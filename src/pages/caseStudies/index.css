@@ -1,0 +1,109 @@
+.glassons {
+    height: 253px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.glassonsView {
+    margin-top: 87px;
+}
+
+.glassonsView2 {
+    margin-top: 87px;
+}
+
+.glassonsTwo2 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 76px;
+}
+
+.glassonsOne {
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.glassonsTwo {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 1024px) {
+    .sectionTwo {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .sectionThree {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .sectionTwo {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .sectionOne {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .glassonsThree {
+        margin-top: 5px;
+        font-size: 13px;
+        text-align: justify;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .sectionOne {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .sectionThree {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .glassonsViewThree {
+        margin-top: 30px;
+    }
+
+    .glassonsOneSectionThree {
+        text-align: justify;
+        padding: 20px;
+        font-size: 13px;
+        
+    }
+
+    .glassonsThree {
+        height: 253px;
+       padding: 20px;
+       
+    }
+
+    .glassonsOneSectionTwo {
+        margin-top: 27px;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .glassonsTwoSectionTwo {
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+}
+
+
+

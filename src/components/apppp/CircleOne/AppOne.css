@@ -1,0 +1,212 @@
+.main-circle {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  /* background-color: lightgray; */
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  color: white;
+ 
+}
+
+.sub-circle {
+  width: 110px;
+  height: 110px;
+  background-color: #35435F  ;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 5px #141922 solid;
+}
+
+.sub-circle.hovered {
+  /* background-color: red; You can change the color for the hovered circle */
+  background-image: linear-gradient(#22BBFF , #9fc8da, #22BBFF)
+}
+.smallCircle.hovered {
+  /* background-color: red; You can change the color for the hovered circle */
+  background-image: linear-gradient(#22BBFF , #9fc8da, #22BBFF)
+}
+
+.description {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 200px;
+ 
+}
+
+
+.description2 {
+  color: rgb(0, 0, 0);
+  /* font-size: 20px; */
+  text-align: center;
+  padding-top: 220px;
+  
+}
+
+.smallCircle{
+  width: 85px;
+  height: 85px;
+  background-color: rgb(84, 94, 122);
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  
+  .main-circle {
+    width: 280px !important;
+    height: 280px !important;
+    position: relative;
+    /* background-color: lightgray; */
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    margin-top: 90px;
+  }
+  .sub-circle {
+    width: 70px !important;
+    height: 70px !important;
+    background-color: #35435F;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 5px #141922 solid;
+  }
+  .smallCircle {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: rgb(84, 94, 122);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -20px;
+    font-size: 10px;
+   word-spacing: -1px;
+   margin-bottom: 7px;
+  }
+
+  .description {
+    color: rgb(0, 0, 0);
+    /* font-size: 20px; */
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .description2 {
+    color: rgb(0, 0, 0);
+    /* font-size: 20px; */
+    text-align: center;
+    padding-top: 120px;
+  }
+ 
+
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .main-circle {
+    width: 300px;
+    height: 300px;
+
+  }
+
+  .sub-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
+
+  .smallCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circle-text {
+    padding: 8px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .description2 {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .main-circle {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.sub-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #35435F;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.sub-circle.hovered {
+  background-color: #455a78;
+}
+
+.smallCircle {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.circle-text {
+  padding: 10px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description2 {
+  text-align: center;
+  margin-top: 20px;
+} */

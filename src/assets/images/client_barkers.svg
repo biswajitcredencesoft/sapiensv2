@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="956.74103mm"
+   height="191.94489mm"
+   viewBox="0 0 956.74103 191.94489"
+   version="1.1"
+   id="svg1750"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="client_barkers.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1752"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.22929386"
+     inkscape:cx="1982.1726"
+     inkscape:cy="477.55313"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1747" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(419.21529,-22.33798)">
+    <g
+       id="g20757"
+       transform="matrix(5.0859802,0,0,5.0859802,-419.21529,22.4397)">
+      <path
+         class="cls-1"
+         d="m 14.44,18 v 0.1 c 3.44,1 5.06,4 5.06,8.51 0,6.69 -2.13,10.63 -9.42,10.63 H 0 V 0.51 h 9 c 6.64,0 9.37,3.9 9.37,9.67 0,4.2 -1.16,6.63 -3.9,7.8 M 6.13,16 h 3.09 c 2.58,0 3.29,-1.52 3.29,-5.07 0,-3.55 -0.86,-4.66 -3.29,-4.66 H 6.13 Z m 0,15.7 h 3.7 c 2.48,0 3.45,-1.16 3.45,-5.42 C 13.28,22.02 12.31,21 9.87,21 H 6.13 Z"
+         id="path20729"
+         style="fill:#111827;fill-opacity:1" />
+      <path
+         class="cls-1"
+         d="M 34.86,6.94 H 35 L 38,24 h -6.18 z m -3.55,-6.43 -8.2,36.72 h 6.28 L 30.9,29 h 8 l 1.52,8.26 h 6.43 L 38.66,0.51 Z"
+         id="path20731"
+         style="fill:#111827;fill-opacity:1" />
+      <path
+         class="cls-1"
+         d="m 61.24,22.18 h -2.53 v 15 H 52.43 V 0.51 h 9.62 c 6.38,0 9.17,3.75 9.17,10.48 0,5.27 -1.52,8.36 -4.46,9.62 l 6,16.61 H 66.1 Z m -2.53,-5.12 h 3 C 64.24,17.06 65,15.54 65,11.49 65,7.18 64.09,6.12 61.71,6.12 h -3 z"
+         id="path20733"
+         style="fill:#111827;fill-opacity:1" />
+      <polygon
+         class="cls-1"
+         points="85.23,0.51 79.1,0.51 79.1,37.22 85.23,37.22 85.23,25.57 87.2,21.58 87.31,21.58 93.58,37.22 100.37,37.22 91.36,16.76 99.76,0.51 92.82,0.51 85.33,17.83 85.23,17.83 "
+         id="polygon20735"
+         style="fill:#111827;fill-opacity:1" />
+      <polygon
+         class="cls-1"
+         points="112.89,20.82 120.74,20.82 120.74,15.65 112.89,15.65 112.89,6.33 123.07,6.33 123.07,0.51 106.61,0.51 106.61,37.23 123.53,37.23 123.53,31.5 112.89,31.5 "
+         id="polygon20737"
+         style="fill:#111827;fill-opacity:1" />
+      <path
+         class="cls-1"
+         d="m 139,22.18 h -2.53 v 15 h -6.28 V 0.51 h 9.62 c 6.38,0 9.19,3.74 9.19,10.49 0,5.27 -1.52,8.36 -4.46,9.62 l 6,16.61 h -6.63 z m -2.53,-5.12 h 3 c 2.53,0 3.29,-1.52 3.29,-5.57 0,-4.31 -0.91,-5.37 -3.29,-5.37 h -3 z"
+         id="path20739"
+         style="fill:#111827;fill-opacity:1" />
+      <path
+         class="cls-1"
+         d="m 173.47,8.15 -4.56,1.72 c -0.71,-3.19 -2.08,-4.46 -4.1,-4.46 -2.23,0 -3.29,1.32 -3.29,3.75 0,6.63 12.2,7.34 12.2,18.28 0,6.59 -3.54,10.28 -9.21,10.28 -4.66,0 -8.61,-3.14 -9.52,-8.81 l 5,-1.52 c 0.71,3.65 2.48,5 4.4,5 2.33,0 3.39,-1.27 3.39,-4 0,-7.75 -12.46,-8 -12.46,-18.79 0,-5.42 3.29,-9.62 8.86,-9.62 5.17,0 8.05,3.19 9.32,8.15"
+         id="path20741"
+         style="fill:#111827;fill-opacity:1" />
+      <path
+         class="cls-1"
+         d="M 188.1,0.52 A 0.1,0.1 0 0 0 188,0.47 h -12.15 a 0.1,0.1 0 0 0 -0.09,0.05 0.1,0.1 0 0 0 0,0.1 l 6.09,10.54 a 0.1,0.1 0 0 0 0.09,0.05 0.1,0.1 0 0 0 0.09,-0.05 L 188.1,0.63 a 0.1,0.1 0 0 0 0,-0.1"
+         id="path20743"
+         style="fill:#111827;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

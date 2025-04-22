@@ -1,0 +1,86 @@
+.BlogContainer{
+    padding: 120px 10px;
+    min-height: 100vh;
+  
+}
+
+.BlogTopText{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+ 
+}
+
+.BlogTopText > h1{
+    font-size: 45px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.image{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .FooterContainer{
+    margin-top: 222px;
+} */
+
+
+/* .BlogTopText > p{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 40px;
+} */
+
+.BlogBottomText{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+/* .BlogBottomText > p:nth-child(1){
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 0;
+} */
+
+/* .BlogBottomText > p:nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 70px;
+} */
+
+@media screen and (max-width: 750px) {
+
+    .BlogContainer{
+        /* padding: 25px 10px; */
+    }
+
+    .BlogTopText{
+        width: 95%;
+    }
+
+    /* .BlogTopText > p{
+        padding: 10px 20px;
+    } */
+
+    .BlogBottomText{
+        width: 95%;
+    }
+    
+/* .FooterContainer{
+    margin-top: 295px;
+    
+    
+} */
+
+
+    /* .BlogBottomText > p:nth-child(2){
+        padding: 10px 20px;
+    } */
+}
+

@@ -1,0 +1,157 @@
+.solution-video-container {
+  padding: 18px;
+  margin-bottom: 170px;
+  
+}
+
+.heading {
+  color:#000000;
+  text-align: center;
+  margin-top: 45px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 38px;
+
+  
+}
+
+.react-player {
+  max-width: 100%;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+ 
+  
+}
+
+.card {
+  background: #2c3c57;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+ 
+ 
+}
+
+.card.hovered {
+  z-index: 1;
+  position: relative;
+  transform: scale(1.05);
+}
+
+.card-top-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row; /* Align image and text horizontally */
+}
+
+.card-img {
+  width: 80px; /* Adjust size as needed */
+  height: 80px;
+  /* background: #fff;
+  border: 2px solid #fff; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card-img img {
+  max-width: 100%;
+ 
+  
+}
+
+.card-title {
+  font-family: gothic-book;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.card-bottom-content {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1rem;
+  color:#ffffff;
+  display: none;
+}
+
+.card.hovered .card-bottom-content {
+  display: block;
+}
+
+@media screen and (min-width: 750px) {
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .video-section,
+  .cards-section {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .card-top-content {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content on smaller screens */
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .card-bottom-content {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heading {
+    font-size: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-bottom-content {
+    font-size: 0.75rem;
+  }
+}
+
+
+@media screen and (min-width: 755px) and (max-width: 905px){
+  .video-section{
+      
+     margin-top: 40px;
+  }
+}

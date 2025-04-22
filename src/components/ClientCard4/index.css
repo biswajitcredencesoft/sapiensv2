@@ -1,0 +1,186 @@
+/* .ClientCard{
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 10px;
+}
+
+.ClientCard > img{
+    width: 100%;
+}
+
+.ClientCardContent {
+    background: #fff;
+    padding: 10px 10px;
+}
+
+.ClientCardContent > h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ClientCardContent > h4{
+    color: #000000;
+    font-size: 20px;
+}
+
+.ClientCardContent > p{
+    color: #000000;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+.ClientCardContent {
+    background: #fff;
+    padding: 5px 2px;
+}
+
+.ClientCardContent > h3{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.ClientCardContent > h4{
+    color: #000000;
+    font-size: 10px;
+}
+
+.ClientCardContent > p{
+    color: #000000;
+    padding:  0;
+    font-size: 10px;
+}
+}
+
+@media screen and (max-width: 1200px) { 
+    
+    .ClientCardContent {
+        background: #fff;
+        padding: 5px 2px;
+    }
+    
+    .ClientCardContent > h3{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .ClientCardContent > h4{
+        color: #000000;
+        font-size: 10px;
+    }
+    
+    .ClientCardContent > p{
+        color: #000000;
+        padding:  0;
+        font-size: 10px;
+    }
+    } */
+
+
+
+
+    .ClientCard{
+    width: 200px;
+
+    
+    overflow: hidden;
+    margin: 10px 10px;
+}
+
+.ClientCard > img{
+    width: 50%;
+    display: flex;
+}
+
+.image{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ClientCardContent {
+ 
+    padding: 20px 10px;
+}
+
+.ClientCardContent > h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ClientCardContent > h4{
+    color: #000000;
+    font-size: 20px;
+}
+
+.ClientCardContent > p{
+    color: #000000;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+.ClientCardContent {
+   
+    padding: 5px 2px;
+}
+
+.ClientCardContent > h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ClientCardContent > h4{
+    color: #000000;
+    font-size: 10px;
+}
+
+.ClientCardContent > p{
+    color: #000000;
+    padding:  0;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 1200px) { 
+    
+    .ClientCardContent {
+      
+        padding: 5px 2px;
+    }
+    
+    .ClientCardContent > h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .ClientCardContent > h4{
+        color: #000000;
+        font-size: 10px;
+    }
+    
+    .ClientCardContent > p{
+        color: #000000;
+        padding:  0;
+        font-size: 20px;
+    }
+    }
+
+
+
+    
+
+    @media screen and (max-width: 450px){
+
+        .ClientCardContent > p{
+            font-size: 15px;
+        }
+
+        .ClientCardContent >h5{
+            font-size: 15px;
+        }
+    }

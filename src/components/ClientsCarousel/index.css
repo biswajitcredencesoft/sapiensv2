@@ -1,0 +1,84 @@
+/* index.css */
+
+.ClientsCarousel {
+    padding: 80px 10px;
+}
+
+.carousel-container {
+    padding: 60px 40px;
+}
+
+.ClientsCarousel > h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 45px;
+}
+
+.ClientsCarousel > h1 > span {
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.carousel-inner {
+    width: 20%;
+    margin: auto;
+}
+
+.carousel-item {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-inner-cards {
+    display: flex !important;
+    justify-content: center !important;
+    justify-items: center !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    justify-items: center !important;
+    justify-content: center !important;
+}
+
+.heading {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #35435f !important;
+}
+
+.transition-none {
+    transition: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .heading {
+        margin-top: -100px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        color: #35435f !important;
+    }
+}
+
+.carousel-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.flex {
+    flex-wrap: nowrap;
+}
+
+ @media (max-width: 768px) {
+    .carousel-container{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+ }
+ @media (max-width: 768px) {
+    .carousel-container p{
+    margin-top: 1px;
+}
+ }

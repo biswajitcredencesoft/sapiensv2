@@ -1,0 +1,145 @@
+.SeerInsightsContainer{
+    background: #2C3C57;
+    padding: 30px 50px;
+}
+
+
+.paragraph{
+color:white;
+}
+.container{
+   font-family: 'roboto';
+    background-color: rgb(38, 48, 68);
+    opacity: 1;
+    
+  
+}
+.SeerInsightsContainer > h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.SeerInsightsContainer > p {
+    text-align: center !important;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 50px;
+    padding-bottom: 30px;
+    line-height: 80px;
+
+   
+    
+}
+ .description{
+    font-family: 'gothic-book';
+    color: #ffffff;
+}
+
+.SeerInsightsImg{
+    /* width: 250px; */
+    width: 10%;
+    min-width: 150px;
+    margin: auto;
+    
+}
+
+.SeerInsightsImg > img{
+    width: 100%;
+   
+}
+
+.seer-description{
+    font-family: 'gothic-book';
+}
+
+@media screen and (max-width: 700px) {
+    .SeerInsightsContainer{
+        padding: 10px 10px;
+    }    
+
+    .SeerInsightsContainer > p {
+        /* padding: 10px 5px; */
+        /* padding-bottom: 10px; */
+        /* line-height: 40px; */
+        text-align: center !important;
+    }
+}
+
+.videoSectionContainer{
+    display: flex;
+    /* padding: 10px 10px; */
+}
+
+.videoSectionContainer > div{
+    width: 50%;
+    padding: 10px 10px;
+}
+
+
+
+
+
+.videoSectionRightSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .videoSectionContainer{
+        flex-direction: column-reverse;
+        /* padding: 10px 0px; */
+    }
+
+    .videoSectionContainer > div{
+        width: 100%;
+    }
+        
+
+}
+
+
+
+.videoSectionContainer{
+    display: flex;
+    padding: 10px 10px;
+}
+
+.videoSectionContainer > div{
+    width: 50%;
+    padding: 10px 10px;
+}
+
+
+.videoSectionRightSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .videoSectionContainer{
+        flex-direction: column-reverse;
+        padding: 10px 0px;
+    }
+
+    .videoSectionContainer > div{
+        width: 100%;
+    }
+
+}
+
+.fontSize{
+    font-size: 2rem;
+
+}
+@media screen and (max-width: 700px) {
+    .fontSize{
+        font-size: 1.5rem;
+    
+    }    
+
+  
+}

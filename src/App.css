@@ -1,0 +1,27 @@
+.AppContainer{
+    position: relative;
+    /* margin: auto; */
+    /* background: linear-gradient(90deg, #05080D 0%, rgba(5, 8, 13, 0.7) 100%); */
+    /* overflow-x: hidden !important; */
+   
+}
+
+.NavbarCont{
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+
+@font-face {
+    font-family: gothic-book;
+    src: url(../public/Fontspring-DEMO-allroundgothic-book.otf);
+}
+
+.gothic-book{
+    font-family: gothic-book;
+}

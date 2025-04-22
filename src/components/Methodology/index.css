@@ -1,0 +1,95 @@
+.MethodologyContainer {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.MethodologyLeftSection {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3d4657;
+  color: #fff;
+}
+
+.MethodologyLeftSectionContent > img,
+p {
+  /* padding: 30px 0; */
+  margin: auto;
+}
+
+.MethodologyLeftSectionContent > p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.MethodologyLeftSectionContent {
+  width: 100%;
+  margin: auto;
+}
+
+.MethodologyRightSection {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .MethodologyContainer {
+    flex-direction: column;
+    /* position: absolute; */
+    width: 100%;
+  }
+
+  .MethodologyLeftSection {
+    width: 100%;
+  }
+
+  .MethodologyRightSection {
+    width: 100%;
+    padding: 70px;
+  }
+}
+.line {
+  background: linear-gradient(to right, #52b2d9 10%, #776379 90%) left !important;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for screens up to 600 pixels wide (typical for mobile devices) */
+  .main-circle {
+    width: 80%;
+    margin: auto;
+  }
+
+  .sub-circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .arrow-icon {
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+  .flex-wrap-mobile {
+    flex-wrap: wrap;
+  }
+}
+
+/* Adjustments for tablet and desktop view */
+@media (min-width: 769px) {
+  .flex-wrap-mobile {
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,509 @@
+.HeroSectionContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.HeroSectionBgImg {
+    z-index: -1;
+}
+
+.HeroSectionBgImg > img {
+    width: 100%;
+}
+
+.desktop-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
+    }
+}
+
+.HeroSectionLeftText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 40%;
+}
+
+.HeroSectionLeftText > h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    color: #141722;
+    margin: 0;
+    font-family: gothic-book, sans-serif;
+}
+
+.HeroSectionLeftText > h1 > span {
+    color: #22bbff;
+}
+
+.HeroSectionLeftText > p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: #374151;
+    margin: 0;
+}
+
+.rightsection {
+    background: linear-gradient(to bottom, #090d14 10%, #35435f 90%);
+}
+
+.ContactRightSectionHome > h1 {
+    color: #141722;
+}
+
+.ContactRightSectionHome > p {
+    color: #374151;
+    font-size: 20px;
+    padding: 2px 0;
+}
+
+.ContactRightSectionHome > input {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+}
+
+.ContactRightSectionHome > textarea {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+}
+
+p.get-in {
+    color: #141722;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2500px) {
+    .ContactRightSectionHome {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .ContactRightSectionHome {
+        padding-right: 110px;
+    }
+    .gmail {
+        font-size: 11px;
+    }
+    .ContactRightSectionHome > p {
+        color: #374151;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        padding: 2px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ContactRightSectionHome {
+        margin-right: 40px;
+    }
+    .ContactRightSectionHome > p {
+        color: #374151;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        padding: 2px 0;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .ContactRightSectionHome {
+        padding-right: 20px;
+    }
+    .ContactRightSectionHome > p {
+        color: #374151;
+        font-size: 0.9rem;
+        line-height: 1rem; 
+        padding: 2px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .HeroSectionLeftText {
+        margin-top: 100px;
+        margin-left: 17px !important;
+        width: 30%;
+    }
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 0;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .HeroSectionLeftText {
+        margin-top: 80px;
+        margin-left: 45px;
+        width: 30%;
+    }
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 0;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .HeroSectionLeftText {
+        margin-top: 50px;
+        margin-left: 35px;
+        width: 30%;
+    }
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .HeroSectionLeftText {
+        margin-top: 30px;
+        margin-left: 25px;
+        width: 30%;
+    }
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 13px;
+        line-height: 18px;
+        padding-top: 15px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+    .demand {
+        margin-left: 230px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .HeroSectionLeftText {
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 30%;
+    }
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .HeroSectionLeftText {
+        margin-top: 30px;
+        margin-left: 5px;
+        width: 50%;
+    }
+    .HeroSectionLeftText > h1 {
+        font-weight: 200;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .HeroSectionLeftText {
+        margin-top: 30px;
+        margin-left: 0px;
+        width: 70%;
+    }
+    .HeroSectionLeftText > h1 {
+        font-weight: 700;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    .HeroSectionLeftText > p {
+        font-weight: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+}
+
+.ContactRightSectionHome {
+    position: absolute;
+    top: 60px;
+    right: -46px;
+    width: 32%;
+    height: 530px;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .ContactRightSectionHome {
+        padding-left: 120px;
+        width: 35%;
+    }
+    .gmail {
+        font-size: 0.7rem;
+    }
+    .ContactRightSectionHome > h1 {
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    .ContactRightSectionHome > p {
+        font-weight: 0;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ContactRightSectionHome {
+        right: 20px;
+        width: 35%;
+        top: 8px;
+    }
+    .gmail {
+        font-size: 9px;
+    }
+    .ContactRightSectionHome > h1 {
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    .ContactRightSectionHome > p {
+        font-weight: 0;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .ContactRightSectionHome {
+        right: 10px;
+        width: 40%;
+        bottom: 12px;
+    }
+    .ContactRightSectionHome > h1 {
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    .ContactRightSectionHome > p {
+        font-weight: 0;
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ContactRightSectionHome {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ContactRightSectionHome {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1028px) {
+    .ContactRightSectionHome {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1029px) and (max-width: 1081px){
+    .inc{
+        padding-left: 15px;
+    }
+}
+@media screen and (min-width: 1203px) and (max-width: 1325px){
+    .inc{
+        /* padding-left: 15px; */
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 848px){
+ 
+    .HeroSectionLeftText > h1 {
+       
+        line-height: 1.5rem;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width:850px) and (max-width: 936px){
+ 
+    .HeroSectionLeftText > p {
+    
+        margin-right: 30px;
+    }
+   
+}
+@media screen and (min-width:1275px) and (max-width: 1505px){
+    .gamil{
+        padding-top: 10px;
+    }
+    .con{
+        padding-top: 10px;
+    }
+ 
+    .location{
+        /* padding-left: 18px; */
+        padding-top: 10px;
+    }
+   
+}
+
+@media screen and (min-width: 1500px){
+    .gamil{
+        padding-top: 10px;
+    }
+    .con{
+        padding-top: 10px;
+    }
+
+    .location{
+        
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+
+
+@media screen and (min-width:1203px) and (max-width: 1319px){
+    .gmail{
+        /* padding-left: 20px; */
+        text-align: center;
+        padding-top: 10px;
+    }
+    .con{
+        /* padding-right: 15px; */
+        padding-top: 10px;
+        text-align: center;
+    }
+    .location{
+        /* padding-right: 2px; */
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+
+
+@media screen and (min-width:1029px) and (max-width: 1080px){
+    .gmail{
+        padding-left: 17px;
+        padding-top: 10px;
+    }
+    .con{
+      padding-right: 14px;
+    }
+    .location{
+        padding-right: 5px;
+    }
+}
+
+@media screen and (min-width:1085px) and (max-width: 1196px){
+    .gmail{
+      
+        padding-top: 10px;
+    }
+    .con{
+      padding-left: 6px;
+
+    }
+  
+}
+@media screen and (min-width:1326px) and (max-width: 1500px){
+    .gmail{
+      
+        padding-top: 10px;
+    }
+    .con{
+      padding-left: 6px;
+
+    }
+  
+}
+
+

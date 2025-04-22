@@ -1,0 +1,109 @@
+.NavbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #090d14 10%, #35435f 90%);
+  padding: 2.5rem; 
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.NavbarContainer>svg {
+  margin: 0 10px;
+  color: #ffffff;
+  display: none;
+}
+
+.NavbarLogo {
+  width: 10%;
+}
+
+/* .NavbarLogo>img {
+  width: 100%;
+} */
+
+.NavbarLinks {
+  display: flex;
+  justify-content: space-between;
+  width: auto; 
+  margin-right: 20px; 
+  font-family: 'gothic-book';
+}
+
+.NavbarLinks>li {
+  list-style: none;
+}
+
+.NavbarLinks>li>a {
+  text-decoration: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 8px 12px;
+  border-radius: 33px;
+  color: #ffffff;
+  font-family: "gothic-book";
+  font-style: normal;
+  font-weight: 400;
+  transition: border 0.3s, font-size 0.3s;
+}
+
+.NavbarLinks>li>a:hover,
+.NavbarLinks>li>a.active {
+  border: 2px solid #ffffff;
+  border-radius: 33px;
+}
+
+.NavbarLinks>li>a.active {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1300px) {
+  .NavbarLinks>li>a {
+    font-size: 1.25rem; 
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .NavbarLinks>li>a {
+    font-size: 1.1rem; 
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .NavbarLinks>li>a {
+    font-size: 1rem; 
+    padding: 6px 10px; 
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .NavbarLinks {
+    display: none; 
+  }
+
+  .NavbarContainer>svg {
+    display: block;
+  }
+
+  .NavbarLogo {
+    width: 30%; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NavbarLinks>li>a {
+    font-size: 0.875rem; 
+    padding: 4px 8px; 
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .NavbarLogo {
+      width: 40%;
+  }
+}

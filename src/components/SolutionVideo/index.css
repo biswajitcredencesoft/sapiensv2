@@ -1,0 +1,206 @@
+
+  .SolutionVideoContainer {
+    display: flex;
+    padding: 90px 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 85px;
+}
+.videoSectionRightSection{
+    width: 550px;
+}
+.SolutionVideoContainer>div {
+    width: 50%;
+    margin: 30px 30px;
+}
+.SolutionVideoLeftSection>img {
+    width: 100%;
+}
+.SolutionVideoLeftSection {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.SolutionVideoRightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+   
+}
+
+.SolutionVideoRightSectionCard {
+    background: #2C3C57;
+    padding: 20px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px 0;
+
+
+}
+/* .SolutionVideoRightSectionCard.small{
+  background-color: aqua;
+} */
+.SolutionVideoRightSectionCardTopContent {
+    display: flex;
+    align-items: center;
+}
+.SolutionVideoRightSectionCard:hover {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: fixed;
+   
+}
+.SolutionVideoRightSectionCard:hover>.SolutionVideoRightSectionCardBottomContent {
+    display: block;
+}
+.SolutionVideoRightSectionCard:hover>.SolutionVideoRightSectionCardTopContent {
+    flex-direction: column;
+}
+.SolutionVideoRightSectionCardTopContent>p {
+    padding: 10px 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    width: 75%;
+    text-align: center;
+}
+.SolutionVideoRightSectionCardImg {
+    width: 25%;
+}
+.SolutionVideoRightSectionCardImg>img {
+    width: 100%;
+}
+.SolutionVideoRightSectionCardBottomContent {
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+
+
+    .SolutionVideoRightSectionCardTopContent>p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .SolutionVideoRightSectionCardBottomContent {
+        line-height: 30px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1000px) {
+
+
+    .SolutionVideoRightSectionCardTopContent>p {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 28px;
+        padding: 2px 2px;
+    }
+
+
+    .SolutionVideoRightSectionCardBottomContent {
+        line-height: 30px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 900px) {
+
+
+    .SolutionVideoRightSectionCardTopContent>p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        padding: 2px 2px;
+    }
+
+
+    .SolutionVideoRightSectionCardBottomContent {
+        line-height: 25px;
+        font-size: 15px;
+        padding: 2px 2px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .SolutionVideoContainer {
+        flex-direction: column;
+    }
+
+
+    .SolutionVideoContainer>div {
+        width: 100%;
+        margin: 0px 0px;
+    }
+}
+@media screen and (max-width: 380px) {
+
+
+    .SolutionVideoRightSectionCardTopContent>p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 28px;
+        padding: 2px 2px;
+    }
+
+
+    .SolutionVideoRightSectionCardBottomContent {
+        line-height: 25px;
+        font-size: 10px;
+        padding: 2px 2px;
+    }
+}
+@media screen and (max-width: 290px) {
+
+
+    .SolutionVideoRightSectionCardTopContent>p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        padding: 0px 0px;
+    }
+
+
+    .SolutionVideoRightSectionCardBottomContent {
+        line-height: 25px;
+        font-size: 10px;
+        padding: 0px 0px;
+    }
+}
+.videoSectionRightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
