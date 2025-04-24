@@ -64,10 +64,10 @@ const Contact = () => {
         </p>
         <div className="ContactLeftSectionContactDetails ml-1">
           <p style={{ fontFamily: "roboto" }}>
-            <span>Phone:</span> +6498892409
+            <span>Phone:</span> +6498879320
           </p>
           <p style={{ fontFamily: "roboto" }}>
-            <span>Address:</span>Sapiensv2 Ltd Enfield street, Auckland, New
+            <span>Address:</span>Sapiens V2 Ltd Enfield street, Auckland, New
             Zealand
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
@@ -78,7 +78,7 @@ const Contact = () => {
 
         <div className="ContactLeftSectionIcons gap-2">
           <a
-            href="https://www.google.com/search?q=seer+inc&sca_esv=998424606ab613e9&rlz=1C1RXQR_en-GBIN1072IN1072&ei=sm8GZ4GYK-KcseMP4bHwmAU&ved=0ahUKEwiBuYKvn4GJAxViTmwGHeEYHFMQ4dUDCA8&uact=5&oq=seer+inc&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlZXIgaW5jMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi3EFDlDFiJDnACeAGQAQCYAc0BoAGGA6oBBTAuMS4xuAEDyAEA-AEBmAIDoALOAcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwMyLjGgB5UM&sclient=gws-wiz-serp"
+            href="https://www.https://www.google.com/search?q=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&oq=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHMjc0ajBqN6gCCLACAfEFVkTh04sEovY&sourceid=chrome&ie=UTF-8"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -282,22 +282,22 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col items-center">
-                <a href="tel:+6498892409" className="text-white">
+                <a href="tel:+6498879320" className="text-white">
                   <MdContactPhone size={60} />
                 </a>
                 <p
                   style={{ fontFamily: "roboto" }}
                   className="text-white pt-2 text-[10px] md:text-[15px]"
                 >
-                  <a href="tel:+6498892409" className="text-white">
-                    +6498892409
+                  <a href="tel:+6498879320" className="text-white">
+                    +6498879320
                   </a>
                 </p>
               </div>
 
               <div className="flex flex-col items-center">
                 <a
-                  href="https://www.google.com/search?q=seer+inc&sca_esv=998424606ab613e9&rlz=1C1RXQR_en-GBIN1072IN1072&ei=sm8GZ4GYK-KcseMP4bHwmAU&ved=0ahUKEwiBuYKvn4GJAxViTmwGHeEYHFMQ4dUDCA8&uact=5&oq=seer+inc&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlZXIgaW5jMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi3EFDlDFiJDnACeAGQAQCYAc0BoAGGA6oBBTAuMS4xuAEDyAEA-AEBmAIDoALOAcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwMyLjGgB5UM&sclient=gws-wiz-serp"
+                  href="https://www.google.com/search?q=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&oq=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHMjc0ajBqN6gCCLACAfEFVkTh04sEovY&sourceid=chrome&ie=UTF-8"
                   target="_blank"
                   className="text-white"
                 >
@@ -307,7 +307,7 @@ const Contact = () => {
                   style={{ fontFamily: "roboto" }}
                   className="text-white pt-1 text-[10px] md:text-[15px]"
                 >
-                  Sapiensv2 Ltd Enfield street, Auckland, New Zealand
+                  Sapiens V2 Ltd Enfield street, Auckland, New Zealand
                 </p>
               </div>
             </div>

@@ -169,7 +169,7 @@ const HeroSection = ({ scrollToDemo }) => {
                   </p>
                 </a>
                 <a
-                  href="tel:+6498892409"
+                  href="tel:+6498879320"
                   className="flex flex-col items-center group"
                 >
                   <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
@@ -179,11 +179,11 @@ const HeroSection = ({ scrollToDemo }) => {
                     style={{ fontFamily: "roboto" }}
                     className="text-white gmail mt-2 text-center"
                   >
-                    +6498892409
+                    +6498879320
                   </p>
                 </a>
                 <a
-                  href="https://www.google.com/search?q=seer+inc"
+                  href="https://www.google.com/search?q=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&oq=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHMjc0ajBqN6gCCLACAfEFVkTh04sEovY&sourceid=chrome&ie=UTF-8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center group"
@@ -195,7 +195,7 @@ const HeroSection = ({ scrollToDemo }) => {
                     style={{ fontFamily: "roboto" }}
                     className="text-white text-center gmail mt-1"
                   >
-                    Sapiensv2 Ltd Enfield street, Auckland, New Zealand
+                    Sapiens V2 Ltd Enfield street, Auckland, New Zealand
                   </p>
                 </a>
               </div>

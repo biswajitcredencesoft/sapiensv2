@@ -219,11 +219,11 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
-            Glassons chose Sapiensv2 to automate and improve outcomes for this manual
-            process. Each Sunday the store scans returns for the week. Using
-            Sapiensv2’s API, the returns are uploaded to the Sapiensv2 cloud and analysed
-            by Stock Sapiensv2 to determine the optimum selling stores, and propose
-            transfers accordingly.
+            Glassons chose Sapiens V2 to automate and improve outcomes for this
+            manual process. Each Sunday the store scans returns for the week.
+            Using Sapiens V2’s API, the returns are uploaded to the Sapiens V2
+            cloud and analysed by Stock Seer to determine the optimum selling
+            stores, and propose transfers accordingly.
           </p>
           <p
             style={{ fontFamily: "roboto" }}
@@ -277,11 +277,11 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16"
           >
-            Animates chose Sapiensv2 to eliminate this complex manual process and
-            optimize stock levels across their store network. We deployed Stock
-            Sapiensv2 (Our proprietary A.I.) to determine optimal re-order points and
-            safety stock levels that robustly factor seasonal fluctuations and
-            planned promotions. Initial trials have shown the potential to save
+            Animates chose Sapiens V2 to eliminate this complex manual process
+            and optimize stock levels across their store network. We deployed
+            Stock Seer to determine optimal re-order points and safety stock
+            levels that robustly factor seasonal fluctuations and planned
+            promotions. Initial trials have shown the potential to save
             $6,000,000+, principally from reductions in working capital (excess
             stock and labour).
           </p>
@@ -295,13 +295,13 @@ const CaseStudies = () => {
           />
           <p
             style={{ fontFamily: "roboto" }}
-            className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16 sm:mr-16 text-[#000000]"
+            className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16     sm:mr-52  text-[#000000]"
           >
             A 46 store strong, Australia/New Zealand based chain, Hallensteins
             provides quality clothing that's both stylish and affordable,
-            catering to the modern man's evolving tastes.
+            catering to the modern man's evolving tastes.   
           </p>
-          <p
+          <p     
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
@@ -330,14 +330,14 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
-            Once again, we deployed Stock Sapiensv2 to automate this manual
-            process generating an accurate, weekly sales forecast with seasonal
-            fluctuations and planned promotions accounted for. As Animates with Glassons
-            the forecast was used, in conjunction with standard business rules,
-            to determine more sensible target stock levels and safety stock
-            buffers, with respect to the predicted demand. Thus far, we have
-            saved $500,000 thanks to mitigations in out of stocks and overstocks
-            via the A.I. driven process.
+            Once again, we deployed Stock Seer to automate this manual process
+            generating an accurate, weekly sales forecast with seasonal
+            fluctuations and planned promotions accounted for. The forecast was
+            used, in conjunction with standard business rules, to determine more
+            sensible target stock levels and safety stock buffers, with respect
+            to the predicted demand. Thus far, we have saved $500,000 thanks to
+            mitigations in out of stocks and overstocks via the A.I. driven
+            process.
           </p>
         </div>
       </div>

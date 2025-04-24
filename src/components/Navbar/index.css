@@ -18,11 +18,12 @@
 
 .NavbarLogo {
   width: 10%;
+  
 }
 
-/* .NavbarLogo>img {
-  width: 100%;
-} */
+.NavbarLogo>img {
+  font-family: 'gothic-book';
+}
 
 .NavbarLinks {
   display: flex;

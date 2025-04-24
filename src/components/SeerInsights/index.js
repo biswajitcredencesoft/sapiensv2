@@ -39,7 +39,7 @@ const SeerInsights = () => {
       desc: "",
       description: "Multi Domain Masters",
       description1:
-        "Sapiensv2’s seasoned team has years of experience supporting the world’s popular platforms - LS Retail, Business Central, Dynamics NAV, Azure, Microsoft .Net, Android and IOS",
+        "Sapiens V2’s seasoned team has years of experience supporting the world’s popular platforms - LS Retail, Business Central, Dynamics NAV, Azure, Microsoft .Net, Android and IOS",
     },
     {
       imageSrc: economial,
@@ -56,7 +56,7 @@ const SeerInsights = () => {
         style={{ fontFamily: "gothic-book" }}
         className="  font-bold text-center mb-5 text-white mt-5 fontSize"
       >
-        Don’t Sweat. With Sapiensv2 Support.
+        Don’t Sweat. With Sapiens V2 Support.
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-40">
         {cards.map((card, index) => (
