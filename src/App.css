@@ -6,22 +6,22 @@
    
 }
 
-.NavbarCont{
-    /* width: 100%; */
-    /* overflow: hidden; */
-}
+/* .NavbarCont{
+    width: 100%;
+    overflow: hidden;
+} */
 
 
 body {
-    font-family: 'MyCustomFont', sans-serif;
+    font-family: 'AllroundGothic', sans-serif;
 }
 
 
 @font-face {
-    font-family: gothic-book;
-    src: url(../public/Fontspring-DEMO-allroundgothic-book.otf);
+    font-family:AllroundGothic;
+    src: url(../public/Fontspring-DEMO-allroundgothic-text.otf);
 }
 
-.gothic-book{
-    font-family: gothic-book;
+.AllroundGothic{
+    font-family: AllroundGothic;
 }

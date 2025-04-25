@@ -30,7 +30,7 @@ const MeetTheTeam = () => {
   return (
     <div className="pb-16">
       <p
-        style={{ fontFamily: "gothic-book" }}
+        style={{ fontFamily: "AllroundGothic" }}
         className="lg:text-5xl md:text-4xl text-[#000000] text-xl text-center font-bold lg:mt-4 md:mt-4 py-4"
       >
         Meet The Team
@@ -44,19 +44,19 @@ const MeetTheTeam = () => {
               </div>
               <div className="text-center mt-3">
                 <p
-                  style={{ fontFamily: "gothic-book" }}
+                  style={{ fontFamily: "AllroundGothic" }}
                   className="lg:text-4xl md:text-4xl text-2xl text-[#000000] font-bold pb-2"
                 >
                   {s.name}
                 </p>
                 <p
-                  style={{ fontFamily: "gothic-book" }}
+                  style={{ fontFamily: "AllroundGothic" }}
                   className="text-lg text-gray-700 font-semibold pb-2 "
                 >
                   {s.designation}
                 </p>
                 <p
-                  style={{ fontFamily: "gothic-book" }}
+                  style={{ fontFamily: "AllroundGothic" }}
                   className="text-center text-[#000000] "
                 >
                   <span style={{ fontFamily: "roboto" }}>

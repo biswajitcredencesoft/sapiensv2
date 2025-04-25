@@ -53,7 +53,7 @@ const SeerInsights = () => {
   return (
     <div className="container mx-auto pt-4 my-[-80px] pb-20">
       <h2
-        style={{ fontFamily: "gothic-book" }}
+        style={{ fontFamily: "AllroundGothic" }}
         className="  font-bold text-center mb-5 text-white mt-5 fontSize"
       >
         Don’t Sweat. With Sapiens V2 Support.

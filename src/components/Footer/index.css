@@ -17,7 +17,7 @@
     justify-content: space-between;
     width: auto; 
     margin-right: 20px; 
-    font-family: 'gothic-book';
+    font-family: 'AllroundGothic';
   }
   
   .NavbarLinks>li {
@@ -30,7 +30,7 @@
     padding: 8px 12px;
     border-radius: 33px;
     color: #ffffff;
-    font-family: "gothic-book";
+    font-family: "AllroundGothic";
     font-style: normal;
     font-weight: 400;
     transition: border 0.3s, font-size 0.3s;

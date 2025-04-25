@@ -85,7 +85,7 @@ const ClientsCarousel = () => {
 
   return (
     <div className="carousel-container relative mb-10 bg-[#edeeff]" onMouseEnter={stopAutoScroll} onMouseLeave={startAutoScroll}>
-      <p style={{ fontFamily: 'gothic-book' }} className=" text-[#000000] text-center flex font-semibold align-center mt-14 justify-center text-xl md:text-3xl lg:text-3xl">
+      <p style={{ fontFamily: 'AllroundGothic' }} className=" text-[#000000] text-center flex font-semibold align-center mt-14 justify-center text-xl md:text-3xl lg:text-3xl">
         Partners Predicting Preparing and Prospering with Sapiens V2.
       </p>
       <div className="relative overflow-hidden">
@@ -126,7 +126,7 @@ const ClientsCarousel = () => {
                       alt={`Card ${index % cardCount}`}
                       className={`${
                         isMobile ? "w-full" : "w-[400px]"
-                      } object-cover`}
+                      } object-cover font-HouschkaPro`}
                     />
                   </div>
                 )}

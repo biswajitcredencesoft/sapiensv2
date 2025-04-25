@@ -757,7 +757,7 @@ const Circle = () => {
                 {descriptions[hoveredIndex]}
               </div>
             ) : (
-              <p className="description2 text-3xl font-bold px-20" style={{ color: "#35435F", fontFamily: 'gothic-book' }}>
+              <p className="description2 text-3xl font-bold px-20" style={{ color: "#35435F", fontFamily: 'AllroundGothic' }}>
                 SSR Methodology
               </p>
             )}

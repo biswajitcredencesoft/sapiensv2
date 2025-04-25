@@ -18,7 +18,7 @@ const VideoSection = () => {
       <div className="headingContainer pt-12 ">
         <span
           className="lg:text-3xl text-lg font-bold text-white"
-          style={{ fontFamily: "gothic-book" }}
+          style={{ fontFamily: "AllroundGothic" }}
         >
           Lost Sales and Wastage Cost Retailers Millions Annually.
         </span>
@@ -43,7 +43,7 @@ const VideoSection = () => {
                 className="w-4/5 lg:text-lg md:text-xs  text-sm text-[#ffffff]  "
               >
                 <span
-                  style={{ fontFamily: "gothic-book" }}
+                  style={{ fontFamily: "AllroundGothic" }}
                   className=" lg:text-lg md:text-sm  text-sm text-white "
                 >
                   <b>RETAIL IS PERVASIVE DETAIL:</b>
@@ -67,7 +67,7 @@ const VideoSection = () => {
                 className="w-4/5 lg:text-lg md:text-sm  text-sm text-[#ffffff] "
               >
                 <span
-                  style={{ fontFamily: "gothic-book" }}
+                  style={{ fontFamily: "AllroundGothic" }}
                   className=" para lg:text-lg md:text-xs  text-sm text-white "
                 >
                   <b>THE COMPLEXITY IS MIND BOGGLING:</b>
@@ -90,7 +90,7 @@ const VideoSection = () => {
                 className="w-4/5 lg:text-lg md:text-sm  text-sm text-[#ffffff] "
               >
                 <span
-                  style={{ fontFamily: "gothic-book" }}
+                  style={{ fontFamily: "AllroundGothic" }}
                   className="lg:text-lg md:text-xs  text-sm text-white "
                 >
                   <b>IT’S EXPENSIVE:</b>
@@ -112,6 +112,6 @@ const VideoSection = () => {
       </div>
     </div>
   );
-};
+};  
 
 export default VideoSection;

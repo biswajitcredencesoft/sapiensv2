@@ -22,12 +22,12 @@ const Blog = () => {
           <div className="BlogTopText pb-4">
             <h1
               className="text-[#000000]"
-              style={{ fontFamily: "gothic-book, sans-serif" }}
+              style={{ fontFamily: "AllroundGothic, sans-serif" }}
             >
               Blog
             </h1>
             <p
-              style={{ fontFamily: "gothic-book, sans-serif" }}
+              style={{ fontFamily: "AllroundGothic, sans-serif" }}
               className="text-lg lg:text-2xl font-light py-4 text-[#000000]"
             >
               All the latest on what’s happening in retail plus some useful tips
@@ -36,7 +36,7 @@ const Blog = () => {
           </div>
           <div className="BlogBottomText">
             <p
-              style={{ fontFamily: "gothic-book, sans-serif" }}
+              style={{ fontFamily: "AllroundGothic, sans-serif" }}
               className="text-lg lg:text-2xl font-semibold py-4  text-[#000000]"
             >
               How can artificial intelligence help retailers forecast demand?
@@ -58,14 +58,14 @@ const Blog = () => {
       ) : (
         <div className="lg:px-20 md:px-20 sm:px-2 ">
           <p
-            style={{ fontFamily: "gothic-book" }}
+            style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-5xl md:text-4xl text-xl font-bold text-center lg:px-40 md:px-20 sm:px-2 text-[#000000]"
           >
             How can artificial intelligence help retailers forecast demand?
           </p>
           <div>
             <p
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
               className="lg:text-3xl text-lg font-bold  text-left pt-8 text-[#000000]"
             >
               Are retailers on the verge of extinction?
@@ -100,7 +100,7 @@ const Blog = () => {
           </div>
           <div>
             <p
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
               className="lg:text-3xl text-xl font-bold text-left py-6 text-[#000000]"
             >
               AI for retailers
@@ -135,7 +135,7 @@ const Blog = () => {
           </div>
           <div>
             <p
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
               className="lg:text-3xl text-xl font-bold text-left py-6 text-[#000000]"
             >
               Demand forecasting

@@ -54,7 +54,7 @@ const Contact = () => {
       <div className="ContactLeftSection">
         <h1
           className="shadow-none"
-          style={{ fontFamily: "gothic-book, sans-serif", boxShadow: "none" }}
+          style={{ fontFamily: "AllroundGothic, sans-serif", boxShadow: "none" }}
         >
           Get In Touch
         </h1>
@@ -72,7 +72,7 @@ const Contact = () => {
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
             <span>Email:</span>{" "}
-            <a href="mailto:enquires@sapiensv2.com">enquires@sapiensv2.com</a>
+            <a href="mailto:enquiries@sapiensv2.com">enquiries@sapiensv2.com</a>
           </p>
         </div>
 
@@ -111,7 +111,7 @@ const Contact = () => {
           >
             <form onSubmit={handleFormSubmit}>
               <h1
-                style={{ fontFamily: "gothic-book" }}
+                style={{ fontFamily: "AllroundGothic" }}
                 className="text-2xl text-[#141722] font-bold py-2"
               >
                 Get in touch
@@ -175,7 +175,7 @@ const Contact = () => {
                 {/* <button
                   type="submit"
                   className="lg:text-lg text-white lg:bg-[#22bbff] lg:px-4 lg:py-1 lg:rounded-lg button"
-                  style={{ fontFamily: "gothic-book, sans-serif" }}
+                  style={{ fontFamily: "AllroundGothic, sans-serif" }}
                 >
                   Submit
                 </button> */}
@@ -194,7 +194,7 @@ const Contact = () => {
             onSubmit={handleFormSubmit}
           >
             <h1
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
               className="text-2xl get-in font-bold py-6 text-[#141722]"
             >
               Get in touch
@@ -254,7 +254,7 @@ const Contact = () => {
               <button
                 className="text-lg text-white bg-[#22bbff] px-4 py-1 rounded-lg 
                  lg:block "
-                style={{ fontFamily: "gothic-book" }}
+                style={{ fontFamily: "AllroundGothic" }}
                 type="submit"
               >
                 Submit
@@ -265,7 +265,7 @@ const Contact = () => {
           <div className="flex rightsec justify-center rounded-r-lg items-center">
             <div className="px-2 md:10 text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
               <div className="flex flex-col items-center">
-                <a href="mailto:enquires@sapiensv2.com" className="text-white">
+                <a href="mailto:enquiries@sapiensv2.com" className="text-white">
                   <MdEmail size={60} />
                 </a>
                 <p
@@ -273,10 +273,10 @@ const Contact = () => {
                   className="pt-1 text-white text-[10px] md:text-[15px]"
                 >
                   <a
-                    href="mailto:enquires@sapiensv2.com"
+                    href="mailto:enquiries@sapiensv2.com"
                     className="text-white"
                   >
-                    enquires@sapiensv2.com
+                    enquiries@sapiensv2.com
                   </a>
                 </p>
               </div>

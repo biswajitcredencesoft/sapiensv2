@@ -8,7 +8,7 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
   const location = useLocation();
   return (
     <div className="FooterContainer bottom-0 left-0 right-0 absolute">
-      <span style={{ fontFamily: "gothic-book" }}>
+      <span style={{ fontFamily: "AllroundGothic" }}>
         ©2025<span style={{ fontFamily: "serif" }}></span> Sapiens V2 Ltd
       </span>
       <ul className="NavbarLinks">

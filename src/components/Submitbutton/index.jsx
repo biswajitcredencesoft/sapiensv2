@@ -29,7 +29,7 @@ export default function ({ completed, onClick, isLoading, error }) {
       <button
         type="submit"
         className="text-lg text-white bg-[#22bbff] px-4 py-1 rounded button flex items-center gap-2"
-        style={{ fontFamily: "gothic-book, sans-serif" }}
+        style={{ fontFamily: "AllroundGothic, sans-serif" }}
         onClick={onClick}
       >
         Submit{" "}

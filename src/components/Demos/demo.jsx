@@ -18,7 +18,7 @@ const Demo = () => {
     <div className="bg-[#edeeff] pb-20 " >
       <h1
         className="text-center text-[#000000] lg:text-3xl md:text-3xl text-xl px-10 lg:px-0 md:px-0 mt-20 font-bold"
-        style={{ fontFamily: "gothic-book" }}
+        style={{ fontFamily: "AllroundGothic" }}
       >
         Prepare for Every Inventory Challenge.
       </h1>
@@ -31,7 +31,7 @@ const Demo = () => {
           <p className="text-lg lg:text-xl lg:mt-10" style={{ color: "#000000" }}>
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
             >
               Optimize Store Inventory Levels
             </span>
@@ -46,7 +46,7 @@ const Demo = () => {
           </p>
 
           <button
-            style={{ fontFamily: "gothic-book" }}
+            style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-xl text-sm text-white  px-4 py-2 rounded-3xl  lg:block lg:mt-5 mt-3 bg-[#22bbff] "
           >
             <Link
@@ -68,7 +68,7 @@ const Demo = () => {
           <p className="text-lg lg:text-xl lg:mt-10" style={{ color: " #000000" }}>
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
             >
               Automate Weekly Vendor Re<span style={{fontFamily:"roboto"}}>-</span>Orders.
             </span>
@@ -83,7 +83,7 @@ const Demo = () => {
             </span>
           </p>
           <button
-            style={{ fontFamily: "gothic-book" }}
+            style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-xl text-sm text-white bg-[#22bbff]   px-4 py-2 rounded-3xl  lg:block lg:mt-5 mt-3 "
           >
             <Link
@@ -105,7 +105,7 @@ const Demo = () => {
           <p className="text-lg lg:text-xl lg:mt-10" style={{ color: "#000000" }}>
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
             >
               Reallocate Stock Between Locations
             </span>
@@ -119,7 +119,7 @@ const Demo = () => {
             </span>
           </p>
           <button
-            style={{ fontFamily: "gothic-book" }}
+            style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-xl text-sm text-white bg-[#22bbff] px-4 py-2 rounded-3xl  lg:block lg:mt-5 mt-3 "
           >
             <Link
@@ -141,7 +141,7 @@ const Demo = () => {
           <p className="text-lg lg:text-xl lg:mt-10" style={{ color: "#000000" }}>
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
             >
               Gauge Desirability of Potential Products.
             </span>
@@ -156,7 +156,7 @@ const Demo = () => {
             </span>
           </p>
           <button
-            style={{ fontFamily: "gothic-book" }}
+            style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-xl text-sm text-white bg-[#22bbff] px-4 py-2 rounded-3xl  lg:block lg:mt-5 mt-3 "
           >
             <Link
@@ -178,7 +178,7 @@ const Demo = () => {
           <p className="text-lg lg:text-xl lg:mt-10" style={{ color: " #000000" }}>
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
-              style={{ fontFamily: "gothic-book" }}
+              style={{ fontFamily: "AllroundGothic" }}
             >
               Simulate Long Term Demand for Perennial Lines.
             </span>
@@ -192,7 +192,7 @@ const Demo = () => {
             </span>
           </p>
           <button
-            style={{ fontFamily: "gothic-book" }}
+            style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-xl text-sm text-white bg-[#22bbff] px-4 py-2 rounded-3xl  lg:block lg:mt-5 mt-3 "
           >
             <Link
