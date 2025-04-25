@@ -99,7 +99,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://www.youtube.com/@Seer-Inc"
+            href="https://www.youtube.com/@Sapiensv2"
             target="_blank"
             rel="noopener noreferrer"
           >
