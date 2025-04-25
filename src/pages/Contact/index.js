@@ -54,7 +54,10 @@ const Contact = () => {
       <div className="ContactLeftSection">
         <h1
           className="shadow-none"
-          style={{ fontFamily: "AllroundGothic, sans-serif", boxShadow: "none" }}
+          style={{
+            fontFamily: "AllroundGothic, sans-serif",
+            boxShadow: "none",
+          }}
         >
           Get In Touch
         </h1>
@@ -72,13 +75,15 @@ const Contact = () => {
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
             <span>Email:</span>{" "}
-            <a href="mailto:enquiries@sapiensv2.com">enquiries@sapiensv2.com</a>
+            <a href="mailto:GetInTouch@SapiensV2.com">
+              GetInTouch@SapiensV2.com
+            </a>
           </p>
         </div>
 
         <div className="ContactLeftSectionIcons gap-2">
           <a
-            href="https://www.https://www.google.com/search?q=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&oq=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHMjc0ajBqN6gCCLACAfEFVkTh04sEovY&sourceid=chrome&ie=UTF-8"
+            href="https://www.google.com/search?q=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&oq=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHMjc0ajBqN6gCCLACAfEFVkTh04sEovY&sourceid=chrome&ie=UTF-8"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -86,7 +91,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/company/seer-inc/about/"
+            href="https://www.linkedin.com/company/sapiens-v2/about/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -265,7 +270,10 @@ const Contact = () => {
           <div className="flex rightsec justify-center rounded-r-lg items-center">
             <div className="px-2 md:10 text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
               <div className="flex flex-col items-center">
-                <a href="mailto:enquiries@sapiensv2.com" className="text-white">
+                <a
+                  href="mailto:GetInTouch@SapiensV2.com"
+                  className="text-white"
+                >
                   <MdEmail size={60} />
                 </a>
                 <p
@@ -273,10 +281,10 @@ const Contact = () => {
                   className="pt-1 text-white text-[10px] md:text-[15px]"
                 >
                   <a
-                    href="mailto:enquiries@sapiensv2.com"
+                    href="mailto:GetInTouch@SapiensV2.com"
                     className="text-white"
                   >
-                    enquiries@sapiensv2.com
+                    GetInTouch@SapiensV2.com
                   </a>
                 </p>
               </div>
