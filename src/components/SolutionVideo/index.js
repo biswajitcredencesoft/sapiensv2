@@ -133,7 +133,7 @@ const SolutionVideo = () => {
       <div className="content-container">
         <div className="video-section">
           <ReactPlayer
-            url="https://youtu.be/Zne5QME3toI?si=Ba4J1VPGda6HpeOR"
+            url="https://www.youtube.com/watch?v=WBEzsF2eBYk"
             className="react-player"
              // playing={playing}
             controls={true}
