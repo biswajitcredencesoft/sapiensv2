@@ -17,7 +17,7 @@ export default function ({ completed, onClick, isLoading, error }) {
         style={{ backgroundColor: "#2f3b55" }}
       >
         <p>
-          Thank you for showing interest in Sapiens V2 We will get in touch with
+          Thank you for showing interest in Sapiens v2 We will get in touch with
           you soon.
         </p>
       </div>

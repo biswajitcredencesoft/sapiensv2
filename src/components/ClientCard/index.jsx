@@ -15,7 +15,7 @@ const ClientCard = () => {
         
         <p style={{fontFamily:'Roboto, sans-serif'}} className="text-center text-[#000000]  ">
          "Out teams are spending days a week managing the parameters which drive
-          our vendor re-order calculation.  Sapiens V2’s forecasts will help us
+          our vendor re-order calculation.  Sapiens v2’s forecasts will help us
           automate the process, eliminate manual effort, and improve order
           accuracy."
         </p>

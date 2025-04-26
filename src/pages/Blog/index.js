@@ -154,7 +154,7 @@ const Blog = () => {
               className="lg:text-xl text-sm text-left text-[#000000]"
             >
               Retailers invariably have rich transactional history and master
-              data which should be capitalized using AI. Companies like Sapiens V2
+              data which should be capitalized using AI. Companies like Sapiens v2
               offer artificial intelligence as a cloud service, allowing
               retailers to: -
             </p>
@@ -206,7 +206,7 @@ const Blog = () => {
               <Link to="/caseStudies" className="mr-2">
                 Contact
               </Link>
-              the team at Sapiens V2 to learn more about how an AI retail solution
+              the team at Sapiens v2 to learn more about how an AI retail solution
               could work for your organisation.
             </p>
             <p
