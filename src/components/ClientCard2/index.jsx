@@ -4,7 +4,7 @@ import SeerLogo1 from '../../assets/images/client_CUE.png'
 
 const ClientCard = () => {
   return (
-    <div className={`${ClientCard}  md:h-[400px]  p-10`}>
+    <div className={`${ClientCard}  md:h-[500px]  p-10`}>
       <div className="flex items-center justify-center ">
           <img src={SeerLogo1} alt="Logo" className='  cue-form' />
           </div>
