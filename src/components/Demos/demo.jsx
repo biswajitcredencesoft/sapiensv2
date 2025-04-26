@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const Demo = () => {
   return (
-    <div className="bg-[#edeeff] pb-20 " >
+    <div className="bg-[#edeeff] pb-20 ">
       <h1
         className="text-center text-[#000000] lg:text-3xl md:text-3xl text-xl px-10 lg:px-0 md:px-0 mt-20 font-bold"
         style={{ fontFamily: "AllroundGothic" }}
@@ -25,10 +25,18 @@ const Demo = () => {
 
       <div className="ContactContainerDemo lg:mt-0 md:mt-0  sm:-mb-16">
         <div className="ContactLeftSection">
-          <img src={Optimise} alt="casestudies" class="glassons" className="rounded-xl"/>
+          <img
+            src={Optimise}
+            alt="casestudies"
+            class="glassons"
+            className="rounded-xl"
+          />
         </div>
         <div className="ContactRightSection">
-          <p className="text-lg lg:text-xl lg:mt-10" style={{ color: "#000000" }}>
+          <p
+            className="text-lg lg:text-xl lg:mt-10"
+            style={{ color: "#000000" }}
+          >
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
               style={{ fontFamily: "AllroundGothic" }}
@@ -62,24 +70,33 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img src={Automate} alt="casestudies" class="glassons" className="rounded-xl"/>
+          <img
+            src={Automate}
+            alt="casestudies"
+            class="glassons"
+            className="rounded-xl"
+          />
         </div>
         <div className="ContactRightSection">
-          <p className="text-lg lg:text-xl lg:mt-10" style={{ color: " #000000" }}>
+          <p
+            className="text-lg lg:text-xl lg:mt-10"
+            style={{ color: " #000000" }}
+          >
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
               style={{ fontFamily: "AllroundGothic" }}
             >
-              Automate Weekly Vendor Re<span style={{fontFamily:"roboto"}}>-</span>Orders.
+              Automate Weekly Vendor Re
+              <span style={{ fontFamily: "roboto" }}>-</span>Orders.
             </span>
             <span
               className="text-lg lg:text-xl lg:mt-10"
               style={{ fontFamily: "roboto" }}
             >
               Calculate safety stock with a desired confidence factor. Determine
-              reorder points and refill levels using Sapiens V2’s sales forecast, lead
-              time and demand variability, to achieve “just-in-time” order
-              fulfilment.
+              reorder points and refill levels using Sapiens V2’s sales forecast
+              taking into consideration lead time and demand variability to
+              achieve “just-in-time” order fulfilment.
             </span>
           </p>
           <button
@@ -99,10 +116,18 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img src={Reallocate} alt="casestudies" class="glassons" className="rounded-xl"/>
+          <img
+            src={Reallocate}
+            alt="casestudies"
+            class="glassons"
+            className="rounded-xl"
+          />
         </div>
         <div className="ContactRightSection">
-          <p className="text-lg lg:text-xl lg:mt-10" style={{ color: "#000000" }}>
+          <p
+            className="text-lg lg:text-xl lg:mt-10"
+            style={{ color: "#000000" }}
+          >
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
               style={{ fontFamily: "AllroundGothic" }}
@@ -135,10 +160,18 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img src={Gauge} alt="casestudies" class="glassons" className="rounded-xl"/>
+          <img
+            src={Gauge}
+            alt="casestudies"
+            class="glassons"
+            className="rounded-xl"
+          />
         </div>
         <div className="ContactRightSection">
-          <p className="text-lg lg:text-xl lg:mt-10" style={{ color: "#000000" }}>
+          <p
+            className="text-lg lg:text-xl lg:mt-10"
+            style={{ color: "#000000" }}
+          >
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
               style={{ fontFamily: "AllroundGothic" }}
@@ -172,17 +205,25 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img src={Simulate} alt="casestudies" class="glassons" className="rounded-xl" />
+          <img
+            src={Simulate}
+            alt="casestudies"
+            class="glassons"
+            className="rounded-xl"
+          />
         </div>
         <div className="ContactRightSection">
-          <p className="text-lg lg:text-xl lg:mt-10" style={{ color: " #000000" }}>
+          <p
+            className="text-lg lg:text-xl lg:mt-10"
+            style={{ color: " #000000" }}
+          >
             <span
               className="text-lg lg:text-xl font-bold mr-2 text-[#000000]"
               style={{ fontFamily: "AllroundGothic" }}
             >
               Simulate Long Term Demand for Perennial Lines.
             </span>
-            <span 
+            <span
               className="text-lg lg:text-xl lg:mt-10"
               style={{ fontFamily: "roboto" }}
             >

@@ -4,7 +4,7 @@ import SeerLogo from '../../assets/images/client_hallensteins.png'
 
 const ClientCard = () => {
   return (
-    <div className={`${ClientCard}  md:h-[400px]  sm:h-[300px]  p-10 `}>
+    <div className={`${ClientCard}  md:h-[500px]  sm:h-[300px]  p-10 `}>
       <div className="flex items-center justify-center ">
         <img src={SeerLogo} alt="Logo" className='h-12 ' />
         </div>
