@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import "./index.css";
 import { MdContactPhone, MdEmail } from "react-icons/md";
@@ -7,22 +6,43 @@ import { FaMapLocationDot } from "react-icons/fa6";
 
 import { serviceId, templateId, publicKey } from "../../configs/emailjs";
 
-import Submitbutton from "./../../components/Submitbutton/index.jsx";
+import Submitbutton from "../../components/Submitbutton/index.jsx";
 
 const HeroSection = ({ scrollToDemo }) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isFormSubmisionError, setIsFormSubmisionError] = useState(false);
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    setIsFormSubmitted(false); // Reset success message when typing
+    setIsFormSubmisionError(false); // Reset error message when typing
+  };
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
     const templateParams = {
-      from_name: formData.get("name"), // Get name from form
-      from_email: formData.get("email"), // Get email from form
-      phone: formData.get("phone"), // Get phone from form (optional)
-      message: formData.get("message"), // Get message from form
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
       to_name: "Sales Team",
     };
 
@@ -31,28 +51,27 @@ const HeroSection = ({ scrollToDemo }) => {
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
       (result) => {
         console.log("Email sent successfully:", result.text);
-        // alert("Your message has been sent successfully!");
-        e.target.reset(); // Reset the form after submission
-
+        e.target.reset(); // Reset HTML form fields
+        setFormData({ name: "", email: "", phone: "", message: "" }); // Reset state
         setIsLoading(false);
         setIsFormSubmitted(true);
       },
       (error) => {
         console.error("Error in sending email:", error);
-        // alert("Failed to send the message. Please try again.");
         setIsFormSubmisionError(true);
+        setIsLoading(false);
       }
     );
   };
 
   return (
     <div className="HeroSectionContainer">
-      <div className="">
+      <div>
         <div className="HeroSectionLeftText">
           <h1>
             Your accurate, intuitive
             <br />
-            <span className="">demand forecaster.</span>
+            <span>demand forecaster.</span>
           </h1>
           <p style={{ fontFamily: "roboto" }}>
             Helping inventory planners get the right stock, in the right place,
@@ -60,7 +79,7 @@ const HeroSection = ({ scrollToDemo }) => {
           </p>
           <button
             onClick={scrollToDemo}
-            className="lg:text-lg text-white mt-8 lg:bg-[#22bbff]  lg:px-4 lg:py-2 lg:rounded-3xl hidden lg:block "
+            className="lg:text-lg text-white mt-8 lg:bg-[#22bbff] lg:px-4 lg:py-2 lg:rounded-3xl hidden lg:block"
             style={{ fontFamily: "AllroundGothic, sans-serif" }}
           >
             Learn more
@@ -77,10 +96,8 @@ const HeroSection = ({ scrollToDemo }) => {
                 >
                   Get in touch
                 </h1>
-                <p
-                  className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
-                >
+
+                <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Name:
                 </p>
                 <div className="mr-4">
@@ -88,13 +105,13 @@ const HeroSection = ({ scrollToDemo }) => {
                     type="text"
                     name="name"
                     className="w-full border p-2 rounded-lg"
+                    value={formData.name}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
-                <p
-                  className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
-                >
+
+                <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Email:
                 </p>
                 <div className="mr-4">
@@ -102,13 +119,13 @@ const HeroSection = ({ scrollToDemo }) => {
                     type="email"
                     name="email"
                     className="w-full border p-2 rounded-lg"
+                    value={formData.email}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
-                <p
-                  className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
-                >
+
+                <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Phone:
                 </p>
                 <div className="mr-4">
@@ -116,37 +133,31 @@ const HeroSection = ({ scrollToDemo }) => {
                     type="text"
                     name="phone"
                     className="w-full border p-2 rounded-lg"
+                    value={formData.phone}
+                    onChange={handleInputChange}
                   />
                 </div>
-                <p
-                  className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
-                >
+
+                <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Enquiry:
                 </p>
                 <div className="mr-4">
                   <textarea
                     name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     cols="30"
                     className="w-full border p-2 rounded-lg"
                     rows="2"
+                    required
                   ></textarea>
                 </div>
-                <div className="pt-2 pb-6 submit">
-                  {/* <button
-                    type="submit"
-                    className="lg:text-lg text-white lg:bg-[#22bbff] lg:px-4 lg:py-1 lg:rounded-lg button"
-                    style={{ fontFamily: "AllroundGothic, sans-serif" }}
-                  >
-                    Submit
-                  </button> */}
 
+                <div className="pt-2 pb-6 submit">
                   <Submitbutton
                     completed={isFormSubmitted}
                     error={isFormSubmisionError}
-                    // error={true}
                     isLoading={isLoading}
-                    // isLoading={true}
                   />
                 </div>
               </form>
@@ -158,43 +169,36 @@ const HeroSection = ({ scrollToDemo }) => {
                   href="mailto:getintouch@sapiensv2.com"
                   className="flex flex-col items-center group"
                 >
-                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
                     <MdEmail className="text-4xl text-black transition duration-300" />
                   </div>
-                  <p
-                    style={{ fontFamily: "roboto" }}
-                    className="gmail inc text-white mt-2 lg:pl-0 text-center"
-                  >
+                  <p className="gmail inc text-white mt-2 text-center" style={{ fontFamily: "roboto" }}>
                     getintouch@sapiensv2.com
                   </p>
                 </a>
+
                 <a
                   href="tel:+6498879320"
                   className="flex flex-col items-center group"
                 >
-                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
                     <MdContactPhone className="text-4xl text-black transition duration-300" />
                   </div>
-                  <p
-                    style={{ fontFamily: "roboto" }}
-                    className="text-white gmail mt-2 text-center"
-                  >
+                  <p className="gmail text-white mt-2 text-center" style={{ fontFamily: "roboto" }}>
                     +6498879320
                   </p>
                 </a>
+
                 <a
-                  href="https://www.google.com/search?q=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&oq=Sapiens+v2+is+a+R%26D+focused%2C+I.T.+start-up.&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHMjc0ajBqN6gCCLACAfEFVkTh04sEovY&sourceid=chrome&ie=UTF-8"
+                  href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center group"
                 >
-                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
                     <FaMapLocationDot className="text-4xl text-black transition duration-300" />
                   </div>
-                  <p
-                    style={{ fontFamily: "roboto" }}
-                    className="text-white text-center gmail mt-1"
-                  >
+                  <p className="text-white text-center gmail mt-1" style={{ fontFamily: "roboto" }}>
                     Sapiens v2 Ltd Enfield Street, Auckland, New Zealand
                   </p>
                 </a>
