@@ -94,7 +94,7 @@ const Demo = () => {
               style={{ fontFamily: "roboto" }}
             >
               Calculate safety stock with a desired confidence factor. Determine
-              reorder points and refill levels using Sapiens V2’s sales forecast
+              reorder points and refill levels using Sapiens v2’s sales forecast
               taking into consideration lead time and demand variability to
               achieve “just-in-time” order fulfilment.
             </span>

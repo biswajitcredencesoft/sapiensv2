@@ -29,7 +29,9 @@
     "eject": "react-scripts eject",
     "next-dev": "next dev",
     "next-build": "next build",
-    "next-start": "next start"
+    "next-start": "next start" ,
+    "dev": "set NODE_OPTIONS=--max-old-space-size=4096 && next dev"
+    
   },
   "eslintConfig": {
     "extends": [

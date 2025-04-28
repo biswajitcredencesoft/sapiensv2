@@ -648,7 +648,7 @@ const Circle = () => {
     "We extract your data into your tenancy in our cloud solution using our secure API's.",
     "We annotate and enhance your data per your blueprint.",
     "Using our Rapid Application Development environment, we build your application set according to your blueprint.",
-    "We release in a restricted deployment environment where you can use the solution to build confidence in Stock Sapiens V2.",
+    "We release in a restricted deployment environment where you can use the solution to build confidence in Stock Sapiens v2.",
     "We go live.",
     "We repeat the process for new opportunities, creating a culture of innovation.",
     "We understand your requirements and the opportunities within your business that give you the greatest return.",

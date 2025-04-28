@@ -10,7 +10,7 @@ const ClientCard = () => {
         </div>
         <div className="ClientCardContent mt-2 ">
 
-            <p style={{fontFamily:'Roboto, sans-serif'}} className='text-center text-[#000000]  leading-2'>"Our stores were swamped with web returns. Stock Seer swiftly and elegantly enabled us to re-distribute the returns to locations with the greatest sales potential. Furthermore, Sapiens V2’s algorithms forecast sales  with a high degree of confidence thereby enabling us to automate our Minimum Stock Levels (MSLs), Re-grouping and Initial Order Quantity and Size Allocation processes."</p>
+            <p style={{fontFamily:'Roboto, sans-serif'}} className='text-center text-[#000000]  leading-2'>"Our stores were swamped with web returns. Stock Seer swiftly and elegantly enabled us to re-distribute the returns to locations with the greatest sales potential. Furthermore, Sapiens v2’s algorithms forecast sales  with a high degree of confidence thereby enabling us to automate our Minimum Stock Levels (MSLs), Re-grouping and Initial Order Quantity and Size Allocation processes."</p>
         
             <h5 className='text-center pt-2  text-[#000000] '  style={{fontFamily:'AllroundGothic, sans-serif'}}>
             <span style={{fontFamily:"roboto"}}>-</span>

@@ -195,7 +195,7 @@ const HeroSection = ({ scrollToDemo }) => {
                     style={{ fontFamily: "roboto" }}
                     className="text-white text-center gmail mt-1"
                   >
-                    Sapiens V2 Ltd Enfield Street, Auckland, New Zealand
+                    Sapiens v2 Ltd Enfield Street, Auckland, New Zealand
                   </p>
                 </a>
               </div>

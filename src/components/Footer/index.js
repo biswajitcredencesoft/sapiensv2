@@ -9,7 +9,7 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
   return (
     <div className="FooterContainer bottom-0 left-0 right-0 absolute">
       <span style={{ fontFamily: "AllroundGothic" }}>
-        ©2025<span style={{ fontFamily: "serif" }}></span> Sapiens V2 Ltd
+        ©2025<span style={{ fontFamily: "serif" }}></span> Sapiens v2 Ltd
       </span>
       <ul className="NavbarLinks">
         <li className="NavbarLink">

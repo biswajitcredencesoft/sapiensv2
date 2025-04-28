@@ -219,9 +219,9 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
-            Glassons chose Sapiens V2 to automate and improve outcomes for this
+            Glassons chose Sapiens v2 to automate and improve outcomes for this
             manual process. Each Sunday the store scans returns for the week.
-            Using Sapiens V2’s API, the returns are uploaded to the Sapiens V2
+            Using Sapiens v2’s API, the returns are uploaded to the Sapiens V2
             cloud and analysed by Stock Seer to determine the optimum selling
             stores, and propose transfers accordingly.
           </p>
@@ -277,7 +277,7 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16"
           >
-            Animates chose Sapiens V2 to eliminate this complex manual process
+            Animates chose Sapiens v2 to eliminate this complex manual process
             and optimize stock levels across their store network. We deployed
             Stock Seer to determine optimal re-order points and safety stock
             levels that robustly factor seasonal fluctuations and planned
