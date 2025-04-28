@@ -221,7 +221,7 @@ const CaseStudies = () => {
           >
             Glassons chose Sapiens v2 to automate and improve outcomes for this
             manual process. Each Sunday the store scans returns for the week.
-            Using Sapiens v2’s API, the returns are uploaded to the Sapiens V2
+            Using Sapiens v2’s API, the returns are uploaded to the Sapiens v2
             cloud and analysed by Stock Seer to determine the optimum selling
             stores, and propose transfers accordingly.
           </p>
@@ -299,9 +299,9 @@ const CaseStudies = () => {
           >
             A 46 store strong, Australia/New Zealand based chain, Hallensteins
             provides quality clothing that's both stylish and affordable,
-            catering to the modern man's evolving tastes.   
+            catering to the modern man's evolving tastes.
           </p>
-          <p     
+          <p
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >

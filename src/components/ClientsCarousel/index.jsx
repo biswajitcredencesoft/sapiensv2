@@ -86,7 +86,7 @@ const ClientsCarousel = () => {
   return (
     <div className="carousel-container relative mb-10 bg-[#edeeff]" onMouseEnter={stopAutoScroll} onMouseLeave={startAutoScroll}>
       <p style={{ fontFamily: 'AllroundGothic' }} className=" text-[#000000] text-center flex font-semibold align-center mt-14 justify-center text-xl md:text-3xl lg:text-3xl">
-        Partners Predicting Preparing and Prospering with Sapiens V2.
+        Partners Predicting Preparing and Prospering with Sapiens v2.
       </p>
       <div className="relative overflow-hidden">
         <div
