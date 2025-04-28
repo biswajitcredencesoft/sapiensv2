@@ -75,8 +75,8 @@ const Contact = () => {
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
             <span>Email:</span>{" "}
-            <a href="mailto:GetInTouch@SapiensV2.com">
-              GetInTouch@SapiensV2.com
+            <a href="mailto:getintouch@sapiensv2.com">
+              getintouch@sapiensv2.com
             </a>
           </p>
         </div>
@@ -271,7 +271,7 @@ const Contact = () => {
             <div className="px-2 md:10 text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
               <div className="flex flex-col items-center">
                 <a
-                  href="mailto:GetInTouch@SapiensV2.com"
+                  href="mailto:getintouch@sapiensv2.com"
                   className="text-white"
                 >
                   <MdEmail size={60} />
@@ -281,10 +281,10 @@ const Contact = () => {
                   className="pt-1 text-white text-[10px] md:text-[15px]"
                 >
                   <a
-                    href="mailto:GetInTouch@SapiensV2.com"
+                    href="mailto:getintouch@sapiensv2.com"
                     className="text-white"
                   >
-                    GetInTouch@SapiensV2.com
+                    getintouch@sapiensv2.com
                   </a>
                 </p>
               </div>

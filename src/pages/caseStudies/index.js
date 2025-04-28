@@ -260,7 +260,7 @@ const CaseStudies = () => {
             their marketing strategy and, when combined with seasonal demand
             fluctuations, require merchandisers to spend entire days, weekly,
             maintaining re-order points and safety stock to support accurate
-            weekly vendor re-orders (often via gutfeel).
+            weekly vendor re-orders (often by gut feel).
           </p>
           <p
             style={{ fontFamily: "roboto" }}
