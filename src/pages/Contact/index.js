@@ -68,7 +68,13 @@ const Contact = () => {
   return (
     <div className="ContactContainer bg-[#edeeff] pb-10 md:pb-0 lg:pb-0">
       <div className="ContactLeftSection">
-        <h1 className="shadow-none" style={{ fontFamily: "AllroundGothic, sans-serif", boxShadow: "none" }}>
+        <h1
+          className="shadow-none"
+          style={{
+            fontFamily: "AllroundGothic, sans-serif",
+            boxShadow: "none",
+          }}
+        >
           Get In Touch
         </h1>
 
@@ -81,10 +87,11 @@ const Contact = () => {
             <span>Phone:</span> +6498879320
           </p>
           <p style={{ fontFamily: "roboto" }}>
-            <span>Address:</span> Sapiens v2 Ltd Enfield Street, Auckland, New Zealand
+            <span>Address:</span> Sapiens v2 Ltd Enfield Street, Auckland, New
+            Zealand
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
-            <span>Email:</span> 
+            <span>Email:</span>
             <a href="mailto:getintouch@sapiensv2.com">
               getintouch@sapiensv2.com
             </a>
@@ -92,13 +99,25 @@ const Contact = () => {
         </div>
 
         <div className="ContactLeftSectionIcons gap-2">
-          <a href="https://www.google.com/search?q=Sapiens+v2..." target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.google.com/search?q=Sapiens+v2..."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Google} alt="Google" className="w-12 h-12" />
           </a>
-          <a href="https://www.linkedin.com/company/sapiens-v2/about/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/company/sapiens-v2/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={LinkedIn} alt="LinkedIn" className="w-12 h-12" />
           </a>
-          <a href="https://www.youtube.com/@Sapiensv2" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.youtube.com/@Sapiensv2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={YouTube} alt="YouTube" className="w-12 h-12" />
           </a>
         </div>
@@ -108,12 +127,20 @@ const Contact = () => {
         <div className="flex rounded-l-lg bg-white rounded-lg pl-4 xl:ml-52">
           <div className="w-full rounded-l-lg bg-white text-[#374151] pl-4">
             <form onSubmit={handleFormSubmit}>
-              <h1 style={{ fontFamily: "AllroundGothic" }} className="text-2xl text-[#141722] font-bold py-2">
+              <h1
+                style={{ fontFamily: "AllroundGothic" }}
+                className="text-2xl text-[#141722] font-bold py-2"
+              >
                 Get in touch
               </h1>
 
-              <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>Name:</p>
-              <div className="mr-4">
+              <p
+                className="py-2 text-[#374151]"
+                style={{ fontFamily: "roboto" }}
+              >
+                Name:
+              </p>
+              <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                 <input
                   type="text"
                   name="name"
@@ -124,8 +151,13 @@ const Contact = () => {
                 />
               </div>
 
-              <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>Email:</p>
-              <div className="mr-4">
+              <p
+                className="py-2 text-[#374151]"
+                style={{ fontFamily: "roboto" }}
+              >
+                Email:
+              </p>
+              <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                 <input
                   type="email"
                   name="email"
@@ -136,8 +168,13 @@ const Contact = () => {
                 />
               </div>
 
-              <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>Phone:</p>
-              <div className="mr-4">
+              <p
+                className="py-2 text-[#374151]"
+                style={{ fontFamily: "roboto" }}
+              >
+                Phone:
+              </p>
+              <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                 <input
                   type="text"
                   name="phone"
@@ -147,8 +184,13 @@ const Contact = () => {
                 />
               </div>
 
-              <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>Enquiry:</p>
-              <div className="mr-4">
+              <p
+                className="py-2 text-[#374151]"
+                style={{ fontFamily: "roboto" }}
+              >
+                Enquiry:
+              </p>
+              <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -173,11 +215,20 @@ const Contact = () => {
           <div className="flex rightsec justify-center rounded-r-lg items-center">
             <div className="px-2 md:10 text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
               <div className="flex flex-col items-center">
-                <a href="mailto:getintouch@sapiensv2.com" className="text-white">
+                <a
+                  href="mailto:getintouch@sapiensv2.com"
+                  className="text-white"
+                >
                   <MdEmail size={60} />
                 </a>
-                <p style={{ fontFamily: "roboto" }} className="pt-1 text-white text-[10px] md:text-[15px]">
-                  <a href="mailto:getintouch@sapiensv2.com" className="text-white">
+                <p
+                  style={{ fontFamily: "roboto" }}
+                  className="pt-1 text-white text-[10px] md:text-[15px]"
+                >
+                  <a
+                    href="mailto:getintouch@sapiensv2.com"
+                    className="text-white"
+                  >
                     getintouch@sapiensv2.com
                   </a>
                 </p>
@@ -187,7 +238,10 @@ const Contact = () => {
                 <a href="tel:+6498879320" className="text-white">
                   <MdContactPhone size={60} />
                 </a>
-                <p style={{ fontFamily: "roboto" }} className="text-white pt-2 text-[10px] md:text-[15px]">
+                <p
+                  style={{ fontFamily: "roboto" }}
+                  className="text-white pt-2 text-[10px] md:text-[15px]"
+                >
                   <a href="tel:+6498879320" className="text-white">
                     +6498879320
                   </a>
@@ -202,13 +256,15 @@ const Contact = () => {
                 >
                   <FaMapLocationDot size={60} />
                 </a>
-                <p style={{ fontFamily: "roboto" }} className="text-white pt-1 text-[10px] md:text-[15px]">
+                <p
+                  style={{ fontFamily: "roboto" }}
+                  className="text-white pt-1 text-[10px] md:text-[15px]"
+                >
                   Sapiens v2 Ltd Enfield Street, Auckland, New Zealand
                 </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

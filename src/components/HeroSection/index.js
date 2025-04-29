@@ -100,7 +100,7 @@ const HeroSection = ({ scrollToDemo }) => {
                 <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Name:
                 </p>
-                <div className="mr-4">
+                <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                   <input
                     type="text"
                     name="name"
@@ -114,7 +114,7 @@ const HeroSection = ({ scrollToDemo }) => {
                 <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Email:
                 </p>
-                <div className="mr-4">
+                <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                   <input
                     type="email"
                     name="email"
@@ -128,7 +128,7 @@ const HeroSection = ({ scrollToDemo }) => {
                 <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Phone:
                 </p>
-                <div className="mr-4">
+                <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                   <input
                     type="text"
                     name="phone"
@@ -141,7 +141,7 @@ const HeroSection = ({ scrollToDemo }) => {
                 <p className="py-2 text-[#374151]" style={{ fontFamily: "roboto" }}>
                   Enquiry:
                 </p>
-                <div className="mr-4">
+                <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                   <textarea
                     name="message"
                     value={formData.message}
