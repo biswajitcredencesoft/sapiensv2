@@ -12,10 +12,14 @@
   background: #3d4657;
   color: #fff;
 }
-
-/* .MethodologyContainer.desktopimg >img{
-  font-family: HouschkaPro;
+/* 
+.MethodologyContainer.desktopimg >img{
+  font-family: "AllroundGothic";
 } */
+
+*{
+  font-family: "AllroundGothic";
+}
 
 .MethodologyLeftSectionContent > img,
 p {

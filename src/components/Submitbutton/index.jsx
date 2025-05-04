@@ -17,8 +17,11 @@ export default function ({ completed, onClick, isLoading, error }) {
         style={{ backgroundColor: "#2f3b55" }}
       >
         <p>
-          Thank you for showing interest in Sapiens v2 We will get in touch with
-          you soon.
+          {/* Thank you for showing interest in Sapiens v2 We will get in touch with
+          you soon. */}
+
+           <span style={{ fontFamily: "serif" }}>"</span>Your enquiry has been submitted, we will be in touch soon.<span style={{ fontFamily: "serif" }}>"</span>
+
         </p>
       </div>
     );

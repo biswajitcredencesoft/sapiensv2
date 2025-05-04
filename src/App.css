@@ -18,10 +18,10 @@ body {
 
 
 @font-face {
-    font-family:AllroundGothic;
+    font-family:"AllroundGothic";
     src: url(../public/Fontspring-DEMO-allroundgothic-text.otf);
 }
 
 .AllroundGothic{
-    font-family: AllroundGothic;
+    font-family: "AllroundGothic";
 }

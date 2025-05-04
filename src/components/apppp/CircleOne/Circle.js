@@ -311,17 +311,6 @@
 
 // export default Circle;
 
-
-
-
-
-
-
-
-
-
-
-
 // import React, { useEffect, useState } from "react";
 // import "./AppOne.css"; // Import your CSS file for styling
 // import { ReactComponent as DottedArrow } from './dottedArrow.svg'
@@ -463,10 +452,6 @@
 // };
 
 // export default Circle;
-
-
-
-
 
 // import React, { useEffect, useState } from "react";
 // import "./AppOne.css"; // Import your CSS file for styling
@@ -621,14 +606,9 @@
 
 // export default Circle;
 
-
-
-
-
-
 import React, { useEffect, useState } from "react";
-import "./AppOne.css"; 
-import { ReactComponent as DottedArrow } from './dottedArrow.svg';
+import "./AppOne.css";
+import { ReactComponent as DottedArrow } from "./dottedArrow.svg";
 
 const Circle = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -644,7 +624,6 @@ const Circle = () => {
   }, []);
 
   const descriptions = [
-
     "We extract your data into your tenancy in our cloud solution using our secure API's.",
     "We annotate and enhance your data per your blueprint.",
     "Using our Rapid Application Development environment, we build your application set according to your blueprint.",
@@ -653,17 +632,14 @@ const Circle = () => {
     "We repeat the process for new opportunities, creating a culture of innovation.",
     "We understand your requirements and the opportunities within your business that give you the greatest return.",
     "We craft and implementation blueprint that is customized to your exact needs and get your sign-off.",
-    
   ];
 
   const circleText = [
-  
-
     "3.\nExtract your\nData",
     "4.\nEnhance your\nData",
     "5.\nImplement your\nAlgorithm",
     "6.\nEstablish\nConfidence",
-    "7.\nGo Live",
+    "7.\nGo Lives",
     "8.\nRefine and\nRepeat",
     "1.\nIdentify\nOpportunity",
     "2.\nCreate your\nBlueprint",
@@ -735,7 +711,9 @@ const Circle = () => {
       >
         <div
           key={index}
-          className={`smallCircle text-sm text-center ${hoveredIndex === index ? "hovered" : ""}`}
+          className={`smallCircle text-sm text-center ${
+            hoveredIndex === index ? "hovered" : ""
+          }`}
           onMouseEnter={() => handleHover(index)}
           onMouseLeave={handleLeave}
         >
@@ -753,11 +731,17 @@ const Circle = () => {
           <div>
             {circles}
             {hoveredIndex !== null ? (
-              <div className="description text-lg px-20" style={{ fontFamily: 'Comfortaa, sans-serif' }}>
+              <div
+                className="description text-lg px-20"
+                style={{ fontFamily: "AllroundGothic, sans-serif" }}
+              >
                 {descriptions[hoveredIndex]}
               </div>
             ) : (
-              <p className="description2 text-3xl font-bold px-20" style={{ color: "#35435F", fontFamily: 'AllroundGothic' }}>
+              <p
+                className="description2 text-3xl font-bold px-20"
+                style={{ color: "#35435F", fontFamily: "AllroundGothic" }}
+              >
                 SSR Methodology
               </p>
             )}
@@ -766,11 +750,17 @@ const Circle = () => {
           <div>
             {circles}
             {hoveredIndex !== null ? (
-              <div className="description lg:text-lg md:text-lg text-xs lg:px-20 md:px-20 px-12 -mt-24" style={{ fontFamily: 'roboto' }}>
+              <div
+                className="description lg:text-lg md:text-lg text-xs lg:px-20 md:px-20 px-12 -mt-24"
+                style={{ fontFamily: "AllroundGothic" }}
+              >
                 {descriptions[hoveredIndex]}
               </div>
             ) : (
-              <p className="description2 lg:text-3xl md:text-3xl text-lg font-bold lg:px-20 md:px-20 -mt-28" style={{ fontFamily: 'roboto', color: "#35435F" }}>
+              <p
+                className="description2 lg:text-3xl md:text-3xl text-lg font-bold lg:px-20 md:px-20 -mt-28"
+                style={{ fontFamily: "AllroundGothic", color: "#35435F" }}
+              >
                 SSR Methodology
               </p>
             )}
@@ -782,5 +772,3 @@ const Circle = () => {
 };
 
 export default Circle;
-
-

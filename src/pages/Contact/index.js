@@ -48,6 +48,10 @@ const Contact = () => {
       to_name: "Sales Team",
     };
 
+
+    
+    
+
     setIsLoading(true);
 
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
@@ -260,7 +264,8 @@ const Contact = () => {
                   style={{ fontFamily: "roboto" }}
                   className="text-white pt-1 text-[10px] md:text-[15px]"
                 >
-                  Sapiens v2 Ltd Enfield Street, Auckland, New Zealand
+                  Sapiens v2 Ltd. <br />
+                   Auckland, New Zealand
                 </p>
               </div>
             </div>

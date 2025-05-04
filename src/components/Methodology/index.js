@@ -62,7 +62,7 @@ const Methodology = () => {
       <div className="w-full mx-auto mb-2">
         <div className="w-full mx-auto max-w-screen-3xl">
           <div className="flex flex-col md:flex-row lg:flex-row gap-10 justify-center text-center relative">
-            <div className="relative hidden md:block desktopimg">
+            <div className="relative hidden md:block desktopimg " style={{ fontFamily: "AllroundGothic" }}>
               <img
                 id="seer"
                 src="/images/uploads/Seer_Cycle_wording_desktop.svg"
@@ -73,18 +73,18 @@ const Methodology = () => {
                 className="block"
               />
             </div>
-            <div className="relative block md:hidden">
+            <div className="relative block md:hidden" style={{ fontFamily: "AllroundGothic" }}>
               <img
                 id="seer"
                 src="/images/uploads/Seer_Cycle_wording_phone.svg"
                 height={840}
-                width={1000}
+                width={1000}  
                 alt="seer methodology"
                 useMap="#methodology"
                 className="block"
               />
             </div>
-            <div className="relative py-4 px-4">
+            <div className="relative py-4 px-4" style={{ fontFamily: "AllroundGothic" }}>
               <img
                 ref={imageRef}
                 id="seer"
@@ -94,7 +94,7 @@ const Methodology = () => {
                 alt="seer methodology"
                 useMap="#methodology"
                 className="block"
-                onLoad={updateAreas} // Update areas when the image is loaded
+                onLoad={updateAreas} 
               />
               <map name="methodology">
                 {areas.map((area, index) => (
