@@ -301,6 +301,7 @@ p.get-in {
         font-size: 0;
         line-height: 0;
     }
+   
 }
 
 .ContactRightSectionHome {
@@ -398,9 +399,9 @@ p.get-in {
     }
 }
 @media screen and (min-width: 1203px) and (max-width: 1325px){
-    .inc{
-        /* padding-left: 15px; */
-    }
+    /* .inc{
+      
+    } */
 }
 @media screen and (min-width: 600px) and (max-width: 848px){
  

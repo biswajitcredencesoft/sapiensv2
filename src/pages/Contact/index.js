@@ -48,10 +48,6 @@ const Contact = () => {
       to_name: "Sales Team",
     };
 
-
-    
-    
-
     setIsLoading(true);
 
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
@@ -104,7 +100,7 @@ const Contact = () => {
 
         <div className="ContactLeftSectionIcons gap-2">
           <a
-            href="https://www.google.com/search?q=Sapiens+v2..."
+            href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -254,7 +250,7 @@ const Contact = () => {
 
               <div className="flex flex-col items-center">
                 <a
-                  href="https://www.google.com/search?q=Sapiens+v2..."
+                  href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
                   target="_blank"
                   className="text-white"
                 >
@@ -265,7 +261,7 @@ const Contact = () => {
                   className="text-white pt-1 text-[10px] md:text-[15px]"
                 >
                   Sapiens v2 Ltd. <br />
-                   Auckland, New Zealand
+                  Auckland, New Zealand
                 </p>
               </div>
             </div>
