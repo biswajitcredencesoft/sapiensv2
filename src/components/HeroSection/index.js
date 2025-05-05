@@ -16,9 +16,12 @@ const HeroSection = ({ scrollToDemo }) => {
     message: "",
   });
 
+  
+
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isFormSubmisionError, setIsFormSubmisionError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -26,18 +29,33 @@ const HeroSection = ({ scrollToDemo }) => {
       ...prev,
       [name]: value,
     }));
+    if (name === "email") {
+      setEmailError(false); // reset on change
+    }
     setIsFormSubmitted(false);
     setIsFormSubmisionError(false);
   };
-
+  const validateEmail = () => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmailError(!emailPattern.test(formData.email));
+  };
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-
+  
+    // Check required fields first
     if (!formData.name || !formData.email || !formData.message) {
       alert("Please fill in all required fields.");
       return;
     }
-
+  
+    // Email format validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(formData.email)) {
+      setEmailError(true);
+      return;
+    }
+  
+    // If valid, proceed
     const templateParams = {
       from_name: formData.name,
       from_email: formData.email,
@@ -45,24 +63,25 @@ const HeroSection = ({ scrollToDemo }) => {
       message: formData.message,
       to_name: "Sales Team",
     };
-
+  
     setIsLoading(true);
-
-    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
-      (result) => {
-        console.log("Email sent successfully:", result.text);
-        e.target.reset();
-        setFormData({ name: "", email: "", phone: "", message: "" });
-        setIsLoading(false);
-        setIsFormSubmitted(true);
-      },
-      (error) => {
-        console.error("Error in sending email:", error);
-        setIsFormSubmisionError(true);
-        setIsLoading(false);
-      }
-    );
+    setEmailError(false); // clear any previous email error
+  
+    try {
+      const result = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      console.log("Email sent successfully:", result.text);
+  
+      e.target.reset();
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setIsLoading(false);
+      setIsFormSubmitted(true);
+    } catch (error) {
+      console.error("Error in sending email:", error);
+      setIsFormSubmisionError(true);
+      setIsLoading(false);
+    }
   };
+  
 
   return (
     <div className="HeroSectionContainer">
@@ -118,7 +137,7 @@ const HeroSection = ({ scrollToDemo }) => {
                   className="py-2 text-[#374151]"
                   style={{ fontFamily: "roboto" }}
                 >
-                  Email:
+                  Email:  {emailError && (<b className="text-red-500 text-sm mt-1 font-normal">Invalid email address.</b>)}
                 </p>
                 <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                   <input
@@ -127,6 +146,7 @@ const HeroSection = ({ scrollToDemo }) => {
                     className="w-full border p-2 rounded-lg"
                     value={formData.email}
                     onChange={handleInputChange}
+                    onBlur={validateEmail}
                     required
                   />
                 </div>
@@ -170,6 +190,7 @@ const HeroSection = ({ scrollToDemo }) => {
                     completed={isFormSubmitted}
                     error={isFormSubmisionError}
                     isLoading={isLoading}
+                    setCompleted={setIsFormSubmitted}
                   />
                 </div>
               </form>

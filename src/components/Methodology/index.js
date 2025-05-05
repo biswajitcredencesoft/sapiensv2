@@ -65,7 +65,7 @@ const Methodology = () => {
             <div className="relative hidden md:block desktopimg " style={{ fontFamily: "AllroundGothic" }}>
               <img
                 id="seer"
-                src="/images/uploads/Seer_Cycle_wording_desktop.svg"
+                src="/images/uploads/Sv2_Cycle_wording_desktopOne.svg"
                 height={840}
                 width={1000}
                 alt="seer methodology"
@@ -76,7 +76,7 @@ const Methodology = () => {
             <div className="relative block md:hidden" style={{ fontFamily: "AllroundGothic" }}>
               <img
                 id="seer"
-                src="/images/uploads/Seer_Cycle_wording_phone.svg"
+                src="/images/uploads/Seer_Cycle_wording_phoneOne.svg"
                 height={840}
                 width={1000}  
                 alt="seer methodology"

@@ -16,7 +16,7 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
     <div className="NavbarContainer ">
       <div className="NavbarLogo  seer-logo">
         <img
-          src="/images/uploads/Sv2_logo_bluepurple.svg"
+          src="/images/uploads/Sv2_logo_bluepurpleOne.svg"
           alt="Logo"
           style={{ fontFamily: "HouschkaPro" }}
         />

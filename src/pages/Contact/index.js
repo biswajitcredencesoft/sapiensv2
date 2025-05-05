@@ -21,6 +21,7 @@ const Contact = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isFormSubmisionError, setIsFormSubmisionError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,8 +29,16 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }));
+    if (name === "email") {
+      setEmailError(false); // reset on change
+    }
     setIsFormSubmitted(false); // Reset thank you when user types again
     setIsFormSubmisionError(false);
+  };
+
+  const validateEmail = () => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmailError(!emailPattern.test(formData.email));
   };
 
   const handleFormSubmit = async (e) => {
@@ -39,6 +48,13 @@ const Contact = () => {
       alert("Please fill in all required fields.");
       return;
     }
+
+        // Email format validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(formData.email)) {
+          setEmailError(true);
+          return;
+        }
 
     const templateParams = {
       from_name: formData.name,
@@ -154,7 +170,7 @@ const Contact = () => {
                 className="py-2 text-[#374151]"
                 style={{ fontFamily: "roboto" }}
               >
-                Email:
+                Email: {emailError && (<b className="text-red-500 text-sm mt-1 font-normal">Invalid email address.</b>)}
               </p>
               <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                 <input
@@ -162,6 +178,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
+                  onBlur={validateEmail}
                   className="w-full border p-2 rounded-lg"
                   required
                 />
@@ -206,6 +223,7 @@ const Contact = () => {
                   completed={isFormSubmitted}
                   error={isFormSubmisionError}
                   isLoading={isLoading}
+                  setCompleted={setIsFormSubmitted}
                 />
               </div>
             </form>

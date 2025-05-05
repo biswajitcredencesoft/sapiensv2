@@ -18,7 +18,7 @@
 }
 
 .NavbarLogo {
-  width: 15%;
+  width: 17%;
   height: auto;
   
 }
@@ -92,7 +92,7 @@
   }
 
   .NavbarLogo {
-    width: 30%; 
+    width: 55%; 
   }
 }
 
@@ -108,7 +108,7 @@
 
 @media screen and (max-width: 767px) {
   .NavbarLogo {
-      width: 50%;
+      width: 55%;
       height: auto;
       font-family: 'HouschkaPro';
   }

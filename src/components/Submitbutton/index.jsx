@@ -1,28 +1,28 @@
+import { useEffect } from "react";
 import Loading from "./../Loading";
-export default function ({ completed, onClick, isLoading, error }) {
+
+export default function Submitbutton({ completed, onClick, isLoading, error, setCompleted }) {
+  useEffect(() => {
+    if (completed) {
+      const timer = setTimeout(() => {
+        setCompleted(false);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [completed, setCompleted]);
+
   if (error) {
     return (
-      <div
-        className="mr-4 rounded p-2 text-white"
-        style={{ backgroundColor: "#ed4e42" }}
-      >
+      <div className="mr-4 rounded p-2 text-white" style={{ backgroundColor: "#ed4e42" }}>
         <p>Failed to send the message. Please try again.</p>
       </div>
     );
   }
+
   if (completed) {
     return (
-      <div
-        className="mr-4 rounded p-2 text-white"
-        style={{ backgroundColor: "#2f3b55" }}
-      >
-        <p>
-          {/* Thank you for showing interest in Sapiens v2 We will get in touch with
-          you soon. */}
-
-           <span style={{ fontFamily: "serif" }}>"</span>Your enquiry has been submitted, we will be in touch soon.<span style={{ fontFamily: "serif" }}>"</span>
-
-        </p>
+      <div className="mr-4 rounded p-2 text-white" style={{ backgroundColor: "#2f3b55" }}>
+        <p>Your enquiry has been submitted, we will be in touch soon.</p>
       </div>
     );
   }
