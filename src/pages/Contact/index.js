@@ -87,8 +87,7 @@ const Contact = () => {
             <span>Phone:</span> +6498879320
           </p>
           <p style={{ fontFamily: "roboto" }}>
-            <span>Address:</span> Sapiens v2 Ltd Enfield Street, Auckland, New
-            Zealand
+            <span>Address:</span>  Sapiens v2 Ltd. Auckland, New Zealand
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
             <span>Email:</span>
