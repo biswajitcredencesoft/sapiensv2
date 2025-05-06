@@ -44,7 +44,20 @@ const Blog = () => {
             <p className="py-2 text-[#000000]" style={{ fontFamily: "roboto" }}>
               Are retailers on the verge of extinction? Confronted by supply
               chain issues, labour shortages, fickle demand, inflationary
-              pressures and ri…{" "}
+              pressures and rising interest rates,
+              retailers are scrambling to cope with the immensity of the
+              challenges they face. <br />
+              Consider a retailer with 20,000 SKUs and 50 stores (potentially 1
+              million store / SKU combinations) and the latter’s implications
+              for the inventory planner. The sheer volume of data is mind
+              boggling. Every stage of the stock life cycle, from building the
+              range to end of line sell through, calls for a level of detail in
+              execution that is constrained by available resource and the
+              capacity of the human mind to process the myriad of data points
+              simultaneously. Invariably, the planner compromises. They may
+              apply approximations such as calculating at aggregate and
+              extrapolating across individual SKUs, rely on intuition or focus
+              on the top performing lines at the expense of the oth.. {" "}
               <span
                 className="underline font-bold text-[#000000]"
                 style={{ cursor: "pointer", fontFamily: "roboto" }}

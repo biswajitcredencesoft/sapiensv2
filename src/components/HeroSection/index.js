@@ -16,8 +16,6 @@ const HeroSection = ({ scrollToDemo }) => {
     message: "",
   });
 
-  
-
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isFormSubmisionError, setIsFormSubmisionError] = useState(false);
@@ -41,20 +39,20 @@ const HeroSection = ({ scrollToDemo }) => {
   };
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-  
+
     // Check required fields first
     if (!formData.name || !formData.email || !formData.message) {
       alert("Please fill in all required fields.");
       return;
     }
-  
+
     // Email format validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(formData.email)) {
       setEmailError(true);
       return;
     }
-  
+
     // If valid, proceed
     const templateParams = {
       from_name: formData.name,
@@ -63,14 +61,19 @@ const HeroSection = ({ scrollToDemo }) => {
       message: formData.message,
       to_name: "Sales Team",
     };
-  
+
     setIsLoading(true);
     setEmailError(false); // clear any previous email error
-  
+
     try {
-      const result = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        publicKey
+      );
       console.log("Email sent successfully:", result.text);
-  
+
       e.target.reset();
       setFormData({ name: "", email: "", phone: "", message: "" });
       setIsLoading(false);
@@ -81,7 +84,6 @@ const HeroSection = ({ scrollToDemo }) => {
       setIsLoading(false);
     }
   };
-  
 
   return (
     <div className="HeroSectionContainer">
@@ -107,11 +109,13 @@ const HeroSection = ({ scrollToDemo }) => {
 
         <div className="ContactRightSectionHome lg:flex">
           <div className="cc flex bg-white rounded-lg pl-4">
+
+            
             <div className="w-2/3">
               <form onSubmit={handleFormSubmit}>
                 <h1
                   style={{ fontFamily: "AllroundGothic" }}
-                  className="text-2xl text-[#141722] font-bold py-2"
+                  className="text-2xl text-[#141722] font-bold py-4"
                 >
                   Get in touch
                 </h1>
@@ -137,7 +141,12 @@ const HeroSection = ({ scrollToDemo }) => {
                   className="py-2 text-[#374151]"
                   style={{ fontFamily: "roboto" }}
                 >
-                  Email:  {emailError && (<b className="text-red-500 text-sm mt-1 font-normal">Invalid email address.</b>)}
+                  Email:{" "}
+                  {emailError && (
+                    <b className="text-red-500 text-sm mt-1 font-normal">
+                      Invalid email address.
+                    </b>
+                  )}
                 </p>
                 <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                   <input
@@ -185,7 +194,7 @@ const HeroSection = ({ scrollToDemo }) => {
                   ></textarea>
                 </div>
 
-                <div className="pt-2 pb-6 submit">
+                <div className="pt-[26px] pb-6 submit">
                   <Submitbutton
                     completed={isFormSubmitted}
                     error={isFormSubmisionError}
@@ -196,6 +205,9 @@ const HeroSection = ({ scrollToDemo }) => {
               </form>
             </div>
 
+
+
+            {/* 
             <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
               <div className="grid place-content-center place-items-center grid-cols-1 justify-center items-center lg:pt-14 gap-8">
                 <a
@@ -209,7 +221,7 @@ const HeroSection = ({ scrollToDemo }) => {
                     className="gmail inc text-white mt-2 text-center"
                     style={{ fontFamily: "roboto" }}
                   >
-                    getintouch@sapiensv2.com
+                    getintouch@sapiensv2.com 
                   </p>
                 </a>
 
@@ -239,6 +251,61 @@ const HeroSection = ({ scrollToDemo }) => {
                   </div>
                   <p
                     className="text-white text-center gmail mt-2 "
+                    style={{ fontFamily: "roboto" }}
+                  >
+                    Sapiens v2 Ltd. <br />
+                    Auckland, New Zealand
+                  </p>
+                </a>
+              </div>
+            </div> */}
+
+            <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
+              <div className="flex flex-col justify-between items-center h-full min-h-[400px] py-8">
+                {/* Email */}
+                <a
+                  href="mailto:getintouch@sapiensv2.com"
+                  className="flex flex-col items-center group"
+                >
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                    <MdEmail className="text-4xl text-black transition duration-300" />
+                  </div>
+                  <p
+                    className="gmail inc text-white mt-2 text-center"
+                    style={{ fontFamily: "roboto" }}
+                  >
+                    getintouch@sapiensv2.com
+                  </p>
+                </a>
+
+                {/* Phone */}
+                <a
+                  href="tel:+6498879320"
+                  className="flex flex-col items-center group"
+                >
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                    <MdContactPhone className="text-4xl text-black transition duration-300" />
+                  </div>
+                  <p
+                    className="gmail text-white mt-2 text-center"
+                    style={{ fontFamily: "roboto" }}
+                  >
+                    +6498879320
+                  </p>
+                </a>
+
+                {/* Location */}
+                <a
+                  href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center group"
+                >
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                    <FaMapLocationDot className="text-4xl text-black transition duration-300" />
+                  </div>
+                  <p
+                    className="text-white text-center gmail mt-2"
                     style={{ fontFamily: "roboto" }}
                   >
                     Sapiens v2 Ltd. <br />

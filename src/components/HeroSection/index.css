@@ -317,10 +317,11 @@ p.get-in {
 @media screen and (max-width: 1300px) {
     .ContactRightSectionHome {
         padding-left: 120px;
-        width: 35%;
+        width: 38%;
     }
     .gmail {
-        font-size: 0.7rem;
+        font-size: 8px;
+        
     }
     .ContactRightSectionHome > h1 {
         font-weight: 700;
@@ -398,6 +399,18 @@ p.get-in {
         padding-left: 15px;
     }
 }
+@media screen and (min-width: 1300px) and (max-width: 1375px){
+    .gmail{
+        font-size: 10px;
+    }
+    
+}
+/* @media screen and (min-width: 1034px) and (max-width: 1078px){
+    .gmail{
+        font-size: 5px;
+    }
+    
+} */
 @media screen and (min-width: 1203px) and (max-width: 1325px){
     /* .inc{
       
@@ -488,6 +501,7 @@ p.get-in {
     .gmail{
       
         padding-top: 10px;
+        font-size: 6px;
     }
     .con{
       padding-left: 6px;

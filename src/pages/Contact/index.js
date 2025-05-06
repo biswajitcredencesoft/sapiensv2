@@ -49,12 +49,12 @@ const Contact = () => {
       return;
     }
 
-        // Email format validation
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(formData.email)) {
-          setEmailError(true);
-          return;
-        }
+    // Email format validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(formData.email)) {
+      setEmailError(true);
+      return;
+    }
 
     const templateParams = {
       from_name: formData.name,
@@ -103,7 +103,7 @@ const Contact = () => {
             <span>Phone:</span> +6498879320
           </p>
           <p style={{ fontFamily: "roboto" }}>
-            <span>Address:</span>  Sapiens v2 Ltd. Auckland, New Zealand
+            <span>Address:</span> Sapiens v2 Ltd. Auckland, New Zealand
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
             <span>Email:</span>
@@ -144,7 +144,7 @@ const Contact = () => {
             <form onSubmit={handleFormSubmit}>
               <h1
                 style={{ fontFamily: "AllroundGothic" }}
-                className="text-2xl text-[#141722] font-bold py-2"
+                className="text-2xl text-[#141722] font-bold py-4"
               >
                 Get in touch
               </h1>
@@ -170,7 +170,12 @@ const Contact = () => {
                 className="py-2 text-[#374151]"
                 style={{ fontFamily: "roboto" }}
               >
-                Email: {emailError && (<b className="text-red-500 text-sm mt-1 font-normal">Invalid email address.</b>)}
+                Email:{" "}
+                {emailError && (
+                  <b className="text-red-500 text-sm mt-1 font-normal">
+                    Invalid email address.
+                  </b>
+                )}
               </p>
               <div className="mr-4" style={{ fontFamily: "sans-serif" }}>
                 <input
@@ -218,7 +223,7 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div className="pt-2 pb-6 submit">
+              <div className="pt-2 pb-6 md:mr-8 submit">
                 <Submitbutton
                   completed={isFormSubmitted}
                   error={isFormSubmisionError}
@@ -228,7 +233,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-
+          {/* 
           <div className="flex rightsec justify-center rounded-r-lg items-center">
             <div className="px-2 md:10 text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
               <div className="flex flex-col items-center">
@@ -277,6 +282,53 @@ const Contact = () => {
                   style={{ fontFamily: "roboto" }}
                   className="text-white pt-1 text-[10px] md:text-[15px]"
                 >
+                  Sapiens v2 Ltd. <br />
+                  Auckland, New Zealand
+                </p>
+              </div>
+            </div>
+          </div> */}
+
+          <div className="flex rightsec justify-center items-center rounded-r-lg">
+            <div className="h-[455px] px-2 md:px-10 text-[10px] md:text-[15px] text-white flex flex-col justify-between items-center text-center">
+              <div className="flex flex-col items-center">
+                <a
+                  href="mailto:getintouch@sapiensv2.com"
+                  className="text-white mb-2"
+                >
+                  <MdEmail size={60} />
+                </a>
+                <p style={{ fontFamily: "roboto" }}>
+                  <a
+                    href="mailto:getintouch@sapiensv2.com"
+                    className="text-white"
+                  >
+                    getintouch@sapiensv2.com
+                  </a>
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <a href="tel:+6498879320" className="text-white mb-2">
+                  <MdContactPhone size={60} />
+                </a>
+                <p style={{ fontFamily: "roboto" }}>
+                  <a href="tel:+6498879320" className="text-white">
+                    +6498879320
+                  </a>
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <a
+                  href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white mb-2"
+                >
+                  <FaMapLocationDot size={60} />
+                </a>
+                <p style={{ fontFamily: "roboto" }} className="leading-tight">
                   Sapiens v2 Ltd. <br />
                   Auckland, New Zealand
                 </p>

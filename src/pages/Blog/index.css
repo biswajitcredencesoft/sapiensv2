@@ -1,6 +1,6 @@
 .BlogContainer{
-    padding: 120px 10px;
-    min-height: 100vh;
+    padding: 40px 10px;
+    min-height: 80vh;
   
 }
 
@@ -15,7 +15,7 @@
 .BlogTopText > h1{
     font-size: 45px;
     font-weight: 700;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .image{
@@ -56,9 +56,9 @@
 
 @media screen and (max-width: 750px) {
 
-    .BlogContainer{
-        /* padding: 25px 10px; */
-    }
+    /* .BlogContainer{
+     
+    } */
 
     .BlogTopText{
         width: 95%;
