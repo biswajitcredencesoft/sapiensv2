@@ -289,54 +289,69 @@ const Contact = () => {
             </div>
           </div> */}
 
-          <div className="flex rightsec justify-center items-center rounded-r-lg">
-            <div className="h-[455px] px-2 md:px-10 text-[10px] md:text-[15px] text-white flex flex-col justify-between items-center text-center">
-              <div className="flex flex-col items-center">
+          <div className="w-full md:w-[65%] rightsection rounded-r-lg text-white">
+              <div className="flex flex-col justify-between items-center h-full min-h-[400px] md:pt-[48px] md:pb-[56px] pt-[50px] pb-[52px]">
+                {/* Email */}
                 <a
                   href="mailto:getintouch@sapiensv2.com"
-                  className="text-white mb-2"
+                  className="flex flex-col items-center group"
                 >
-                  <MdEmail size={60} />
-                </a>
-                <p style={{ fontFamily: "roboto" }}>
-                  <a
-                    href="mailto:getintouch@sapiensv2.com"
-                    className="text-white"
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                    <MdEmail className="text-4xl text-black transition duration-300" />
+                  </div>
+                  <p
+                    className="gmail inc text-white mt-2 text-center"
+                    style={{ fontFamily: "roboto" }}
                   >
                     getintouch@sapiensv2.com
-                  </a>
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <a href="tel:+6498879320" className="text-white mb-2">
-                  <MdContactPhone size={60} />
+                  </p>
                 </a>
-                <p style={{ fontFamily: "roboto" }}>
-                  <a href="tel:+6498879320" className="text-white">
-                    +6498879320
-                  </a>
-                </p>
-              </div>
 
-              <div className="flex flex-col items-center">
+                {/* Phone */}
+                <a
+                  href="tel:+6498879320"
+                  className="flex flex-col items-center group"
+                >
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                    <MdContactPhone className="text-4xl text-black transition duration-300" />
+                  </div>
+                  <p
+                    className="gmail text-white mt-2 text-center"
+                    style={{ fontFamily: "roboto" }}
+                  >
+                    +6498879320
+                  </p>
+                </a>
+
+                {/* Location */}
                 <a
                   href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white mb-2"
+                  className="flex flex-col items-center group"
                 >
-                  <FaMapLocationDot size={60} />
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                    <FaMapLocationDot className="text-4xl text-black transition duration-300" />
+                  </div>
+                  <p
+                    className="text-white text-center gmail mt-2"
+                    style={{ fontFamily: "roboto" }}
+                  >
+                    Sapiens v2 Ltd. <br />
+                    Auckland, New Zealand
+                  </p>
                 </a>
-                <p style={{ fontFamily: "roboto" }} className="leading-tight">
-                  Sapiens v2 Ltd. <br />
-                  Auckland, New Zealand
-                </p>
               </div>
             </div>
-          </div>
+
+
+
         </div>
       </div>
+
+
+
+      
     </div>
   );
 };

@@ -109,8 +109,6 @@ const HeroSection = ({ scrollToDemo }) => {
 
         <div className="ContactRightSectionHome lg:flex">
           <div className="cc flex bg-white rounded-lg pl-4">
-
-            
             <div className="w-2/3">
               <form onSubmit={handleFormSubmit}>
                 <h1
@@ -205,8 +203,6 @@ const HeroSection = ({ scrollToDemo }) => {
               </form>
             </div>
 
-
-
             {/* 
             <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
               <div className="grid place-content-center place-items-center grid-cols-1 justify-center items-center lg:pt-14 gap-8">
@@ -260,8 +256,8 @@ const HeroSection = ({ scrollToDemo }) => {
               </div>
             </div> */}
 
-            <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
-              <div className="flex flex-col justify-between items-center h-full min-h-[400px] py-8">
+            <div className="w-full md:w-[39%] rightsection rounded-r-lg text-white">
+              <div className="flex flex-col justify-between items-center h-full min-h-[400px] pt-[50px] pb-16">
                 {/* Email */}
                 <a
                   href="mailto:getintouch@sapiensv2.com"
@@ -314,8 +310,13 @@ const HeroSection = ({ scrollToDemo }) => {
                 </a>
               </div>
             </div>
+
+            
           </div>
         </div>
+
+
+        
       </div>
 
       <div className="HeroSectionBgImg">

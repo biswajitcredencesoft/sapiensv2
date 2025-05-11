@@ -186,8 +186,8 @@ const CaseStudies = () => {
             className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16 sm:mr-16 text-[#000000] "
           >
             Glassons are renowned in Australia and New Zealand for delivering
-            youthful, women’s fashion at, great value, across 60 vibrant stores
-            . Giving their customers exactly what they want, when they want it;
+            youthful  women’s fashion at, great value, across 60 vibrant stores
+            . Giving their customers exactly what they want, when they want,
             they pride themselves as a destination for trending, must have
             pieces, wardrobe staples and everything in between.
           </p>
@@ -213,14 +213,14 @@ const CaseStudies = () => {
             applies operational rules to determine where each store should send
             its returns. The process is time consuming and error prone,
             resulting in many thousands of items languishing on racks in stock
-            rooms or transferred to sub optimal locations.
+            rooms or transferred to suboptimal  locations.
           </p>
           <p
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             Glassons chose Sapiens v2 to automate and improve outcomes for this
-            manual process. Each Sunday the store scans returns for the week.
+            manual process. Each Sunday the  stores scan returns for the week.
             Using Sapiens v2’s API, the returns are uploaded to the Sapiens v2
             cloud and analysed by Stock Seer to determine the optimum selling
             stores, and propose transfers accordingly.
@@ -260,7 +260,7 @@ const CaseStudies = () => {
             their marketing strategy and, when combined with seasonal demand
             fluctuations, require merchandisers to spend entire days, weekly,
             maintaining re-order points and safety stock to support accurate
-            weekly vendor re-orders (often by gut feel).
+            weekly vendor re-orders (often by gut-feel).
           </p>
           <p
             style={{ fontFamily: "roboto" }}
@@ -268,8 +268,8 @@ const CaseStudies = () => {
           >
             Given more than 5,000 products across 50 stores, it is impossible
             for merchandisers to accurately forecast sales and infer optimum
-            stock levels for every product store combination. The result is
-            under, and over stocked items and a merchandise team constrained by
+            stock levels for every product-store combination. The result is
+            under and over-stocked items, and a merchandise team constrained by
             excessive repetitive tasks, impacting financial performance and
             customer satisfaction.
           </p>
@@ -297,7 +297,7 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16     sm:mr-52  text-[#000000]"
           >
-            A 46 store strong, Australia/New Zealand based chain, Hallensteins
+            A 46-store-strong, Australia/New Zealand-based chain, Hallensteins
             provides quality clothing that's both stylish and affordable,
             catering to the modern man's evolving tastes.
           </p>
@@ -317,26 +317,26 @@ const CaseStudies = () => {
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             However, determining the ideal stock levels, week on week, for some
-            276,000 product store combinations, is an impossible task for the
+            276,000 product-store combinations, is an impossible task for the
             human stock controller. A lack of resource, and the inability of the
             human mind to accurately forecast evolving sales, forces a reliance
-            on crude averages that tend to over allocate to mitigate risk of
-            stock outs. The result: cluttered stores and lost sales as the
+            on crude averages that tend to over-allocate to mitigate risk of
+            stock-outs. The result: cluttered stores and lost sales as the
             season progresses, with faster moving stores selling out while
-            product languishes in the quieter store. Costly inter store
+            product languishes in the quieter store. Costly inter-store
             movements ensue.
           </p>
           <p
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
-            Once again, we deployed Stock Seer to automate this manual process
+            Once again, we deployed Stock Seer to automate this manual process,
             generating an accurate, weekly sales forecast with seasonal
             fluctuations and planned promotions accounted for. The forecast was
             used, in conjunction with standard business rules, to determine more
             sensible target stock levels and safety stock buffers, with respect
             to the predicted demand. Thus far, we have saved $500,000 thanks to
-            mitigations in out of stocks and overstocks via the A.I. driven
+            mitigations in out-of-stocks and overstocks via the A.I.-driven
             process.
           </p>
         </div>

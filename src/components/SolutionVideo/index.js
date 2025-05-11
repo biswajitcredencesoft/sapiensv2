@@ -159,7 +159,8 @@ const SolutionVideo = () => {
               </div>
 
               <div className="card-bottom-content lg:mt-4 text-[#ffffff]">
-                <p>{card.description}</p>
+               <p style={{ fontFamily: 'Roboto, sans-serif' }}>{card.description}</p>
+
               </div>
             </div>
           ))}
