@@ -327,7 +327,7 @@ const HeroSection = ({ scrollToDemo }) => {
           style={{ fontFamily: "HouschkaPro" }}
         />
         <img
-          src="https://bookonelocal.in/cdn/Seer_phone.svg"
+          src="https://bookonelocal.in/cdn/Stock_Seer_Oracle_phone-cropped.svg"
           alt="hero"
           className="mobile-image"
           style={{ fontFamily: "HouschkaPro" }}
@@ -336,5 +336,4 @@ const HeroSection = ({ scrollToDemo }) => {
     </div>
   );
 };
-
 export default HeroSection;
