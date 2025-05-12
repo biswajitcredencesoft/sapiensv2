@@ -186,7 +186,7 @@ const CaseStudies = () => {
             className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16 sm:mr-16 text-[#000000] "
           >
             Glassons are renowned in Australia and New Zealand for delivering
-            youthful  women’s fashion at, great value, across 60 vibrant stores
+            youthful  women’s fashion at  great value, across 60 vibrant stores
             . Giving their customers exactly what they want, when they want,
             they pride themselves as a destination for trending, must have
             pieces, wardrobe staples and everything in between.
