@@ -34,10 +34,12 @@
   width: auto; 
   margin-right: 20px; 
   font-family: 'AllroundGothic';
+  gap:6px;
 }
 
 .NavbarLinks>li {
   list-style: none;
+  
 }
 
 .NavbarLinks>li>a {
