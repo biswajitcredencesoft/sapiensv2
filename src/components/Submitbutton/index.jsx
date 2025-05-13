@@ -1,7 +1,13 @@
 import { useEffect } from "react";
 import Loading from "./../Loading";
 
-export default function Submitbutton({ completed, onClick, isLoading, error, setCompleted }) {
+export default function Submitbutton({
+  completed,
+  onClick,
+  isLoading,
+  error,
+  setCompleted,
+}) {
   useEffect(() => {
     if (completed) {
       const timer = setTimeout(() => {
@@ -13,7 +19,10 @@ export default function Submitbutton({ completed, onClick, isLoading, error, set
 
   if (error) {
     return (
-      <div className="mr-4 rounded p-2 text-white" style={{ backgroundColor: "#ed4e42" }}>
+      <div
+        className="mr-4 rounded p-2 text-white"
+        style={{ backgroundColor: "#ed4e42" }}
+      >
         <p>Failed to send the message. Please try again.</p>
       </div>
     );
@@ -21,9 +30,10 @@ export default function Submitbutton({ completed, onClick, isLoading, error, set
 
   if (completed) {
     return (
-      <div className="mr-4 rounded p-2 text-white" style={{ backgroundColor: "#2f3b55" }}>
-        <p>Your enquiry has been submitted, we will be in touch soon.</p>
-      </div>
+      <div className="mr-4 mb-4 rounded text-white" style={{ backgroundColor: "#2f3b55" }}>
+  <p className="ml-2">Your enquiry has been submitted, we will be in touch soon.</p>
+</div>
+
     );
   }
 
