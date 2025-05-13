@@ -39,7 +39,7 @@ const SeerInsights = () => {
       desc: "",
       description: "Multi Domain Masters",
       description1:
-        "Sapiens v2’s seasoned team has years of experience supporting the world’s popular platforms - LS Retail, Business Central, Dynamics NAV, Azure, Microsoft .Net, Android and IOS",
+        "Sapiens v2’s seasoned team has years of experience supporting the world’s popular platforms - LS Retail, Business Central, Dynamics NAV, Azure, Microsoft .Net, Android and iOS",
     },
     {
       imageSrc: economial,
