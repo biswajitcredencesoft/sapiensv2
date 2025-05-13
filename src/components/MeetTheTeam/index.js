@@ -17,7 +17,7 @@ const MeetTheTeam = () => {
       name: "Roland D’Silva",
       designation: "Founder",
       description:
-        "With a degree in Mathematics and Computer Science, Roland has thrived at the juncture of software engineering and Retail for 25+ years, having architected and managed complex implementations that have aligned technology with the customer's business goals. Roland has also been mentoring businesses and start-ups in their quest for market growth and is often the go-to person when complex issues need a sounding board.",
+        "With a degree in Mathematics and Computer Science, Roland has thrived at the juncture of software engineering and retail for 25+ years, having architected and managed complex implementations that have aligned technology with the customer's business goals. Roland has also been mentoring businesses and start-ups in their quest for market growth and is often the go-to person when complex issues need a sounding board.",
     },
     {
       image: Person3,
