@@ -30,9 +30,9 @@ const Contact = () => {
       [name]: value,
     }));
     if (name === "email") {
-      setEmailError(false); // reset on change
+      setEmailError(false); 
     }
-    setIsFormSubmitted(false); // Reset thank you when user types again
+    setIsFormSubmitted(false); 
     setIsFormSubmisionError(false);
   };
 
@@ -49,7 +49,6 @@ const Contact = () => {
       return;
     }
 
-    // Email format validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(formData.email)) {
       setEmailError(true);
@@ -69,7 +68,7 @@ const Contact = () => {
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
       (result) => {
         console.log("Email sent successfully:", result.text);
-        setFormData({ name: "", email: "", phone: "", message: "" }); // Reset the form
+        setFormData({ name: "", email: "", phone: "", message: "" });
         setIsLoading(false);
         setIsFormSubmitted(true);
       },
@@ -99,14 +98,22 @@ const Contact = () => {
         </p>
 
         <div className="ContactLeftSectionContactDetails ml-1">
+          
           <p style={{ fontFamily: "roboto" }}>
-            <span>Phone:</span> +6498879320
+            <span>Head Office:</span> Sapiens v2 Ltd. Auckland, New Zealand
           </p>
           <p style={{ fontFamily: "roboto" }}>
-            <span>Address:</span> Sapiens v2 Ltd. Auckland, New Zealand
+            <span>Phone:</span> +64 9 887 9320
           </p>
+          <p style={{ fontFamily: "roboto" }}>
+            <span>India Office:</span>Sapiens v2 (IND), Jaipur, Rajasthan, India
+          </p>
+          <p style={{ fontFamily: "roboto" }}>
+            <span>Phone:</span> +91 9660469937
+          </p>
+
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
-            <span>Email:</span>
+            <span>Email: </span>
             <a href="mailto:getintouch@sapiensv2.com">
               getintouch@sapiensv2.com
             </a>
