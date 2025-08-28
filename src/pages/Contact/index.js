@@ -105,8 +105,14 @@ const Contact = () => {
           <p style={{ fontFamily: "roboto" }}>
             <span>Phone:</span> +64 9 887 9320
           </p>
+            <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
+            <span>Email: </span>
+            <a href="mailto:getintouch@sapiensv2.com">
+              getintouch@sapiensv2.com
+            </a>
+          </p>
           <p style={{ fontFamily: "roboto" }}>
-            <span>India Office:</span>Sapiens v2 (IND), Jaipur, Rajasthan, India
+            <span>India Office: </span>Sapiens v2 (IND), Jaipur, Rajasthan, India
           </p>
           <p style={{ fontFamily: "roboto" }}>
             <span>Phone:</span> +91 9660469937

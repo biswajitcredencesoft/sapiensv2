@@ -10,32 +10,36 @@ const Card = ({ imageSrc, desc, description, previewText, hiddenText }) => {
   const toggleReadMore = () => setIsExpanded(!isExpanded);
 
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400">
+    
+    <div className="rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400 flex flex-col h-full">
       <img
         src={imageSrc}
         alt="Card Image"
         className="w-full h-52 object-cover"
       />
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-grow">
         <p
           style={{ fontFamily: "roboto" }}
           className="text-white font-bold text-lg"
         >
           <span style={{ fontFamily: "roboto" }}>{desc}</span> {description}
         </p>
-        <p style={{ fontFamily: "roboto" }} className="text-[#ffffff]">
+
+        <p
+          style={{ fontFamily: "roboto" }}
+          className="text-[#ffffff] flex-grow"
+        >
           {previewText}
-          {!isExpanded && hiddenText ? "" : ""}
           {isExpanded && hiddenText && <span> {hiddenText}</span>}
+          {hiddenText && (
+            <button
+              onClick={toggleReadMore}
+              className="text-blue-400 underline hover:text-blue-300 ml-2 inline"
+            >
+              {isExpanded ? "Read Less" : "Read More"}
+            </button>
+          )}
         </p>
-        {hiddenText && (
-          <button
-            onClick={toggleReadMore}
-            className="text-blue-400 mt-2 underline hover:text-blue-300"
-          >
-            {isExpanded ? "Read Less" : "Read More"}
-          </button>
-        )}
       </div>
     </div>
   );
@@ -72,14 +76,15 @@ const SeerInsights = () => {
   ];
 
   return (
-    <div className="container mx-auto pt-4 my-[-80px] pb-20">
+    <div className="container mx-auto pt-4 my-[-80px] pb-20 ">
       <h2
         style={{ fontFamily: "AllroundGothic" }}
         className="font-bold text-center mb-5 text-white mt-5 fontSize"
       >
         Unlock Potential. With Sapiens v2 Expertise
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-40">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-40 items-start">
         {cards.map((card, index) => (
           <Card
             key={index}
