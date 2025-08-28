@@ -25,7 +25,7 @@ const Card = ({ imageSrc, desc, description, previewText, hiddenText }) => {
         </p>
         <p style={{ fontFamily: "roboto" }} className="text-[#ffffff]">
           {previewText}
-          {!isExpanded && hiddenText ? "..." : ""}
+          {!isExpanded && hiddenText ? "" : ""}
           {isExpanded && hiddenText && <span> {hiddenText}</span>}
         </p>
         {hiddenText && (
