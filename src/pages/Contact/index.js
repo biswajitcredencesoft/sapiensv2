@@ -9,8 +9,10 @@ import { MdContactPhone, MdEmail } from "react-icons/md";
 import { serviceId, templateId, publicKey } from "./../../configs/emailjs";
 import emailjs from "@emailjs/browser";
 import Submitbutton from "../../components/Submitbutton";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-
+// import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { SlLocationPin } from "react-icons/sl";
+import { FiPhone } from "react-icons/fi";
+import { MdOutlineMail } from "react-icons/md";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -120,7 +122,8 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <FaMapMarkerAlt /> Sapiens v2 Ltd. Auckland, New Zealand
+                <SlLocationPin   className="mt-[11px]"/> Sapiens v2 Ltd. Auckland, <br />
+                 New Zealand
               </p>
               <p
                 className="flex items-center gap-2"
@@ -130,7 +133,7 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <FaPhoneAlt /> +64 9 887 9320
+                <FiPhone /> +64 9 887 9320
               </p>
               <p
                 className="flex items-center gap-2 cursor-pointer"
@@ -140,7 +143,7 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <FaEnvelope />
+                <MdOutlineMail />
                 <a href="mailto:getintouch@sapiensv2.com">
                   getintouch@sapiensv2.com
                 </a>
@@ -166,7 +169,7 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <FaMapMarkerAlt /> Sapiens v2 (IND), Jaipur, Rajasthan, India
+                <SlLocationPin  className="mt-[11px]"/> Sapiens v2 (IND), Jaipur,  <br />Rajasthan, India
               </p>
               <p
                 className="flex items-center gap-2"
@@ -176,7 +179,7 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <FaPhoneAlt /> +91 9660469937
+                <FiPhone /> +91 9660469937
               </p>
               <p
                 className="flex items-center gap-2 cursor-pointer"
@@ -186,7 +189,7 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <FaEnvelope />
+                <MdOutlineMail />
                 <a href="mailto:getintouch@sapiensv2.com">
                   getintouch@sapiensv2.com
                 </a>
