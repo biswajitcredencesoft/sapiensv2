@@ -102,7 +102,7 @@ const Contact = () => {
 
         {/* New Changes contact section   */}
 
-        <div className="ml-2 mt-[10px] flex flex-col md:flex-row gap-10">
+        <div className="ml-2 mt-[10px] flex flex-col md:flex-row gap-20  text-[18px]">
           <div>
             <h3
               style={{
@@ -122,8 +122,9 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <SlLocationPin   className="mt-[11px]"/> Sapiens v2 Ltd. Auckland, <br />
-                 New Zealand
+                <SlLocationPin className="mt-[11px] " /> Sapiens v2 Ltd.
+                Auckland, <br />
+                New Zealand
               </p>
               <p
                 className="flex items-center gap-2"
@@ -169,7 +170,9 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <SlLocationPin  className="mt-[11px]"/> Sapiens v2 (IND), Jaipur,  <br />Rajasthan, India
+                <SlLocationPin className="mt-[11px]" /> Sapiens v2 (IND),
+                Jaipur, <br />
+                Rajasthan, India
               </p>
               <p
                 className="flex items-center gap-2"

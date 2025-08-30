@@ -5,7 +5,7 @@ import support from "../../assets/images/Support.png";
 import economial from "../../assets/images/Economical.png";
 
 const SeerInsights = () => {
-  const [isHovered, setIsHovered] = useState({});
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const cards = [
     {
@@ -54,20 +54,19 @@ const SeerInsights = () => {
           const isFirstCard = index === 0;
           const isSecondCard = index === 1;
           const shouldExpand =
-            (isFirstCard || isSecondCard) && isHovered[index];
+            (isFirstCard || isSecondCard) && hoveredIndex === index;
 
           return (
             <div
               key={index}
-              className={`rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400 flex flex-col transition-all duration-300
-                ${shouldExpand ? "h-auto" : "h-[450px]"}`}
+              className={`rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400 flex flex-col transition-all duration-300 ${
+                shouldExpand ? "h-auto" : "h-[450px]"
+              }`}
               onMouseEnter={() =>
-                (isFirstCard || isSecondCard) &&
-                setIsHovered({ ...isHovered, [index]: true })
+                (isFirstCard || isSecondCard) && setHoveredIndex(index)
               }
               onMouseLeave={() =>
-                (isFirstCard || isSecondCard) &&
-                setIsHovered({ ...isHovered, [index]: false })
+                (isFirstCard || isSecondCard) && setHoveredIndex(null)
               }
             >
               <img
@@ -88,6 +87,7 @@ const SeerInsights = () => {
                     {card.description}
                   </span>
                 </p>
+
                 <div
                   className="text-white transition-all duration-500 overflow-hidden"
                   style={{
