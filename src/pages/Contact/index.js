@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
-import Faceboook from "../../assets/images/Facebook.png";
+// import Faceboook from "../../assets/images/Facebook.png";
 import Google from "../../assets/images/Google.png";
 import LinkedIn from "../../assets/images/LinkedIn.png";
 import YouTube from "../../assets/images/youtube.png";
@@ -9,6 +9,7 @@ import { MdContactPhone, MdEmail } from "react-icons/md";
 import { serviceId, templateId, publicKey } from "./../../configs/emailjs";
 import emailjs from "@emailjs/browser";
 import Submitbutton from "../../components/Submitbutton";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,9 +31,9 @@ const Contact = () => {
       [name]: value,
     }));
     if (name === "email") {
-      setEmailError(false); 
+      setEmailError(false);
     }
-    setIsFormSubmitted(false); 
+    setIsFormSubmitted(false);
     setIsFormSubmisionError(false);
   };
 
@@ -97,33 +98,101 @@ const Contact = () => {
           Tell us about your retail challenges.
         </p>
 
-        <div className="ContactLeftSectionContactDetails ml-1">
-          
-          <p style={{ fontFamily: "roboto" }}>
-            <span>Head Office:</span> Sapiens v2 Ltd. Auckland, New Zealand
-          </p>
-          <p style={{ fontFamily: "roboto" }}>
-            <span>Phone:</span> +64 9 887 9320
-          </p>
-            <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
-            <span>Email: </span>
-            <a href="mailto:getintouch@sapiensv2.com">
-              getintouch@sapiensv2.com
-            </a>
-          </p>
-          <p style={{ fontFamily: "roboto" }}>
-            <span>India Office: </span>Sapiens v2 (IND), Jaipur, Rajasthan, India
-          </p>
-          <p style={{ fontFamily: "roboto" }}>
-            <span>Phone:</span> +91 9660469937
-          </p>
+        {/* New Changes contact section   */}
 
-          <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
-            <span>Email: </span>
-            <a href="mailto:getintouch@sapiensv2.com">
-              getintouch@sapiensv2.com
-            </a>
-          </p>
+        <div className="ml-2 mt-[10px] flex flex-col md:flex-row gap-10">
+          <div>
+            <h3
+              style={{
+                fontFamily: "roboto",
+                fontWeight: "600",
+                color: "#374151",
+              }}
+            >
+              NEW ZEALAND
+            </h3>
+            <div className="mt-[14px] space-y-2">
+              <p
+                className="flex items-start gap-2"
+                style={{
+                  fontFamily: "roboto",
+                  fontWeight: "500",
+                  color: "#374151",
+                }}
+              >
+                <FaMapMarkerAlt /> Sapiens v2 Ltd. Auckland, New Zealand
+              </p>
+              <p
+                className="flex items-center gap-2"
+                style={{
+                  fontFamily: "roboto",
+                  fontWeight: "500",
+                  color: "#374151",
+                }}
+              >
+                <FaPhoneAlt /> +64 9 887 9320
+              </p>
+              <p
+                className="flex items-center gap-2 cursor-pointer"
+                style={{
+                  fontFamily: "roboto",
+                  fontWeight: "500",
+                  color: "#374151",
+                }}
+              >
+                <FaEnvelope />
+                <a href="mailto:getintouch@sapiensv2.com">
+                  getintouch@sapiensv2.com
+                </a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3
+              style={{
+                fontFamily: "roboto",
+                fontWeight: "500",
+                color: "#374151",
+              }}
+            >
+              INDIA
+            </h3>
+            <div className="mt-[14px] space-y-2">
+              <p
+                className="flex items-start gap-2"
+                style={{
+                  fontFamily: "roboto",
+                  fontWeight: "500",
+                  color: "#374151",
+                }}
+              >
+                <FaMapMarkerAlt /> Sapiens v2 (IND), Jaipur, Rajasthan, India
+              </p>
+              <p
+                className="flex items-center gap-2"
+                style={{
+                  fontFamily: "roboto",
+                  fontWeight: "500",
+                  color: "#374151",
+                }}
+              >
+                <FaPhoneAlt /> +91 9660469937
+              </p>
+              <p
+                className="flex items-center gap-2 cursor-pointer"
+                style={{
+                  fontFamily: "roboto",
+                  fontWeight: "500",
+                  color: "#374151",
+                }}
+              >
+                <FaEnvelope />
+                <a href="mailto:getintouch@sapiensv2.com">
+                  getintouch@sapiensv2.com
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="ContactLeftSectionIcons gap-2">
@@ -303,68 +372,61 @@ const Contact = () => {
           </div> */}
 
           <div className="w-full md:w-[65%] rightsection rounded-r-lg text-white">
-              <div className="flex flex-col justify-between items-center h-full min-h-[400px] md:pt-[48px] md:pb-[56px] pt-[50px] pb-[52px]">
-                {/* Email */}
-                <a
-                  href="mailto:getintouch@sapiensv2.com"
-                  className="flex flex-col items-center group"
+            <div className="flex flex-col justify-between items-center h-full min-h-[400px] md:pt-[48px] md:pb-[56px] pt-[50px] pb-[52px]">
+              {/* Email */}
+              <a
+                href="mailto:getintouch@sapiensv2.com"
+                className="flex flex-col items-center group"
+              >
+                <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                  <MdEmail className="text-4xl text-black transition duration-300" />
+                </div>
+                <p
+                  className="gmail inc text-white mt-2 text-center"
+                  style={{ fontFamily: "roboto" }}
                 >
-                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
-                    <MdEmail className="text-4xl text-black transition duration-300" />
-                  </div>
-                  <p
-                    className="gmail inc text-white mt-2 text-center"
-                    style={{ fontFamily: "roboto" }}
-                  >
-                    getintouch@sapiensv2.com
-                  </p>
-                </a>
+                  getintouch@sapiensv2.com
+                </p>
+              </a>
 
-                {/* Phone */}
-                <a
-                  href="tel:+6498879320"
-                  className="flex flex-col items-center group"
+              {/* Phone */}
+              <a
+                href="tel:+6498879320"
+                className="flex flex-col items-center group"
+              >
+                <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                  <MdContactPhone className="text-4xl text-black transition duration-300" />
+                </div>
+                <p
+                  className="gmail text-white mt-2 text-center"
+                  style={{ fontFamily: "roboto" }}
                 >
-                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
-                    <MdContactPhone className="text-4xl text-black transition duration-300" />
-                  </div>
-                  <p
-                    className="gmail text-white mt-2 text-center"
-                    style={{ fontFamily: "roboto" }}
-                  >
-                    +6498879320
-                  </p>
-                </a>
+                  +6498879320
+                </p>
+              </a>
 
-                {/* Location */}
-                <a
-                  href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center group"
+              {/* Location */}
+              <a
+                href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center group"
+              >
+                <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
+                  <FaMapLocationDot className="text-4xl text-black transition duration-300" />
+                </div>
+                <p
+                  className="text-white text-center gmail mt-2"
+                  style={{ fontFamily: "roboto" }}
                 >
-                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 cursor-pointer">
-                    <FaMapLocationDot className="text-4xl text-black transition duration-300" />
-                  </div>
-                  <p
-                    className="text-white text-center gmail mt-2"
-                    style={{ fontFamily: "roboto" }}
-                  >
-                    Sapiens v2 Ltd. <br />
-                    Auckland, New Zealand
-                  </p>
-                </a>
-              </div>
+                  Sapiens v2 Ltd. <br />
+                  Auckland, New Zealand
+                </p>
+              </a>
             </div>
-
-
-
+          </div>
         </div>
       </div>
-
-
-
-      
     </div>
   );
 };
