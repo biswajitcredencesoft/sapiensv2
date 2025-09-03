@@ -99,7 +99,8 @@ const Contact = () => {
         <p style={{ fontFamily: "roboto" }} className="md:mt-4 mt-2">
           Tell us about your retail challenges.
         </p>
-
+         
+         <br/>
         {/* New Changes contact section   */}
 
         <div className="ml-2 mt-[10px] flex flex-col md:flex-row gap-10">

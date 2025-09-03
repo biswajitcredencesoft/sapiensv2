@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./index.css";
+
 import multi from "../../assets/images/Multi.png";
 import support from "../../assets/images/Support.png";
 import economial from "../../assets/images/Economical.png";
 
 const SeerInsights = () => {
-  const [isHovered, setIsHovered] = useState({});
+  const [hoveredCard, setHoveredCard] = useState(null);
 
   const cards = [
     {
@@ -46,72 +47,54 @@ const SeerInsights = () => {
         style={{ fontFamily: "AllroundGothic" }}
         className="font-bold text-center mb-5 text-white mt-5 text-3xl"
       >
-        Unlock Potential. With Sapiens v2 Expertise
+        Unlock Potential. With Sapiens v2 Expertise.
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-40 items-start">
         {cards.map((card, index) => {
-          const isFirstCard = index === 0;
-          const isSecondCard = index === 1;
-          const shouldExpand =
-            (isFirstCard || isSecondCard) && isHovered[index];
-
+          const isHovered = hoveredCard === index;
           return (
             <div
               key={index}
-              className={`rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400 flex flex-col transition-all duration-300
-                ${shouldExpand ? "h-auto" : "h-[450px]"}`}
-              onMouseEnter={() =>
-                (isFirstCard || isSecondCard) &&
-                setIsHovered({ ...isHovered, [index]: true })
-              }
-              onMouseLeave={() =>
-                (isFirstCard || isSecondCard) &&
-                setIsHovered({ ...isHovered, [index]: false })
-              }
+              className={`rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400 flex flex-col transition-all duration-300 transform ${
+                isHovered ? "scale-105 shadow-2xl" : "scale-100"
+              }`}
+              onMouseEnter={() => setHoveredCard(index)}
+              onMouseLeave={() => setHoveredCard(null)}
             >
               <img
                 src={card.imageSrc}
                 alt="Card Image"
                 className="w-full h-52 object-cover flex-shrink-0"
               />
-              <div className="p-6 flex flex-col flex-1">
+              <div className="p-6 flex flex-col flex-1 ">
                 <p
                   style={{ fontFamily: "roboto" }}
                   className="text-white font-bold text-lg mb-2"
                 >
-                  <span style={{ fontFamily: "roboto" }}>{card.desc}</span>{" "}
+                  <span style={{ fontFamily: "roboto" }} className="paragraph-text">{card.desc}</span>{" "}
                   <span
-                    className="text-white text-[18px]"
+                    className="text-white text-[18px] paragraph-text"
                     style={{ fontFamily: "AllroundGothic" }}
                   >
                     {card.description}
                   </span>
                 </p>
                 <div
-                  className="text-white transition-all duration-500 overflow-hidden"
+                  className={`text-white transition-all duration-500 overflow-hidden`}
                   style={{
                     fontFamily: "roboto",
-                    maxHeight: shouldExpand ? "none" : "150px",
+                    minHeight: index === 2 ? "130px" : "unset",
+                    maxHeight: isHovered ? "1000px" : "130px",
+                    
                   }}
                 >
-                  <div className={shouldExpand ? "" : "overflow-y-auto pr-2"}>
-                    {card.paragraphs &&
-                      (shouldExpand ? (
-                        card.paragraphs.map((p, i) => (
-                          <p
-                            key={i}
-                            className="mb-3 leading-relaxed text-[16px]"
-                          >
-                            {p}
-                          </p>
-                        ))
-                      ) : (
-                        <p className="leading-relaxed text-[16px]">
-                          {card.paragraphs[0]}
-                        </p>
-                      ))}
-                  </div>
+                  {card.paragraphs &&
+                    card.paragraphs.map((p, i) => (
+                      <p key={i} className="mb-3 leading-relaxed text-[16px] paragraph-text">
+                        {p}
+                      </p>
+                    ))}
                 </div>
               </div>
             </div>

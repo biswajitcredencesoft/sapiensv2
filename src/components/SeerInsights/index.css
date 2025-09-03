@@ -144,3 +144,17 @@ color:white;
 
   
 }
+
+
+@media (min-width: 1700px) {
+  .paragraph-text {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1518px) and (max-width: 1690px) {
+  .paragraph-text {
+    font-size: 17px;
+  }
+}
+

@@ -96,9 +96,9 @@ import React, { useState } from "react";
 import "./index2.css";
 import ReactPlayer from "react-player";
 
-import I9 from "../../assets/images/I9.png";
-import I10 from "../../assets/images/I10.png";
-import I11 from "../../assets/images/I11.png";
+// import I9 from "../../assets/images/I9.png";
+// import I10 from "../../assets/images/I10.png";
+// import I11 from "../../assets/images/I11.png";
 
 const cards = [
   {
