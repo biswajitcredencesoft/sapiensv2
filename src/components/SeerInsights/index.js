@@ -41,7 +41,7 @@ const Card = ({
 
       <div className="bg-[#1d2939] text-white p-6 h-[216px]">
         <p className="font-AllroundGothic font-bold text-lg mb-2">
-          <span>{desc}</span> <span className="card-title">{description}</span>
+          <span>{desc}</span> <span className="seer-title">{description}</span>
         </p>
         <p className="font-roboto text-sm sm:text-base leading-relaxed">
           {description1}
@@ -67,10 +67,10 @@ const Popup = ({ popupContent, setPopupContent }) => {
       ? // ? "max-w-[690px] h-[330px] "
         // : "max-w-[700px] h-[420px]";
 
-        "max-w-[690px] h-[330px] mt-[40px]"
+        "max-w-[690px] h-[330px] mt-[50px]"
       : index === 1
-      ? "max-w-[740px] h-[390px] mt-[15px]"
-      : "max-w-[700px] h-[420px]";
+      ? "max-w-[740px] h-[390px] mt-[17px]"
+      : "max-w-[740px] h-[390px] mt-[17px]";
 
   return (
     <div className="absolute top-0 left-0 w-full flex justify-center z-30 pointer-events-none">
@@ -79,8 +79,8 @@ const Popup = ({ popupContent, setPopupContent }) => {
         onMouseEnter={() => setPopupContent(popupContent)}
         onMouseLeave={() => setPopupContent(null)}
       >
-        <p className="font-bold text-lg mb-2">
-          {desc} <span className="card-title">{description}</span>
+        <p className="font-bold text-[16px] mb-2">
+          {desc} <span className="seer-title">{description}</span>
         </p>
         <div className="space-y-3">
           {rows.map((pair, idx) => (
@@ -141,10 +141,10 @@ const SeerInsights = () => {
   return (
     <div className="container mx-auto px-4 py-10 relative">
       <h2
-        className="card-title font-AllroundGothic font-bold text-center mb-5 text-white mt-5 
+        className="seer-title font-AllroundGothic font-bold text-center mb-5 text-white mt-5 
                    text-xl sm:text-2xl md:text-[2rem] leading-snug"
       >
-        Don’t Sweat. With Sapiens v2 Support.
+       Unlock Potential. With Sapiens v2 Expertise.
       </h2>
 
       <div className="relative flex flex-col md:flex-row gap-y-6 md:gap-x-6 justify-center pb-10">
