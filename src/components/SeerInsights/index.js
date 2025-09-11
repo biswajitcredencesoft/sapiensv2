@@ -19,8 +19,7 @@ const Card = ({
     <div
       className="relative cursor-pointer shadow-lg border border-slate-200 
                  overflow-hidden w-full sm:w-[300px] md:w-[380px] lg:w-[560px] 
-                 h-[432px] rounded-lg transition-all duration-300 transform 
-                 hover:-translate-y-2 hover:scale-105"
+                 h-[432px] rounded-lg transition-transform duration-300 transform hover:-translate-y-1 hover:scale-105"
       onMouseEnter={() =>
         !disablePopup &&
         setPopupContent({
@@ -64,30 +63,58 @@ const Popup = ({ popupContent, setPopupContent }) => {
 
   const popupStyles =
     index === 0
-      ? // ? "max-w-[690px] h-[330px] "
-        // : "max-w-[700px] h-[420px]";
-
-        "max-w-[690px] h-[330px] mt-[50px]"
+      ? "max-w-[690px] h-auto mt-[50px]"
       : index === 1
-      ? "max-w-[740px] h-[390px] mt-[17px]"
-      : "max-w-[740px] h-[390px] mt-[17px]";
+      ? "max-w-[798px] h-auto mt-[5px]"
+      : "max-w-[600px] md:max-w-[800px] h-auto mt-[120px]";
 
   return (
     <div className="absolute top-0 left-0 w-full flex justify-center z-30 pointer-events-none">
       <div
-        className={`bg-[#1d2939] text-white p-6 rounded-xl shadow-2xl ${popupStyles} overflow-y-auto border border-gray-600 transform transition-all duration-300 ease-in-out opacity-100 scale-100 pointer-events-auto mt-[6px]`}
+        className={`relative text-white p-6 ${popupStyles} 
+                    overflow-y-auto transition-transform duration-300 ease-in-out scale-100 pointer-events-auto animate-zoomOut`}
+        style={{
+          borderRadius: "8px",
+          border: "2px solid rgba(81, 180, 218, 0.60)",
+          background: "linear-gradient(180deg, #090F14 10%, #35435F 90%)",
+          boxShadow: "4px 4px 4px 2px rgba(53, 67, 95, 0.25)",
+        }}
         onMouseEnter={() => setPopupContent(popupContent)}
-        onMouseLeave={() => setPopupContent(null)}
+        onMouseLeave={() => setPopupContent(null)} // ✅ Close popup on mouse leave
       >
-        <p className="font-bold text-[16px] mb-2">
-          {desc} <span className="seer-title">{description}</span>
-        </p>
-        <div className="space-y-3">
+        <h3
+          className={`font-AllroundGothic font-bold mb-4 
+          ${
+            index === 2
+              ? "text-xl sm:text-2xl md:text-3xl"
+              : "text-lg sm:text-xl md:text-2xl"
+          }`}
+        >
+          <span>{desc}</span>{" "}
+          <span className="seer-title text-[28px]">{description}</span>
+        </h3>
+
+        <div
+          className={`space-y-3 ${
+            index === 2 ? "flex flex-col items-center" : ""
+          }`}
+        >
           {rows.map((pair, idx) => (
-            <div key={idx} className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <p className="text-sm leading-relaxed font-roboto ">{pair[0]}</p>
+            <div
+              key={idx}
+              className={`grid ${
+                index === 2
+                  ? "grid-cols-1 max-w-[500px]"
+                  : "grid-cols-1 md:grid-cols-2"
+              } gap-4`}
+            >
+              <p className="font-roboto text-sm sm:text-base leading-relaxed">
+                {pair[0]}
+              </p>
               {pair[1] && (
-                <p className="text-sm leading-relaxed font-roboto">{pair[1]}</p>
+                <p className="font-roboto text-sm sm:text-base leading-relaxed">
+                  {pair[1]}
+                </p>
               )}
             </div>
           ))}
@@ -133,7 +160,7 @@ const SeerInsights = () => {
       description: "Economical and Efficient",
       description1:
         "Eliminate your burden of maintaining a technical team. Our offering is structured to suit your unique requirements and budget – we won’t burn a hole in your pocket.",
-      disablePopup: true,
+      disablePopup: false,
       hoverText: [],
     },
   ];
@@ -144,8 +171,13 @@ const SeerInsights = () => {
         className="seer-title font-AllroundGothic font-bold text-center mb-5 text-white mt-5 
                    text-xl sm:text-2xl md:text-[2rem] leading-snug"
       >
-       Unlock Potential. With Sapiens v2 Expertise.
+        Unlock Potential. With Sapiens v2 Expertise.
       </h2>
+
+      {/* Blur background overlay */}
+      {popupContent && (
+        <div className="fixed inset-0 bg-[rgba(38,48,68,0.20)] backdrop-blur-sm z-20 pointer-events-none"></div>
+      )}
 
       <div className="relative flex flex-col md:flex-row gap-y-6 md:gap-x-6 justify-center pb-10">
         {cards.map((card, index) => (
