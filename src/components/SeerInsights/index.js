@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import "./index.css";
 
 import multi from "../../assets/images/Multi.png";
@@ -14,14 +15,16 @@ const Card = ({
   hoverText,
   setPopupContent,
   index,
+  isMobile,
 }) => {
   return (
     <div
       className="relative cursor-pointer shadow-lg border border-slate-200 
                  overflow-hidden w-full sm:w-[300px] md:w-[380px] lg:w-[560px] 
-                 h-[432px] rounded-lg transition-transform duration-300 transform hover:-translate-y-1 hover:scale-105"
+                 h-[432px] rounded-lg transition-transform duration-300"
       onMouseEnter={() =>
         !disablePopup &&
+        !isMobile &&
         setPopupContent({
           desc,
           description,
@@ -30,7 +33,17 @@ const Card = ({
           index,
         })
       }
-      onMouseLeave={() => setPopupContent(null)}
+      onMouseLeave={() => !isMobile && setPopupContent(null)}
+      onClick={() =>
+        isMobile &&
+        setPopupContent({
+          desc,
+          description,
+          description1,
+          hoverText,
+          index,
+        })
+      }
     >
       <img
         src={imageSrc}
@@ -38,7 +51,7 @@ const Card = ({
         className="w-full h-[216px] object-cover"
       />
 
-      <div className="bg-[#1d2939] text-white p-6 h-[216px]">
+      <div className="bg-[#1d2939] text-white md:p-6 p-[15px] h-[216px]">
         <p className="font-AllroundGothic font-bold text-lg mb-2">
           <span>{desc}</span> <span className="seer-title">{description}</span>
         </p>
@@ -50,7 +63,7 @@ const Card = ({
   );
 };
 
-const Popup = ({ popupContent, setPopupContent }) => {
+const Popup = ({ popupContent, setPopupContent, isMobile }) => {
   if (!popupContent) return null;
 
   const { desc, description, description1, hoverText, index } = popupContent;
@@ -68,19 +81,68 @@ const Popup = ({ popupContent, setPopupContent }) => {
       ? "max-w-[798px] h-auto mt-[5px]"
       : "max-w-[600px] md:max-w-[800px] h-auto mt-[120px]";
 
+  const baseStyle = {
+    background: "linear-gradient(180deg, #090F14 10%, #35435F 90%)",
+    borderTop: "8px solid rgba(81,180,218,0.6)",
+    borderLeft: "8px solid rgba(81,180,218,0.6)",
+    borderTopLeftRadius: "0",
+    boxShadow:
+      "6px 6px 15px rgba(0,0,0,0.45), -6px -6px 15px rgba(255,255,255,0.05)",
+    borderRadius: "12px",
+    transform: "perspective(1000px) translateZ(0)",
+    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+  };
+
+  if (isMobile) {
+    return (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(38,48,68,0.8)] backdrop-blur-sm">
+        <div
+          className={`relative text-white p-6 w-[90%] max-h-[80%] overflow-y-auto rounded-lg`}
+          style={baseStyle}
+        >
+          <button
+            onClick={() => setPopupContent(null)}
+            className="absolute top-3 right-3 bg-white/10 hover:bg-white/20 
+                       rounded-full p-2 text-white text-sm leading-none z-40"
+          >
+            <AiOutlineClose />
+          </button>
+
+          <h3
+            className={`font-AllroundGothic font-bold mb-4 text-lg sm:text-xl`}
+          >
+            <span>{desc}</span>{" "}
+            <span className="seer-title text-[24px]">{description}</span>
+          </h3>
+
+          <div className="space-y-3 ">
+            {rows.map((pair, idx) => (
+              <div key={idx} className="grid grid-cols-1 gap-4 ">
+                <p className="font-roboto text-sm sm:text-base leading-relaxed">
+                  {pair[0]}
+                </p>
+                {pair[1] && (
+                  <p className="font-roboto text-sm sm:text-base leading-relaxed">
+                    {pair[1]}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="absolute top-0 left-0 w-full flex justify-center z-30 pointer-events-none">
       <div
         className={`relative text-white p-6 ${popupStyles} 
-                    overflow-y-auto transition-transform duration-300 ease-in-out scale-100 pointer-events-auto animate-zoomOut`}
-        style={{
-          borderRadius: "8px",
-          border: "2px solid rgba(81, 180, 218, 0.60)",
-          background: "linear-gradient(180deg, #090F14 10%, #35435F 90%)",
-          boxShadow: "4px 4px 4px 2px rgba(53, 67, 95, 0.25)",
-        }}
+                    overflow-y-auto transition-transform duration-300 ease-in-out scale-100 
+                    pointer-events-auto animate-zoomOut`}
+        style={baseStyle}
         onMouseEnter={() => setPopupContent(popupContent)}
-        onMouseLeave={() => setPopupContent(null)} // ✅ Close popup on mouse leave
+        onMouseLeave={() => setPopupContent(null)}
       >
         <h3
           className={`font-AllroundGothic font-bold mb-4 
@@ -102,7 +164,7 @@ const Popup = ({ popupContent, setPopupContent }) => {
           {rows.map((pair, idx) => (
             <div
               key={idx}
-              className={`grid ${
+              className={`grid  ${
                 index === 2
                   ? "grid-cols-1 max-w-[500px]"
                   : "grid-cols-1 md:grid-cols-2"
@@ -126,6 +188,14 @@ const Popup = ({ popupContent, setPopupContent }) => {
 
 const SeerInsights = () => {
   const [popupContent, setPopupContent] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const cards = [
     {
@@ -174,22 +244,29 @@ const SeerInsights = () => {
         Unlock Potential. With Sapiens v2 Expertise.
       </h2>
 
-      {/* Blur background overlay */}
-      {popupContent && (
+      {!isMobile && popupContent && (
         <div className="fixed inset-0 bg-[rgba(38,48,68,0.20)] backdrop-blur-sm z-20 pointer-events-none"></div>
       )}
 
-      <div className="relative flex flex-col md:flex-row gap-y-6 md:gap-x-6 justify-center pb-10">
+      <div className="relative flex flex-col md:flex-row gap-y-6 md:gap-x-6 justify-center pb-10  ">
         {cards.map((card, index) => (
           <Card
             key={index}
             {...card}
             index={index}
             setPopupContent={setPopupContent}
+            popupContent={popupContent}
+            isMobile={isMobile}
           />
         ))}
-
-        <Popup popupContent={popupContent} setPopupContent={setPopupContent} />
+        {popupContent && (
+          <Popup
+            key={popupContent.index}
+            popupContent={popupContent}
+            setPopupContent={setPopupContent}
+            isMobile={isMobile}
+          />
+        )}
       </div>
     </div>
   );
