@@ -99,11 +99,11 @@ const Contact = () => {
         <p style={{ fontFamily: "roboto" }} className="md:mt-4 mt-2">
           Tell us about your retail challenges.
         </p>
-         
-         <br/>
+
+        <br />
         {/* New Changes contact section   */}
 
-        <div className="ml-2 mt-[10px] flex flex-col md:flex-row gap-10">
+        <div className="ml-2 mt-[10px] flex flex-col md:flex-row gap-[152px]">
           <div>
             <h3
               style={{
@@ -114,6 +114,7 @@ const Contact = () => {
             >
               NEW ZEALAND
             </h3>
+
             <div className="mt-[14px] space-y-2">
               <p
                 className="flex items-start gap-2"
@@ -123,9 +124,11 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <SlLocationPin   className="mt-[11px]"/> Sapiens v2 Ltd. Auckland, <br />
-                 New Zealand
+                <SlLocationPin className="mt-[11px]" /> Sapiens v2 Ltd.
+                Auckland, <br />
+                New Zealand
               </p>
+
               <p
                 className="flex items-center gap-2"
                 style={{
@@ -170,7 +173,9 @@ const Contact = () => {
                   color: "#374151",
                 }}
               >
-                <SlLocationPin  className="mt-[11px]"/> Sapiens v2 (IND), Jaipur,  <br />Rajasthan, India
+                <SlLocationPin className="mt-[11px]" /> Sapiens v2 (IND),
+                Jaipur, <br />
+                Rajasthan, India
               </p>
               <p
                 className="flex items-center gap-2"
@@ -198,7 +203,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
+        <br />
         <div className="ContactLeftSectionIcons gap-2">
           <a
             href="https://www.google.com/search?q=Sapiens+v2+Ltd+Enfield+Street+Auckland"

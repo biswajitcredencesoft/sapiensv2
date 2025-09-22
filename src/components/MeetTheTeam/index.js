@@ -1,7 +1,15 @@
 import React, { useState } from "react";
-import Person1 from "../../assets/images/Joshua.webp";
-import Person2 from "../../assets/images/Roland.webp";
-import Person3 from "../../assets/images/damien.webp";
+// import Person1 from "../../assets/images/Joshua.webp";
+// import Person2 from "../../assets/images/Roland.webp";
+// import Person3 from "../../assets/images/damien.webp";
+import Person1 from "../../assets/images/Joshua1.svg";
+import Person2 from "../../assets/images/Roland1.svg";
+import Person3 from "../../assets/images/Damien1.svg";
+
+import Person4 from "../../assets/images/Kanika.svg";
+import Person5 from "../../assets/images/Vidhi.svg";
+import Person6 from "../../assets/images/Shruti.svg";
+
 import "./index.css";
 const MeetTheTeam = () => {
   const details = [
@@ -25,6 +33,27 @@ const MeetTheTeam = () => {
       designation: "Consultant",
       description:
         "A chartered accountant by qualification, Damien brings more than 35 years of retail technology experience to Sapiens v2, specialising in Data Design, Analytics, and Data Visualization. Damien's focus at Sapiens v2 is Data Development, and he is a key contributor to product strategy and design.",
+    },
+    {
+      image: Person4,
+      name: "Kanika Mathur",
+      designation: "Designation",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      image: Person5,
+      name: "Vidhi Jamar",
+      designation: "Designation",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      image: Person6,
+      name: "Shruti Wadhwa",
+      designation: "Designation",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
   ];
   return (
@@ -57,7 +86,7 @@ const MeetTheTeam = () => {
                 </p>
                 <p
                   style={{ fontFamily: "AllroundGothic" }}
-                  className="text-center text-[#000000] text-[18px]"
+                  className="text-justify text-[#000000] text-[18px]"
                 >
                   <span style={{ fontFamily: "roboto" }}>
                     {" "}
