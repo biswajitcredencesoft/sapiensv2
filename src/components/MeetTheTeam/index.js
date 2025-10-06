@@ -32,14 +32,7 @@ const MeetTheTeam = () => {
       name: "Vidhi Jamar",
       designation: "Designation",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    },
-     {
-      image: Person6,
-      name: "Shruti Wadhwa",
-      designation: "Designation",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Tasked with business development, Vidhi brings panache to her engagement with her customers and network.  Adept at identifying tangible workable business solutions that harness technology and in particular AI as an enabler she will help you reimagine your business potential and achieve measurable ROI. With deep dive insight into technologies both present and emerging she is an ally in your business journey. After work you may spot her chilling out at a classical music recital or at an award-winning winery.",
     },
     {
       image: Person3,
@@ -53,7 +46,14 @@ const MeetTheTeam = () => {
       name: "Kanika Mathur",
       designation: "Designation",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Kanika is the quintessential software geek with a penchant for all things technology. With her dedication for implementing sensible solutions using the talent and resource available with the customer, Kanika will ensure the end outcome aligns with the customer’s vision and goal. Kanika has unrivalled experience with the Microsoft technology stack and Business Central platforms. She is also a keen exponent of the classical Indian dance form.",
+    },
+      {
+      image: Person6,
+      name: "Shruti Wadhwa",
+      designation: "Designation",
+      description:
+        "Shruti’s background as a software engineer coupled with her business focused, people centric approach has allowed her to successfully lead and implement a myriad of projects across multiple verticals. As a people leader who communicates clearly and is astute problem solver, the success of a project is all but guaranteed. When not working Shruti may be spotted trekking some picturesque trail on the planet.",
     },
    
    
