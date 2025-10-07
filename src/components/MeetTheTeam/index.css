@@ -6,7 +6,7 @@
   font-family: 'Roboto';
   font-size: 18px;
   color: #000000;
-  text-align: left; 
+  text-align: center; 
   line-height: 1.5rem;
   /* word-spacing: 0.12rem;          */
   font-kerning: none;            
@@ -17,7 +17,7 @@
    font-family: 'Roboto';
   font-size: 18px;
   color: #000000;
-  text-align: left; 
+  text-align: center; 
   line-height: 1.5rem;
     /* word-spacing: 0.16rem;         */
   text-rendering: geometricPrecision;
@@ -28,7 +28,7 @@
   .team-description {
   
     font-size: 15px;    
-     text-align: left;   
+     text-align: center;   
       
   }
 }
