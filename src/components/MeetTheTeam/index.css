@@ -2,3 +2,33 @@
   font-family:'roboto';
  
 }
+.team-description {
+  font-family: 'Roboto';
+  font-size: 17px;
+  color: #000000;
+  text-align: justify; 
+  line-height: 1.8;
+  word-spacing: 0.12rem;         
+  font-kerning: none;            
+  text-rendering: geometricPrecision;
+  white-space: normal;
+}
+.damien-description{
+   font-family: 'Roboto';
+  font-size: 17px;
+  color: #000000;
+  text-align: justify; 
+  line-height: 1.8; 
+    word-spacing: 0.16rem;        
+  text-rendering: geometricPrecision;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .team-description {
+    word-spacing: 0.10rem;  
+    font-size: 15px;         
+    line-height: 1.5;
+  }
+}
+
