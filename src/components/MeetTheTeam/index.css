@@ -4,22 +4,22 @@
 }
 .team-description {
   font-family: 'Roboto';
-  font-size: 17px;
+  font-size: 18px;
   color: #000000;
-  text-align: justify; 
-  line-height: 1.8;
-  word-spacing: 0.12rem;         
+  text-align: left; 
+  line-height: 1.5rem;
+  /* word-spacing: 0.12rem;          */
   font-kerning: none;            
-  text-rendering: geometricPrecision;
+  /* text-rendering: geometricPrecision; */
   white-space: normal;
 }
 .damien-description{
    font-family: 'Roboto';
-  font-size: 17px;
+  font-size: 18px;
   color: #000000;
-  text-align: justify; 
-  line-height: 1.8; 
-    word-spacing: 0.16rem;        
+  text-align: left; 
+  line-height: 1.5rem;
+    /* word-spacing: 0.16rem;         */
   text-rendering: geometricPrecision;
   white-space: normal;
 }
