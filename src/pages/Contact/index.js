@@ -103,7 +103,7 @@ const Contact = () => {
         <br />
         {/* New Changes contact section   */}
 
-        <div className="ml-2 mt-[10px] flex flex-col md:flex-row gap-[152px]">
+        <div className="ml-2 mt-[10px] flex flex-col md:flex-row md:gap-[152px] gap-6">
           <div>
             <h3
               style={{
