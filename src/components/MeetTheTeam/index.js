@@ -53,7 +53,7 @@ const MeetTheTeam = () => {
       name: "Shruti Wadhwa",
       designation: "Principal Advisor Projects",
       description:
-        "Shruti’s background as a software engineer coupled with her business focused, people centric approach has allowed her to successfully lead and implement a myriad of projects across multiple verticals. As a people leader who communicates clearly and is astute problem solver, the success of a project is all but guaranteed. When not working Shruti may be spotted trekking some picturesque trail on the planet.",
+        "Shruti’s background as a software engineer coupled with her business focused, people centric approach has allowed her to successfully lead and implement a myriad of projects across multiple verticals. As a people leader who communicates clearly and is an astute problem solver, the success of a project is all but guaranteed. When not working Shruti may be spotted trekking some picturesque trail on the planet.",
     },
   ];
   return (
