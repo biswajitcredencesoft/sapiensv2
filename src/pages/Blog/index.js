@@ -80,6 +80,10 @@ const Blog = () => {
         </div>
       ) : (
         <div className="lg:px-20 md:px-20 sm:px-2 ">
+          <Helmet>
+            <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sapiensv2.com/blog#article"},"headline":"How can artificial intelligence help retailers forecast demand?","description":"Are retailers on the verge of extinction? Confronted by supply chain issues, labour shortages and fickle demand, this article explains how AI can help retailers forecast demand.","image":["https://sapiensv2.com/images/uploads/social-share.svg"],"author":{"@type":"Organization","name":"Sapiens v2"},"publisher":{"@type":"Organization","name":"Sapiens v2","logo":{"@type":"ImageObject","url":"https://sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg"}},"datePublished":"${new Date().toISOString()}","dateModified":"${new Date().toISOString()}"}`}</script>
+            <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sapiensv2.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://sapiensv2.com/blog"},{"@type":"ListItem","position":3,"name":"How can artificial intelligence help retailers forecast demand?","item":"https://sapiensv2.com/blog#article"}]}`}</script>
+          </Helmet>
           <p
             style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-5xl md:text-4xl text-xl font-bold text-center lg:px-40 md:px-20 sm:px-2 text-[#000000]"
