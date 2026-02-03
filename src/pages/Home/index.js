@@ -4,6 +4,7 @@ import ClientsCarousel from "../../components/ClientsCarousel";
 import HeroSection from "../../components/HeroSection";
 import VideoSection from "../../components/VideoSection";
 import Demo from "../../components/Demos/demo";
+import ErrorBoundary from "../../components/ErrorBoundary";
 import "./index.css";
 
 const Home = () => {
@@ -28,7 +29,9 @@ const Home = () => {
       </Helmet>
       <HeroSection scrollToDemo={scrollToDemo} />
       <ClientsCarousel />
-      <VideoSection />
+      <ErrorBoundary>
+        <VideoSection />
+      </ErrorBoundary>
       <div ref={demoRef}>
         <Demo />
       </div>
