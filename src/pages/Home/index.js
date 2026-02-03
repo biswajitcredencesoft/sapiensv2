@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import ClientsCarousel from "../../components/ClientsCarousel";
 import HeroSection from "../../components/HeroSection";
 import VideoSection from "../../components/VideoSection";
@@ -16,6 +17,15 @@ const Home = () => {
 
   return (
     <div className="HomePageContainer bg-[#edeeff]">
+      <Helmet>
+        <title>Sapiens v2 — AI Solutions for Retail</title>
+        <meta name="description" content="AI-powered solutions to help retailers reduce shrinkage, automate returns and make smarter decisions." />
+        <link rel="canonical" href="https://sapiensv2.com/" />
+        <meta property="og:title" content="Sapiens v2 — AI Solutions for Retail" />
+        <meta property="og:description" content="AI-powered solutions to help retailers reduce shrinkage, automate returns and make smarter decisions." />
+        <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <HeroSection scrollToDemo={scrollToDemo} />
       <ClientsCarousel />
       <VideoSection />

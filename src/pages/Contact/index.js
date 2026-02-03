@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import "./index.css";
 // import Faceboook from "../../assets/images/Facebook.png";
 import Google from "../../assets/images/Google.png";
@@ -85,6 +86,15 @@ const Contact = () => {
 
   return (
     <div className="ContactContainer bg-[#edeeff] pb-10 md:pb-0 lg:pb-0">
+      <Helmet>
+        <title>Contact — Sapiens v2</title>
+        <meta name="description" content="Contact Sapiens v2 — tell us about your retail challenges and we'll help you explore AI solutions." />
+        <link rel="canonical" href="https://sapiensv2.com/contact" />
+        <meta property="og:title" content="Contact — Sapiens v2" />
+        <meta property="og:description" content="Contact Sapiens v2 — tell us about your retail challenges and we'll help you explore AI solutions." />
+        <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <div className="ContactLeftSection">
         <h1
           className="shadow-none"
