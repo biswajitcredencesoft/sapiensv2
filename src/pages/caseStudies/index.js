@@ -167,6 +167,7 @@
 // export default CaseStudies
 
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Seer1 from "../../assets/images/client_glassons.png";
 import Seer2 from "../../assets/images/client_animates.png";
 import Seer3 from "../../assets/images/client_hallensteins.png";
@@ -174,6 +175,16 @@ import Seer3 from "../../assets/images/client_hallensteins.png";
 const CaseStudies = () => {
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Case Studies — Sapiens v2</title>
+        <meta name="description" content="Case studies — examples of how Sapiens v2 helped retailers automate returns, forecasting, and stock optimization." />
+        <link rel="canonical" href="https://sapiensv2.com/caseStudies" />
+        <meta property="og:title" content="Case Studies — Sapiens v2" />
+        <meta property="og:description" content="Case studies — examples of how Sapiens v2 helped retailers automate returns, forecasting, and stock optimization." />
+        <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sapiensv2.com/"},{"@type":"ListItem","position":2,"name":"Case Studies","item":"https://sapiensv2.com/caseStudies"}]}`}</script>
+      </Helmet>
       <div className="flex flex-col items-center ">
         <div className="flex flex-col items-center pb-6 bg-[#edeeff]">
           <img

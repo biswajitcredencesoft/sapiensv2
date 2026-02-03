@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import "./index.css";
 import { Link } from "react-router-dom";
 
@@ -17,6 +18,15 @@ const Blog = () => {
 
   return (
     <div className="BlogContainer bg-[#edeeff]">
+      <Helmet>
+        <title>Blog — Sapiens v2</title>
+        <meta name="description" content="Sapiens v2 blog — insights and thought leadership on AI for retail." />
+        <link rel="canonical" href="https://sapiensv2.com/blog" />
+        <meta property="og:title" content="Blog — Sapiens v2" />
+        <meta property="og:description" content="Sapiens v2 blog — insights and thought leadership on AI for retail." />
+        <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       {content == false ? (
         <div className="">
           <div className="BlogTopText pb-4">
