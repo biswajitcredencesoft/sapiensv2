@@ -13,3 +13,11 @@ root.render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+// Global error handlers to capture uncaught and async errors that ErrorBoundary may miss
+window.addEventListener('error', (event) => {
+  console.error('Global error captured:', event.error || event.message, event);
+});
+window.addEventListener('unhandledrejection', (event) => {
+  console.error('Unhandled Promise rejection:', event.reason);
+});

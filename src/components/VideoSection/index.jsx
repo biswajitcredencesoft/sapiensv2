@@ -8,10 +8,11 @@ import I3 from "../../assets/images/I3.png";
 
 const VideoSection = () => {
   const [playing, setPlaying] = useState(true);
+  const [playerError, setPlayerError] = useState(false);
 
   const togglePlaying = () => {
     setPlaying(!playing);
-  };
+  }; 
 
   return (
     <div className="container">
@@ -26,7 +27,7 @@ const VideoSection = () => {
 
       <div className="videoSectionContainer pb-20 -pt-10">
         <div className="videoSectionLeftSection ">
-          <p
+          <div
             style={{ fontFamily: "Comfortaa, sans-serif" }}
             className="lg:text-lg text-sm text-white "
           >
@@ -102,14 +103,25 @@ const VideoSection = () => {
                 and inter-store transfers.
               </p>
             </div>
-          </p>
+          </div>
         </div>
 
         <div className="videoSectionRightSection">
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=jf3uYtBFNk0"
-            controls={true}
-          />
+          {!playerError ? (
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=jf3uYtBFNk0"
+              controls={true}
+              onError={(e) => {
+                console.error('ReactPlayer error:', e);
+                setPlaying(false);
+                setPlayerError(true);
+              }}
+            />
+          ) : (
+            <div className="text-white">
+              <p>Video unavailable. You can <a href="https://www.youtube.com/watch?v=jf3uYtBFNk0" target="_blank" rel="noreferrer" className="underline">open it on YouTube</a>.</p>
+            </div>
+          )}
         </div>
 
       </div>

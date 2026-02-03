@@ -169,7 +169,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import Seer1 from "../../assets/images/client_glassons.png";
-import Seer2 from "../../assets/images/client_animates.png";
+// import Seer2 from "../../assets/images/client_animates.png";
 import Seer3 from "../../assets/images/client_hallensteins.png";
 
 const CaseStudies = () => {

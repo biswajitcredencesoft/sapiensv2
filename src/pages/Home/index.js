@@ -12,7 +12,10 @@ const Home = () => {
   const offset = -200; // Adjust this value as needed
 
   const scrollToDemo = () => {
-    const top = demoRef.current.getBoundingClientRect().top + window.scrollY + offset;
+    // Guard against calling before the demo element is mounted
+    if (!demoRef.current) return;
+    const rect = demoRef.current.getBoundingClientRect();
+    const top = rect.top + window.scrollY + offset;
     window.scrollTo({ top, behavior: "smooth" });
   };
 
