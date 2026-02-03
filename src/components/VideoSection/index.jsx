@@ -35,6 +35,7 @@ const VideoSection = () => {
                 <img
                   src="/images/uploads/I1_white.svg"
                   alt=""
+                  loading="lazy"
                   className="object-center w-1/5 "
                 />
               </div>
@@ -59,6 +60,7 @@ const VideoSection = () => {
                 <img
                   src="/images/uploads/I2_white.svg"
                   alt=""
+                  loading="lazy"
                   className="object-center w-1/5"
                 />
               </div>
@@ -82,6 +84,7 @@ const VideoSection = () => {
                 <img
                   src="/images/uploads/I3_white.svg"
                   alt=""
+                  loading="lazy"
                   className="object-center w-1/5"
                 />
               </div>

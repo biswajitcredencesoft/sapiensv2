@@ -27,8 +27,8 @@ const Demo = () => {
         <div className="ContactLeftSection">
           <img
             src={Optimise}
-            alt="casestudies"
-            class="glassons"
+            alt="Optimize Store Inventory"
+            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -72,8 +72,8 @@ const Demo = () => {
         <div className="ContactLeftSection">
           <img
             src={Automate}
-            alt="casestudies"
-            class="glassons"
+            alt="Automate Weekly Vendor Reorders"
+            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -118,8 +118,8 @@ const Demo = () => {
         <div className="ContactLeftSection">
           <img
             src={Reallocate}
-            alt="casestudies"
-            class="glassons"
+            alt="Reallocate Stock Between Locations"
+            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -162,8 +162,8 @@ const Demo = () => {
         <div className="ContactLeftSection">
           <img
             src={Gauge}
-            alt="casestudies"
-            class="glassons"
+            alt="Gauge Desirability of Products"
+            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -207,8 +207,8 @@ const Demo = () => {
         <div className="ContactLeftSection">
           <img
             src={Simulate}
-            alt="casestudies"
-            class="glassons"
+            alt="Simulate Long Term Demand"
+            loading="lazy"
             className="rounded-xl"
           />
         </div>

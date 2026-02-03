@@ -4,11 +4,12 @@ import multi from "../../assets/images/Multi.png";
 import support from "../../assets/images/Support.png";
 import economial from "../../assets/images/Economical.png";
 
-const Card = ({ imageSrc, desc, description, description1 }) => (
+const Card = ({ imageSrc, desc, description, description1, altText }) => (
   <div className="rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400">
     <img
       src={imageSrc}
-      alt="Card Image"
+      alt={altText || desc || "Seer insight"}
+      loading="lazy"
       className="w-full h-52 object-cover "
     />
     <div className="p-6">
@@ -30,6 +31,7 @@ const SeerInsights = () => {
     {
       imageSrc: support,
       desc: "24/7",
+      alt: "24/7 Support Capability",
       description: "Support Capability",
       description1:
         " We understand the perpetual demands of multi-store retailers. Our team of experts are on-call, round the clock, ensuring your business never stops.",
@@ -37,6 +39,7 @@ const SeerInsights = () => {
     {
       imageSrc: multi,
       desc: "",
+      alt: "Multi Domain Masters",
       description: "Multi Domain Masters",
       description1:
         "Sapiens v2’s seasoned team has years of experience supporting the world’s popular platforms - LS Retail, Business Central, Dynamics NAV, Azure, Microsoft, .Net, Android and iOS",
@@ -44,6 +47,7 @@ const SeerInsights = () => {
     {
       imageSrc: economial,
       desc: "",
+      alt: "Economical and Efficient",
       description: "Economical and Efficient",
       description1:
         "Eliminate your burden of maintaining a technical team. Our offering is structured to suit your unique requirements and budget – we won’t burn a hole in your pocket",
@@ -64,6 +68,7 @@ const SeerInsights = () => {
             key={index}
             desc={card.desc}
             imageSrc={card.imageSrc}
+            altText={card.alt}
             description={
               <span className="seer-description">{card.description}</span>
             }
