@@ -176,13 +176,29 @@ const CaseStudies = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Case Studies — Sapiens v2</title>
+        {/* Before */}
+        {/* <title>Case Studies — Sapiens v2</title>
         <meta name="description" content="Case studies — examples of how Sapiens v2 helped retailers automate returns, forecasting, and stock optimization." />
         <link rel="canonical" href="https://sapiensv2.com/caseStudies" />
         <meta property="og:title" content="Case Studies — Sapiens v2" />
         <meta property="og:description" content="Case studies — examples of how Sapiens v2 helped retailers automate returns, forecasting, and stock optimization." />
         <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+        <meta name="twitter:card" content="summary_large_image" /> */}
+
+        {/* After */}
+        <title>AI Inventory Case Studies & Retail Success Stories - New Zealand</title>
+        <meta name="description" content="Explore Sapiens v2 case studies. See how we help retailers in New Zealand and Australia optimize inventory, reduce stockouts, and automate forecasting." />
+        <link rel="canonical" href="https://sapiensv2.com/caseStudies" />
+        <meta property="og:title" content="AI Inventory Case Studies & Retail Success Stories - NZ" />
+        <meta property="og:description" content="See how Sapiens v2 helped retailers like Glassons and Animates automate returns and stock optimization." />
+        <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+        <meta property="og:url" content="https://sapiensv2.com/caseStudies" />
+        <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI Inventory Case Studies - Sapiens v2" />
+        <meta name="twitter:description" content="Retail success stories from NZ and Australia using AI demand forecasting." />
+
+
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sapiensv2.com/"},{"@type":"ListItem","position":2,"name":"Case Studies","item":"https://sapiensv2.com/caseStudies"}]}`}</script>
       </Helmet>
       <div className="flex flex-col items-center ">

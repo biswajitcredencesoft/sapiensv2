@@ -80,13 +80,13 @@ const Contact = () => {
         console.error("Error in sending email:", error);
         setIsFormSubmisionError(true);
         setIsLoading(false);
-      }
+      },
     );
   };
 
   return (
     <div className="ContactContainer bg-[#edeeff] pb-10 md:pb-0 lg:pb-0">
-      <Helmet>
+      {/* <Helmet>
         <title>Contact — Sapiens v2</title>
         <meta name="description" content="Contact Sapiens v2 — tell us about your retail challenges and we'll help you explore AI solutions." />
         <link rel="canonical" href="https://sapiensv2.com/contact" />
@@ -94,6 +94,55 @@ const Contact = () => {
         <meta property="og:description" content="Contact Sapiens v2 — tell us about your retail challenges and we'll help you explore AI solutions." />
         <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
         <meta name="twitter:card" content="summary_large_image" />
+      </Helmet> */}
+
+      <Helmet>
+        <title>Contact Sapiens v2 - NZ Support and Sales</title>
+        <meta
+          name="description"
+          content="Contact our New Zealand-based team for 24/7 technical support, sales inquiries on our AI Demand Forecaster, or to discuss partnership opportunities."
+        />
+        <link rel="canonical" href="https://sapiensv2.com/contact" />
+        <meta
+          property="og:title"
+          content="Get in Touch with Sapiens v2's NZ Team"
+        />
+        <meta
+          property="og:description"
+          content="Contact Sapiens v2 for AI Demand Forecasting & Support. Our NZ-based team is here to help with your retail challenges."
+        />
+        <meta
+          property="og:image"
+          content="https://sapiensv2.com/images/uploads/social-share.svg"
+        />
+        <meta property="og:url" content="https://sapiensv2.com/contact" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Contact Sapiens v2 - NZ Sales & Support"
+        />
+        <meta
+          name="twitter:description"
+          content="Connect with our New Zealand team for AI-driven retail solutions and technical support."
+        />
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Sapiens v2",
+            "description": "Contact our New Zealand-based team for 24/7 technical support and sales inquiries.",
+            "url": "https://sapiensv2.com/contact",
+            "image": "https://www.sapiensv2.com/images/contact-icon.png",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Sapiens v2",
+              "telephone": "+64 9 887 9320",
+              "areaServed": "NZ",
+              "availableLanguage": "English"
+            }
+          }`}
+        </script>
       </Helmet>
       <div className="ContactLeftSection">
         <h1

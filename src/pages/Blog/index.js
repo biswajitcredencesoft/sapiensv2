@@ -18,7 +18,7 @@ const Blog = () => {
 
   return (
     <div className="BlogContainer bg-[#edeeff]">
-      <Helmet>
+      {/* <Helmet>
         <title>Blog — Sapiens v2</title>
         <meta name="description" content="Sapiens v2 blog — insights and thought leadership on AI for retail." />
         <link rel="canonical" href="https://sapiensv2.com/blog" />
@@ -26,7 +26,63 @@ const Blog = () => {
         <meta property="og:description" content="Sapiens v2 blog — insights and thought leadership on AI for retail." />
         <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
         <meta name="twitter:card" content="summary_large_image" />
+      </Helmet> */}
+
+      <Helmet>
+        <title>
+          Fashion Retail Guide: Implementing AI Demand Forecasting | Sapiens v2
+        </title>
+        <meta
+          name="description"
+          content="A step-by-step guide on how to implement AI demand forecasting. Learn best practices for fashion retail and maximizing your inventory ROI."
+        />
+        <link rel="canonical" href="https://sapiensv2.com/blog" />
+        <meta
+          property="og:title"
+          content="Fashion Retail Guide: Implementing AI Demand Forecasting"
+        />
+        <meta
+          property="og:description"
+          content="Learn best practices for fashion retail and maximizing your inventory ROI with our step-by-step AI implementation guide."
+        />
+        <meta
+          property="og:image"
+          content="https://www.sapiensv2.com/images/blog/fashion-ai-guide.jpg"
+        />
+        <meta property="og:url" content="https://sapiensv2.com/blog" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Fashion Retail Guide: Implementing AI Demand Forecasting"
+        />
+        <meta
+          name="twitter:description"
+          content="A step-by-step guide on maximizing inventory ROI in fashion retail using AI."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.sapiensv2.com/images/blog/fashion-ai-guide.jpg"
+        />
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Fashion Retail Guide: Implementing AI Demand Forecasting",
+            "image": "https://www.sapiensv2.com/images/blog/fashion-ai-guide.jpg",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Sapiens v2",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg"
+              }
+            },
+            "description": "Learn how to implement AI demand forecasting to maximize inventory ROI."
+          }`}
+        </script>
       </Helmet>
+
       {content == false ? (
         <div className="">
           <div className="BlogTopText pb-4">
@@ -54,9 +110,8 @@ const Blog = () => {
             <p className="py-2 text-[#000000]" style={{ fontFamily: "roboto" }}>
               Are retailers on the verge of extinction? Confronted by supply
               chain issues, labour shortages, fickle demand, inflationary
-              pressures and rising interest rates,
-              retailers are scrambling to cope with the immensity of the
-              challenges they face. <br />
+              pressures and rising interest rates, retailers are scrambling to
+              cope with the immensity of the challenges they face. <br />
               Consider a retailer with 20,000 SKUs and 50 stores (potentially 1
               million store / SKU combinations) and the latter’s implications
               for the inventory planner. The sheer volume of data is mind
@@ -67,7 +122,7 @@ const Blog = () => {
               simultaneously. Invariably, the planner compromises. They may
               apply approximations such as calculating at aggregate and
               extrapolating across individual SKUs, rely on intuition or focus
-              on the top performing lines at the expense of the oth.. {" "}
+              on the top performing lines at the expense of the oth..{" "}
               <span
                 className="underline font-bold text-[#000000]"
                 style={{ cursor: "pointer", fontFamily: "roboto" }}
@@ -181,8 +236,8 @@ const Blog = () => {
               className="lg:text-xl text-sm text-left text-[#000000]"
             >
               Retailers invariably have rich transactional history and master
-              data which should be capitalized using AI. Companies like Sapiens v2
-              offer artificial intelligence as a cloud service, allowing
+              data which should be capitalized using AI. Companies like Sapiens
+              v2 offer artificial intelligence as a cloud service, allowing
               retailers to: -
             </p>
             <p
@@ -233,8 +288,8 @@ const Blog = () => {
               <Link to="/caseStudies" className="mr-2">
                 Contact
               </Link>
-              the team at Sapiens v2 to learn more about how an AI retail solution
-              could work for your organisation.
+              the team at Sapiens v2 to learn more about how an AI retail
+              solution could work for your organisation.
             </p>
             <p
               style={{ fontFamily: "roboto" }}
