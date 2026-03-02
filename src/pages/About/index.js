@@ -21,7 +21,7 @@ const index = () => {
           <title>About Sapiens v2 | LS Central & Business Central Experts</title>
           <meta 
             name="description" 
-            content="Sapiens v2 AI demand forecasting software and expert LS Central, Business Central services for retail and hospitality brands worldwide." 
+            content="Sapiens v2 AI demand forecasting software and expert LS Central, Business Central services for global retail and hospitality brands." 
           />
           <link rel="canonical" href="https://sapiensv2.com/about" />
           <meta property="og:title" content="Meet Sapiens v2 — Creators of Stock Seer AI & LS Central Experts" />
@@ -30,8 +30,9 @@ const index = () => {
           <meta property="og:image" content="https://www.sapiensv2.com/images/team-or-hq.jpg" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Meet Sapiens v2 — Creators of Stock Seer AI & LS Central Experts" />
-          <meta name="twitter:description" content="Transforming retail with AI demand forecasting and expert LS Central services." />
+          <meta name="twitter:title" content="About Sapiens v2 | AI Demand Forecasting & Ls Central Experts" />
+          <meta name="twitter:description" content="Sapiens v2 builds Stock Seer AI demand forecasting software and delivers LS Central and Business Central services globally." />
+          <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
       </Helmet>
 
       <div className="bg-[#edeeff] pb-0 md:pb-10 md:pt-10 pt-0">

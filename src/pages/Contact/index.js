@@ -108,8 +108,10 @@ const Contact = () => {
               <meta property="og:url" content="https://sapiensv2.com/contact-us" />
               <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
               <meta property="og:type" content="website" />
-              <meta name="twitter:card" content="summary_large_image" />
-              <meta name="twitter:title" content="Contact Sapiens v2 — AI Demos & LS Central Support" />
+              <meta name="twitter:card" content="summary" />
+              <meta name="twitter:title" content="Contact Sapiens v2 for AI Forecasting & 24/7 Support" />
+              <meta name="twitter:description" content="Reach us for a Stock Seer AI demo, 24/7 LS Central and Business Central support, or partnership enquiries." />
+              <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
               <script type="application/ld+json">
                 {`{
                   "@context": "https://schema.org",

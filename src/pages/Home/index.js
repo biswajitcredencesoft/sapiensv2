@@ -36,8 +36,11 @@ const Home = () => {
         <meta property="og:title" content="Stock Seer by Sapiens v2 — AI Demand Planning Software for Retail" />
         <meta property="og:description" content="AI demand planning software that eliminates stockouts and overstock for retailers." />
         <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
-        <meta name="keywords" content="Demand planning software, demand forecasting software, AI demand forecasting, retail demand planning" />
+        <meta name="keywords" content="demand planning software, demand forecasting software, AI demand forecasting, demand planning tools, retail demand planning, supply chain demand planning software, inventory planning, stockout prevention, demand planning solutions, ai powered demand planning software" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Stock Seer — AI Demand Forecasting Software" />
+        <meta name="twitter:description" content="AI demand planning software that eliminates stockouts and overstocks for multi-store retail and hospitality brands." />
+        <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
         <script type="application/ld+json">
                 {`{
                   "@context": "https://schema.org",

@@ -24,11 +24,14 @@ const Solution = () => {
               content="AI demand forecasting and planning tools for retail and hospitality. Expert LS Central and Business Central 24/7 support, development, customisation and integration." 
             />
             <link rel="canonical" href="https://sapiensv2.com/solutions" />
-            <meta property="og:title" content="AI Demand Planning Software & LS Central Support | Sapiens v2" />
+            <meta property="og:title" content="Demand Planning Software & LS Central Support | Sapiens v2" />
             <meta property="og:description" content="AI demand forecasting and planning tools for retail and hospitality with 24/7 LS Central support." />
             <meta property="og:url" content="https://sapiensv2.com/solutions" />
-            <meta name="keywords" content="Demand forecasting software, demand planning tools, LS Central support, Business Central support, LS Central technical support, demand planning solutions, supply chain forecasting software, LS Central POS support, LS Central implementation support, 24/7 Business Central support, demand forecasting tools" />
+            <meta name="keywords" content="demand forecasting software, demand planning tools, LS Central support, Business Central support, LS Central technical support, demand planning solutions, supply chain forecasting software, LS Central POS support, LS Central implementation support, 24/7 Business Central support, demand forecasting tools, retail demand planning software" />
             <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:title" content="Stock Seer: AI Demand Planning & Forecasting Tool" />
+            <meta name="twitter:description" content="Achieve maximum forecast accuracy with Stock Seer. AI-powered demand planning for retail worldwide." />
+            <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
             <script type="application/ld+json">
               {`{
                 "@context": "https://schema.org",

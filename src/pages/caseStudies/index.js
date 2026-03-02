@@ -31,8 +31,9 @@ const CaseStudies = () => {
           <meta property="og:type" content="website" />
           <meta name="keywords" content="Demand forecasting case studies, AI inventory management results, Stock Seer AI, retail demand planning, LS Central implementation, demand forecasting ROI, hospitality inventory management, fashion retail AI, demand planning software results, supply chain forecasting" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="How Retail Brands Transformed Inventory with Stock Seer AI" />
-          <meta name="twitter:description" content="Real-world case studies in demand forecasting and inventory ROI for retail and hospitality." />
+          <meta name="twitter:title" content="AI Demand Forecasting Case Studies | Sapiens v2" />
+          <meta name="twitter:description" content="Real-world results from retail brands using Stock Seer AI demand planning software. ROI data included." />
+          <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
           <script type="application/ld+json">
             {`{
               "@context": "https://schema.org",

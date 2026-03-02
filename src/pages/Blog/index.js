@@ -41,7 +41,9 @@ const Blog = () => {
             <meta property="og:type" content="website" />
             <meta name="keywords" content="Demand forecasting software, demand planning tools, LS Central best practices, Business Central tips, retail inventory management, supply chain planning, AI demand forecasting, demand planning techniques, what is demand planning, NAV to Business Central migration, LS Central implementation" />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Sapiens v2 Blog — AI Demand Planning & LS Central Insights" />
+            <meta name="twitter:title" content="Implementing AI Demand Forecasting in Fashion Retail" />
+            <meta name="twitter:description" content="A guide on how to implement AI demand forecasting. Best practices for fashion retail and maximizing your inventory ROI." />
+            <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
             <script type="application/ld+json">
               {`{
                 "@context": "https://schema.org",
