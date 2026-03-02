@@ -17,58 +17,20 @@ const Solution = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet> */}
 
-      <Helmet>
-        <title>
-          Introducing Stock Seer: The AI Demand Forecaster Built for ANZ Retail
-        </title>
-        <meta
-          name="description"
-          content="Achieve max forecast accuracy with Stock Seer, Sapiens v2's machine learning demand prediction tool. Built for granular SKU management across NZ and AUS."
-        />
-        <link rel="canonical" href="https://sapiensv2.com/solutions" />
-        <meta
-          property="og:title"
-          content="Introducing Stock Seer: AI Demand Forecasting for ANZ"
-        />
-        <meta
-          property="og:description"
-          content="Maximize accuracy with machine learning demand prediction. Purpose-built for retail SKU management in New Zealand and Australia."
-        />
-        <meta
-          property="og:image"
-          content="https://www.sapiensv2.com/images/stock-seer-dashboard.jpg"
-        />
-        <meta property="og:url" content="https://sapiensv2.com/solutions" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Stock Seer: AI Demand Forecaster for ANZ Retail"
-        />
-        <meta
-          name="twitter:description"
-          content="ML-powered demand prediction for granular SKU management across NZ and AUS."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.sapiensv2.com/images/stock-seer-dashboard.jpg"
-        />
-        <script type="application/ld+json">
-          {`{
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "Stock Seer",
-            "operatingSystem": "Web-based",
-            "applicationCategory": "BusinessApplication",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Sapiens v2"
-            },
-            "description": "Machine learning demand prediction tool for granular SKU management in NZ and AUS retail.",
-            "screenshot": "https://www.sapiensv2.com/images/stock-seer-dashboard.jpg"
-          }`}
-        </script>
-      </Helmet>
+        <Helmet>
+            <title>AI Demand Planning Software & LS Central Support | Sapiens v2</title>
+            <meta 
+              name="description" 
+              content="AI demand forecasting and planning tools for retail and hospitality. Expert LS Central and Business Central 24/7 support, development, customisation and integration." 
+            />
+            <link rel="canonical" href="https://sapiensv2.com/solutions" />
+            <meta property="og:title" content="AI Demand Planning Software & LS Central Support | Sapiens v2" />
+            <meta property="og:description" content="AI demand forecasting and planning tools for retail and hospitality with 24/7 LS Central support." />
+            <meta property="og:url" content="https://sapiensv2.com/solutions" />
+            <meta name="keywords" content="Demand forecasting software, demand planning tools, LS Central support, Business Central support, LS Central technical support, demand planning solutions, supply chain forecasting software, LS Central POS support, LS Central implementation support, 24/7 Business Central support, demand forecasting tools" />
+            <meta name="twitter:card" content="summary_large_image"/>
+        </Helmet>
+      
       <SolutionVideo />
       <SeerInsights />
     </div>

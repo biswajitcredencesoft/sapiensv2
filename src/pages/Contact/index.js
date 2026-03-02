@@ -96,54 +96,43 @@ const Contact = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet> */}
 
-      <Helmet>
-        <title>Contact Sapiens v2 - NZ Support and Sales</title>
-        <meta
-          name="description"
-          content="Contact our New Zealand-based team for 24/7 technical support, sales inquiries on our AI Demand Forecaster, or to discuss partnership opportunities."
-        />
-        <link rel="canonical" href="https://sapiensv2.com/contact" />
-        <meta
-          property="og:title"
-          content="Get in Touch with Sapiens v2's NZ Team"
-        />
-        <meta
-          property="og:description"
-          content="Contact Sapiens v2 for AI Demand Forecasting & Support. Our NZ-based team is here to help with your retail challenges."
-        />
-        <meta
-          property="og:image"
-          content="https://sapiensv2.com/images/uploads/social-share.svg"
-        />
-        <meta property="og:url" content="https://sapiensv2.com/contact" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Contact Sapiens v2 - NZ Sales & Support"
-        />
-        <meta
-          name="twitter:description"
-          content="Connect with our New Zealand team for AI-driven retail solutions and technical support."
-        />
-        <script type="application/ld+json">
-          {`{
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            "name": "Contact Sapiens v2",
-            "description": "Contact our New Zealand-based team for 24/7 technical support and sales inquiries.",
-            "url": "https://sapiensv2.com/contact",
-            "image": "https://www.sapiensv2.com/images/contact-icon.png",
-            "mainEntity": {
-              "@type": "LocalBusiness",
-              "name": "Sapiens v2",
-              "telephone": "+64 9 887 9320",
-              "areaServed": "NZ",
-              "availableLanguage": "English"
-            }
-          }`}
-        </script>
-      </Helmet>
+         <Helmet>
+              <title>Contact Us | AI Demand Forecasting & 24/7 LS Central Support | Sapiens v2</title>
+              <meta 
+                name="description" 
+                content="Contact Sapiens v2 for a Stock Seer AI demand forecasting demo or 24/7 LS Central and Business Central support. Expert solutions for multi-store retail businesses." 
+              />
+              <link rel="canonical" href="https://sapiensv2.com/contact" />
+              <meta property="og:title" content="Contact Sapiens v2 — Book a Stock Seer Demo or Get 24/7 LS Central Support" />
+              <meta property="og:description" content="Get in touch for AI demand forecasting demos and expert 24/7 LS Central or Business Central support." />
+              <meta property="og:url" content="https://sapiensv2.com/contact-us" />
+              <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+              <meta property="og:type" content="website" />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content="Contact Sapiens v2 — AI Demos & LS Central Support" />
+              <script type="application/ld+json">
+                {`{
+                  "@context": "https://schema.org",
+                  "@type": "ContactPage",
+                  "name": "Contact Sapiens v2",
+                  "description": "Contact Sapiens v2 for Stock Seer AI demos and 24/7 LS Central technical support.",
+                  "url": "https://sapiensv2.com/contact",
+                  "mainEntity": {
+                    "@type": "Organization",
+                    "name": "Sapiens v2",
+                    "contactPoint": {
+                      "@type": "ContactPoint",
+                      "telephone": "+64 9 887 9320",
+                      "contactType": "customer service",
+                      "availableLanguage": "English",
+                      "hoursAvailable": "Mo-Su 00:00-23:59"
+                    }
+                  }
+                }`}
+              </script>
+         </Helmet>
+
+
       <div className="ContactLeftSection">
         <h1
           className="shadow-none"

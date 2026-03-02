@@ -28,61 +28,37 @@ const Blog = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet> */}
 
-      <Helmet>
-        <title>
-          Fashion Retail Guide: Implementing AI Demand Forecasting | Sapiens v2
-        </title>
-        <meta
-          name="description"
-          content="A step-by-step guide on how to implement AI demand forecasting. Learn best practices for fashion retail and maximizing your inventory ROI."
-        />
-        <link rel="canonical" href="https://sapiensv2.com/blog" />
-        <meta
-          property="og:title"
-          content="Fashion Retail Guide: Implementing AI Demand Forecasting"
-        />
-        <meta
-          property="og:description"
-          content="Learn best practices for fashion retail and maximizing your inventory ROI with our step-by-step AI implementation guide."
-        />
-        <meta
-          property="og:image"
-          content="https://www.sapiensv2.com/images/blog/fashion-ai-guide.jpg"
-        />
-        <meta property="og:url" content="https://sapiensv2.com/blog" />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Fashion Retail Guide: Implementing AI Demand Forecasting"
-        />
-        <meta
-          name="twitter:description"
-          content="A step-by-step guide on maximizing inventory ROI in fashion retail using AI."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.sapiensv2.com/images/blog/fashion-ai-guide.jpg"
-        />
-        <script type="application/ld+json">
-          {`{
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "Fashion Retail Guide: Implementing AI Demand Forecasting",
-            "image": "https://www.sapiensv2.com/images/blog/fashion-ai-guide.jpg",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Sapiens v2",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg"
-              }
-            },
-            "description": "Learn how to implement AI demand forecasting to maximize inventory ROI."
-          }`}
-        </script>
+        <Helmet>
+            <title>Blog | AI Demand Planning & LS Central Insights | Sapiens v2</title>
+            <meta 
+              name="description" 
+              content="Expert articles on demand forecasting software, LS Central best practices, Business Central tips, retail inventory management, and supply chain planning trends." 
+            />
+            <link rel="canonical" href="https://sapiensv2.com/blog" />
+            <meta property="og:title" content="Sapiens v2 Blog — AI Demand Planning, LS Central & Retail Tech Insights" />
+            <meta property="og:description" content="Expert articles on demand forecasting software, LS Central best practices, and retail inventory management." />
+            <meta property="og:url" content="https://sapiensv2.com/blog" />
+            <meta property="og:type" content="website" />
+            <meta name="keywords" content="Demand forecasting software, demand planning tools, LS Central best practices, Business Central tips, retail inventory management, supply chain planning, AI demand forecasting, demand planning techniques, what is demand planning, NAV to Business Central migration, LS Central implementation" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="Sapiens v2 Blog — AI Demand Planning & LS Central Insights" />
+            <script type="application/ld+json">
+              {`{
+                "@context": "https://schema.org",
+                "@type": "Blog",
+                "name": "Sapiens v2 Blog",
+                "description": "Expert insights on AI demand planning, LS Central, and Business Central for retail.",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Sapiens v2",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg"
+                  }
+                }
+              }`}
+            </script>
       </Helmet>
-
       {content == false ? (
         <div className="">
           <div className="BlogTopText pb-4">
