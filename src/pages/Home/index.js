@@ -38,6 +38,36 @@ const Home = () => {
         <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
         <meta name="keywords" content="Demand planning software, demand forecasting software, AI demand forecasting, retail demand planning" />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+                {`{
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  "name": "Sapiens v2",
+                  "url": "https://www.sapiensv2.com/",
+                  "logo": "https://www.sapiensv2.com/logo.png",
+                  "description": "A global AI-driven demand forecasting and inventory optimization platform for enterprise retailers.",
+                  "contactPoint": [
+                    {
+                      "@type": "ContactPoint",
+                      "telephone": "+64 9 887 9320",
+                      "contactType": "customer service",
+                      "email": "getintouch@sapiensv2.com",
+                      "areaServed": ["NZ", "AU", "US", "UK", "AE", "SA"],
+                      "availableLanguage": ["en"]
+                    },
+                    {
+                      "@type": "ContactPoint",
+                      "telephone": "+91 9660469937",
+                      "contactType": "technical support",
+                      "areaServed": "IN",
+                      "availableLanguage": ["en"]
+                    }
+                  ],
+                  "sameAs": [
+                    "https://www.linkedin.com/company/sapiens-v2/about/"
+                  ]
+                }`}
+        </script>
       </Helmet>
       
       <HeroSection scrollToDemo={scrollToDemo} />

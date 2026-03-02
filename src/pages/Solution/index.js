@@ -29,6 +29,21 @@ const Solution = () => {
             <meta property="og:url" content="https://sapiensv2.com/solutions" />
             <meta name="keywords" content="Demand forecasting software, demand planning tools, LS Central support, Business Central support, LS Central technical support, demand planning solutions, supply chain forecasting software, LS Central POS support, LS Central implementation support, 24/7 Business Central support, demand forecasting tools" />
             <meta name="twitter:card" content="summary_large_image"/>
+            <script type="application/ld+json">
+              {`{
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Sapiens v2 Stock Seer",
+                "operatingSystem": "Web-Based",
+                "applicationCategory": "BusinessApplication",
+                "description": "Advanced AI demand forecasting software for global retail markets.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                }
+              }`}
+            </script>
         </Helmet>
       
       <SolutionVideo />
