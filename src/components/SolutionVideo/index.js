@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./index2.css";
-import ReactPlayer from "react-player";
+import dynamic from "next/dynamic";
 
 // import I9 from "../../assets/images/I9.png";
 // import I10 from "../../assets/images/I10.png";
@@ -26,6 +25,8 @@ const cards = [
       "Swathes of transactions are analysed at light-speed, along with parameters like promotions, door counts and more. Powerful, predictive formulae are automatically derived to drive your decisions for every SKU, at every store.",
   },
 ];
+
+const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const SolutionVideo = () => {
   const [hoveredCard, setHoveredCard] = useState(null);

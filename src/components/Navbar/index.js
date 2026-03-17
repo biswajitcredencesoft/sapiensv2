@@ -1,16 +1,17 @@
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { RiMenu2Fill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
-import "./index.css";
-import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
-  const location = useLocation();
+  const router = useRouter();
+  const pathname = router.pathname;
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+  }, [pathname]);
 
   return (
     <div className="NavbarContainer ">
@@ -24,9 +25,9 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
       <ul className="NavbarLinks">
         <li className="NavbarLink">
           <Link
-            to="/"
+            href="/"
             className={
-              location.pathname === "/"
+              pathname === "/"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -36,9 +37,9 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/solutions"
+            href="/solutions"
             className={
-              location.pathname === "/solutions"
+              pathname === "/solutions"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -48,9 +49,9 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/caseStudies"
+            href="/caseStudies"
             className={
-              location.pathname === "/caseStudies"
+              pathname === "/caseStudies"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -60,9 +61,9 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/about"
+            href="/about"
             className={
-              location.pathname === "/about"
+              pathname === "/about"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -72,9 +73,9 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/blog"
+            href="/blog"
             className={
-              location.pathname === "/blog"
+              pathname === "/blog"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -84,9 +85,9 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/contact"
+            href="/contact"
             className={
-              location.pathname === "/contact"
+              pathname === "/contact"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }

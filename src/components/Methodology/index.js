@@ -41,10 +41,6 @@ const Methodology = () => {
     return () => window.removeEventListener("resize", updateAreas);
   }, []);
 
-  useEffect(() => {
-    updateAreas();
-  }, [imageRef.current]);
-
   const handleMouseEnter = (index) => {
     setActiveArea(index);
   };

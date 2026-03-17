@@ -1,9 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 import MeetTheTeam from "../../components/MeetTheTeam";
 import Methodology from "../../components/Methodology";
-import "./index.css";
-import MethodologyPhone from "../../components/MethodologyPhone";
 const index = () => {
   return (
     <div className="about">
@@ -17,7 +15,7 @@ const index = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet> */}
 
-      <Helmet>
+      <Head>
           <title>About Sapiens v2 | LS Central & Business Central Experts</title>
           <meta 
             name="description" 
@@ -33,7 +31,7 @@ const index = () => {
           <meta name="twitter:title" content="About Sapiens v2 | AI Demand Forecasting & Ls Central Experts" />
           <meta name="twitter:description" content="Sapiens v2 builds Stock Seer AI demand forecasting software and delivers LS Central and Business Central services globally." />
           <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
-      </Helmet>
+      </Head>
 
       <div className="bg-[#edeeff] pb-0 md:pb-10 md:pt-10 pt-0">
         <p className="text-left lg:text-xl md:text-xl text-[18px] px-6 md:px-20 pt-10 text-[#000000]">

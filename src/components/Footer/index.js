@@ -1,11 +1,10 @@
 import React from "react";
-import "./index.css";
-import { Link, useLocation } from "react-router-dom";
-import { RiMenu2Fill } from "react-icons/ri";
-import { ImCross } from "react-icons/im";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
-  const location = useLocation();
+const Footer = () => {
+  const router = useRouter();
+  const pathname = router.pathname;
   return (
     <div className="FooterContainer bottom-0 left-0 right-0 absolute">
       <span style={{ fontFamily: "AllroundGothic" }}>
@@ -14,9 +13,9 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
       <ul className="NavbarLinks">
         <li className="NavbarLink">
           <Link
-            to="/"
+            href="/"
             className={
-              location.pathname === "/"
+              pathname === "/"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -26,9 +25,9 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/solutions"
+            href="/solutions"
             className={
-              location.pathname === "/solutions"
+              pathname === "/solutions"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -38,9 +37,9 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/caseStudies"
+            href="/caseStudies"
             className={
-              location.pathname === "/caseStudies"
+              pathname === "/caseStudies"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -50,9 +49,9 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/about"
+            href="/about"
             className={
-              location.pathname === "/about"
+              pathname === "/about"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -62,9 +61,9 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/blog"
+            href="/blog"
             className={
-              location.pathname === "/blog"
+              pathname === "/blog"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }
@@ -74,9 +73,9 @@ const Footer = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
         </li>
         <li className="NavbarLink">
           <Link
-            to="/contact"
+            href="/contact"
             className={
-              location.pathname === "/contact"
+              pathname === "/contact"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }

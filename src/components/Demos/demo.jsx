@@ -1,17 +1,11 @@
 import React from "react";
-import "./index.css";
-import Faceboook from "../../assets/images/Facebook.png";
-import Google from "../../assets/images/Google.png";
-import LinkedIn from "../../assets/images/LinkedIn.png";
-import Message from "../../assets/images/Message.png";
-import HeroImg from "../../assets/images/SeerHeroImg.svg";
+import Link from "next/link";
 
 import Automate from "../../assets/images/Automate-weekly.png";
 import Gauge from "../../assets/images/Gauge-desirability.png";
 import Optimise from "../../assets/images/Optimise-store.png";
 import Reallocate from "../../assets/images/Reallocate-stock.png";
 import Simulate from "../../assets/images/Simulate-long.png";
-import { Link } from "react-router-dom";
 
 const Demo = () => {
   return (
@@ -60,7 +54,7 @@ const Demo = () => {
             <Link
               className="text-white"
               style={{ textDecoration: "none", cursor: "pointer" }}
-              to="/solutions"
+              href="/solutions"
             >
               Demo
             </Link>
@@ -106,7 +100,7 @@ const Demo = () => {
             <Link
               className="text-white"
               style={{ textDecoration: "none", cursor: "pointer" }}
-              to="/solutions"
+              href="/solutions"
             >
               Demo
             </Link>
@@ -150,7 +144,7 @@ const Demo = () => {
             <Link
               className="text-white"
               style={{ textDecoration: "none", cursor: "pointer" }}
-              to="/solutions"
+              href="/solutions"
             >
               Demo
             </Link>
@@ -195,7 +189,7 @@ const Demo = () => {
             <Link
               className="text-white"
               style={{ textDecoration: "none", cursor: "pointer" }}
-              to="/solutions"
+              href="/solutions"
             >
               Demo
             </Link>
@@ -239,7 +233,7 @@ const Demo = () => {
             <Link
               className="text-white"
               style={{ textDecoration: "none", cursor: "pointer" }}
-              to="/solutions"
+              href="/solutions"
             >
               Demo
             </Link>

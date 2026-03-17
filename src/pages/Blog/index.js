@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
-import "./index.css";
-import { Link } from "react-router-dom";
+import Head from "next/head";
+import Link from "next/link";
 
 import blog from "../../assets/images/blog.jpg";
 
@@ -28,7 +27,7 @@ const Blog = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet> */}
 
-        <Helmet>
+      <Head>
             <title>Blog | AI Demand Planning & LS Central Insights | Sapiens v2</title>
             <meta 
               name="description" 
@@ -60,8 +59,8 @@ const Blog = () => {
                 }
               }`}
             </script>
-      </Helmet>
-      {content == false ? (
+      </Head>
+      {!content ? (
         <div className="">
           <div className="BlogTopText pb-4">
             <h1
@@ -113,10 +112,10 @@ const Blog = () => {
         </div>
       ) : (
         <div className="lg:px-20 md:px-20 sm:px-2 ">
-          <Helmet>
+          <Head>
             <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sapiensv2.com/blog#article"},"headline":"How can artificial intelligence help retailers forecast demand?","description":"Are retailers on the verge of extinction? Confronted by supply chain issues, labour shortages and fickle demand, this article explains how AI can help retailers forecast demand.","image":["https://sapiensv2.com/images/uploads/social-share.svg"],"author":{"@type":"Organization","name":"Sapiens v2"},"publisher":{"@type":"Organization","name":"Sapiens v2","logo":{"@type":"ImageObject","url":"https://sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg"}},"datePublished":"${new Date().toISOString()}","dateModified":"${new Date().toISOString()}"}`}</script>
             <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sapiensv2.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://sapiensv2.com/blog"},{"@type":"ListItem","position":3,"name":"How can artificial intelligence help retailers forecast demand?","item":"https://sapiensv2.com/blog#article"}]}`}</script>
-          </Helmet>
+          </Head>
           <p
             style={{ fontFamily: "AllroundGothic" }}
             className="lg:text-5xl md:text-4xl text-xl font-bold text-center lg:px-40 md:px-20 sm:px-2 text-[#000000]"
@@ -263,7 +262,7 @@ const Blog = () => {
               style={{ fontFamily: "roboto" }}
               className="lg:text-xl text-sm text-left  text-[#000000]"
             >
-              <Link to="/caseStudies" className="mr-2">
+              <Link href="/caseStudies" className="mr-2">
                 Contact
               </Link>
               the team at Sapiens v2 to learn more about how an AI retail

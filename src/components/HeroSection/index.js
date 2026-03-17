@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
-import "./index.css";
 import { MdContactPhone, MdEmail } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
 
@@ -66,7 +64,8 @@ const HeroSection = ({ scrollToDemo }) => {
     setEmailError(false); // clear any previous email error
 
     try {
-      const result = await emailjs.send(
+      const emailjs = await import("@emailjs/browser");
+      const result = await emailjs.default.send(
         serviceId,
         templateId,
         templateParams,

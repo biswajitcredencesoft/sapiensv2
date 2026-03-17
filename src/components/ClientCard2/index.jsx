@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 import SeerLogo1 from '../../assets/images/client_CUE.png'
 
 const ClientCard = () => {

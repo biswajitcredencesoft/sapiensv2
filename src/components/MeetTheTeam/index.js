@@ -5,8 +5,6 @@ import Person4 from "../../assets/images/Kanika.svg";
 import Person5 from "../../assets/images/Vidhi.svg";
 import Person6 from "../../assets/images/Shruti.svg";
 
-import "./index.css";
-
 const MeetTheTeam = () => {
   const details = [
     {

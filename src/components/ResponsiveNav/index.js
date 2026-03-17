@@ -1,7 +1,6 @@
 import React from 'react';
+import Link from "next/link";
 import Navbar from '../Navbar';
-import './index.css';
-import { Link } from "react-router-dom";
 
 const ResponsiveNav = ({ setShowResponsiveNav, showResponsiveNav }) => {
 
@@ -14,22 +13,22 @@ const ResponsiveNav = ({ setShowResponsiveNav, showResponsiveNav }) => {
       <Navbar setShowResponsiveNav={setShowResponsiveNav} showResponsiveNav={showResponsiveNav} responsiveNav={true} />
       <ul className="responsiveMenuNavbarLinks">
         <li className="NavbarLink">
-          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link href="/" onClick={closeMenu}>Home</Link>
         </li>
         <li className="NavbarLink">
-          <Link to="/solutions" onClick={closeMenu}>Solutions</Link>
+          <Link href="/solutions" onClick={closeMenu}>Solutions</Link>
         </li>
         <li className="NavbarLink">
-          <Link to="/caseStudies" onClick={closeMenu}>Case Studies</Link>
+          <Link href="/caseStudies" onClick={closeMenu}>Case Studies</Link>
         </li>
         <li className="NavbarLink">
-          <Link to="/about" onClick={closeMenu}>About Us</Link>
+          <Link href="/about" onClick={closeMenu}>About Us</Link>
         </li>
         <li className="NavbarLink">
-          <Link to="/blog" onClick={closeMenu}>Blog</Link>
+          <Link href="/blog" onClick={closeMenu}>Blog</Link>
         </li>
         <li className="NavbarLink">
-          <Link to="/contact" onClick={closeMenu}>Contact</Link>
+          <Link href="/contact" onClick={closeMenu}>Contact</Link>
         </li>
       </ul>
     </div>

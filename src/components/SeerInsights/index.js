@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 import multi from "../../assets/images/Multi.png";
 import support from "../../assets/images/Support.png";
 import economial from "../../assets/images/Economical.png";

@@ -1,18 +1,10 @@
 import React, { useState } from "react";
-import "./index.css";
-import ReactPlayer from "react-player";
-import icon1 from "../../assets/images/icon.jpg";
+import dynamic from "next/dynamic";
 
-import I2 from "../../assets/images/I2.png";
-import I3 from "../../assets/images/I3.png";
+const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const VideoSection = () => {
-  const [playing, setPlaying] = useState(true);
   const [playerError, setPlayerError] = useState(false);
-
-  const togglePlaying = () => {
-    setPlaying(!playing);
-  }; 
 
   return (
     <div className="container">
@@ -113,7 +105,6 @@ const VideoSection = () => {
               controls={true}
               onError={(e) => {
                 console.error('ReactPlayer error:', e);
-                setPlaying(false);
                 setPlayerError(true);
               }}
             />

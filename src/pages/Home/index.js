@@ -1,11 +1,10 @@
 import React, { useRef } from "react";
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 import ClientsCarousel from "../../components/ClientsCarousel";
 import HeroSection from "../../components/HeroSection";
 import VideoSection from "../../components/VideoSection";
 import Demo from "../../components/Demos/demo";
 import ErrorBoundary from "../../components/ErrorBoundary";
-import "./index.css";
 
 const Home = () => {
   const demoRef = useRef(null);
@@ -21,7 +20,7 @@ const Home = () => {
 
   return (
     <div className="HomePageContainer bg-[#edeeff]">
-      <Helmet>
+      <Head>
         {/* <title>Sapiens v2 — AI Solutions for Retail</title>
         <meta name="description" content="AI-powered solutions to help retailers reduce shrinkage, automate returns and make smarter decisions." />
         <link rel="canonical" href="https://sapiensv2.com/" />
@@ -71,7 +70,7 @@ const Home = () => {
                   ]
                 }`}
         </script>
-      </Helmet>
+      </Head>
       
       <HeroSection scrollToDemo={scrollToDemo} />
       <ClientsCarousel />

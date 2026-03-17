@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
-import "./index.css";
+import Head from "next/head";
 // import Faceboook from "../../assets/images/Facebook.png";
 import Google from "../../assets/images/Google.png";
 import LinkedIn from "../../assets/images/LinkedIn.png";
@@ -8,7 +7,6 @@ import YouTube from "../../assets/images/youtube.png";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdContactPhone, MdEmail } from "react-icons/md";
 import { serviceId, templateId, publicKey } from "./../../configs/emailjs";
-import emailjs from "@emailjs/browser";
 import Submitbutton from "../../components/Submitbutton";
 // import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
@@ -69,7 +67,9 @@ const Contact = () => {
 
     setIsLoading(true);
 
-    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+    const emailjs = await import("@emailjs/browser");
+
+    emailjs.default.send(serviceId, templateId, templateParams, publicKey).then(
       (result) => {
         console.log("Email sent successfully:", result.text);
         setFormData({ name: "", email: "", phone: "", message: "" });
@@ -96,7 +96,7 @@ const Contact = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet> */}
 
-         <Helmet>
+         <Head>
               <title>Contact Us | AI Demand Forecasting & 24/7 LS Central Support | Sapiens v2</title>
               <meta 
                 name="description" 
@@ -132,7 +132,7 @@ const Contact = () => {
                   }
                 }`}
               </script>
-         </Helmet>
+         </Head>
 
 
       <div className="ContactLeftSection">

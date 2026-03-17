@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 import Seer1 from "../../assets/images/client_glassons.png";
 // import Seer2 from "../../assets/images/client_animates.png";
 import Seer3 from "../../assets/images/client_hallensteins.png";
@@ -7,7 +7,7 @@ import Seer3 from "../../assets/images/client_hallensteins.png";
 const CaseStudies = () => {
   return (
     <div className="bg-white">
-      <Helmet>
+      <Head>
         {/* Before */}
         {/* <title>Case Studies — Sapiens v2</title>
         <meta name="description" content="Case studies — examples of how Sapiens v2 helped retailers automate returns, forecasting, and stock optimization." />
@@ -54,7 +54,7 @@ const CaseStudies = () => {
               ]
             }`}
           </script>
-      </Helmet>
+      </Head>
       <div className="flex flex-col items-center ">
         <div className="flex flex-col items-center pb-6 bg-[#edeeff]">
           <img

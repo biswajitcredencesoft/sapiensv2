@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import ClientCard from "../ClientCard";
-import ClientCard2 from "../ClientCard2";
 import ClientCard3 from "../ClientCard3";
 import ClientCard4 from "../ClientCard4";
 
@@ -28,7 +27,7 @@ const ClientsCarousel = () => {
   };
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(false);
   const intervalRef = useRef(null);
   const cardCount = cards.length;
   const duplicatedCards = duplicateCards(500);
@@ -38,6 +37,7 @@ const ClientsCarousel = () => {
   };
 
   useEffect(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -52,20 +52,20 @@ const ClientsCarousel = () => {
     setActiveIndex((prevIndex) => prevIndex - 1);
   };
 
-  const startAutoScroll = () => {
+  const startAutoScroll = React.useCallback(() => {
     intervalRef.current = setInterval(handleNext, 7000);
-  };
+  }, []);
 
-  const stopAutoScroll = () => {
+  const stopAutoScroll = React.useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-  };
+  }, []);
 
   useEffect(() => {
     startAutoScroll();
     return () => stopAutoScroll();
-  }, []);
+  }, [startAutoScroll, stopAutoScroll]);
 
   const getMiddleIndex = () => {
     return isMobile ? 0 : 1;

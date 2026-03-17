@@ -1,8 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 import SeerInsights from "../../components/SeerInsights";
 import SolutionVideo from "../../components/SolutionVideo";
-import "./index.css";
 
 const Solution = () => {
   return (
@@ -17,7 +16,7 @@ const Solution = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet> */}
 
-        <Helmet>
+        <Head>
             <title>AI Demand Planning Software & LS Central Support | Sapiens v2</title>
             <meta 
               name="description" 
@@ -47,7 +46,7 @@ const Solution = () => {
                 }
               }`}
             </script>
-        </Helmet>
+        </Head>
       
       <SolutionVideo />
       <SeerInsights />

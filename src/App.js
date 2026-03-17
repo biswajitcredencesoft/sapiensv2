@@ -11,7 +11,6 @@ import Solution from "./pages/Solution";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import CaseStudies from "./pages/caseStudies";
-import ReactDOM from "react-dom/client";
 
 export default function App() {
   const [showResponsiveNav, setShowResponsiveNav] = useState(false);
