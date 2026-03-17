@@ -23,7 +23,7 @@ env:
   AWS_REGION: null
   AWS_SECRET: null
 
-  BRANCH: cleanup-errors
+  BRANCH: fix/cleanup-errors
   
   # generated do not touch
   # IDENTITY_PROVIDER: projects/${{ env.GCP_PROJECT_NUMBER }}/locations/global/workloadIdentityPools/${{ env.GCP_IDENTITY_POOL_NAME }}/providers/${GCP_IDENTITY_PROVIDER_NAME}
