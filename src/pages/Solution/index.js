@@ -26,6 +26,8 @@ const Solution = () => {
             <meta property="og:title" content="Demand Planning Software & LS Central Support | Sapiens v2" />
             <meta property="og:description" content="AI demand forecasting and planning tools for retail and hospitality with 24/7 LS Central support." />
             <meta property="og:url" content="https://sapiensv2.com/solutions" />
+            <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+            <meta property="og:type" content="website" />
             <meta name="keywords" content="demand forecasting software, demand planning tools, LS Central support, Business Central support, LS Central technical support, demand planning solutions, supply chain forecasting software, LS Central POS support, LS Central implementation support, 24/7 Business Central support, demand forecasting tools, retail demand planning software" />
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="Stock Seer: AI Demand Planning & Forecasting Tool" />

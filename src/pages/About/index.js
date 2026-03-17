@@ -25,7 +25,7 @@ const index = () => {
           <meta property="og:title" content="Meet Sapiens v2 — Creators of Stock Seer AI & LS Central Experts" />
           <meta property="og:description" content="Sapiens v2 AI demand forecasting software and expert LS Central, Business Central services for retail and hospitality." />
           <meta property="og:url" content="https://sapiensv2.com/about" />
-          <meta property="og:image" content="https://www.sapiensv2.com/images/uploads/social-share.svg" />
+          <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="About Sapiens v2 | AI Demand Forecasting & Ls Central Experts" />

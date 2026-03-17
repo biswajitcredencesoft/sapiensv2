@@ -5,6 +5,9 @@ import Link from "next/link";
 
 import blog from "../../assets/images/blog.jpg";
 
+const ARTICLE_PUBLISHED_AT = "2024-01-15T00:00:00.000Z";
+const ARTICLE_MODIFIED_AT = "2024-01-15T00:00:00.000Z";
+
 const Blog = () => {
   const [content, setContent] = useState(false);
 
@@ -38,6 +41,7 @@ const Blog = () => {
             <meta property="og:title" content="Sapiens v2 Blog — AI Demand Planning, LS Central & Retail Tech Insights" />
             <meta property="og:description" content="Expert articles on demand forecasting software, LS Central best practices, and retail inventory management." />
             <meta property="og:url" content="https://sapiensv2.com/blog" />
+            <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
             <meta property="og:type" content="website" />
             <meta name="keywords" content="Demand forecasting software, demand planning tools, LS Central best practices, Business Central tips, retail inventory management, supply chain planning, AI demand forecasting, demand planning techniques, what is demand planning, NAV to Business Central migration, LS Central implementation" />
             <meta name="twitter:card" content="summary_large_image" />
@@ -114,7 +118,7 @@ const Blog = () => {
       ) : (
         <div className="lg:px-20 md:px-20 sm:px-2 ">
           <Head>
-            <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sapiensv2.com/blog#article"},"headline":"How can artificial intelligence help retailers forecast demand?","description":"Are retailers on the verge of extinction? Confronted by supply chain issues, labour shortages and fickle demand, this article explains how AI can help retailers forecast demand.","image":["https://sapiensv2.com/images/uploads/social-share.svg"],"author":{"@type":"Organization","name":"Sapiens v2"},"publisher":{"@type":"Organization","name":"Sapiens v2","logo":{"@type":"ImageObject","url":"https://sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg"}},"datePublished":"${new Date().toISOString()}","dateModified":"${new Date().toISOString()}"}`}</script>
+            <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sapiensv2.com/blog#article"},"headline":"How can artificial intelligence help retailers forecast demand?","description":"Are retailers on the verge of extinction? Confronted by supply chain issues, labour shortages and fickle demand, this article explains how AI can help retailers forecast demand.","image":["https://sapiensv2.com/images/uploads/social-share.svg"],"author":{"@type":"Organization","name":"Sapiens v2"},"publisher":{"@type":"Organization","name":"Sapiens v2","logo":{"@type":"ImageObject","url":"https://sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg"}},"datePublished":"${ARTICLE_PUBLISHED_AT}","dateModified":"${ARTICLE_MODIFIED_AT}"}`}</script>
             <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sapiensv2.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://sapiensv2.com/blog"},{"@type":"ListItem","position":3,"name":"How can artificial intelligence help retailers forecast demand?","item":"https://sapiensv2.com/blog#article"}]}`}</script>
           </Head>
           <p

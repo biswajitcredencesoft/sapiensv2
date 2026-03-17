@@ -106,7 +106,7 @@ const Contact = () => {
               <link rel="canonical" href="https://sapiensv2.com/contact" />
               <meta property="og:title" content="Contact Sapiens v2 — Book a Stock Seer Demo or Get 24/7 LS Central Support" />
               <meta property="og:description" content="Get in touch for AI demand forecasting demos and expert 24/7 LS Central or Business Central support." />
-              <meta property="og:url" content="https://sapiensv2.com/contact-us" />
+              <meta property="og:url" content="https://sapiensv2.com/contact" />
               <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
               <meta property="og:type" content="website" />
               <meta name="twitter:card" content="summary" />
