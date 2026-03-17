@@ -19,7 +19,7 @@ const ResponsiveNav = ({ setShowResponsiveNav, showResponsiveNav }) => {
           <Link href="/solutions" onClick={closeMenu}>Solutions</Link>
         </li>
         <li className="NavbarLink">
-          <Link href="/caseStudies" onClick={closeMenu}>Case Studies</Link>
+          <Link href="/case-studies" onClick={closeMenu}>Case Studies</Link>
         </li>
         <li className="NavbarLink">
           <Link href="/about" onClick={closeMenu}>About Us</Link>

@@ -23,15 +23,15 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "deploy": "echo SSR Next.js apps need a Node server deployment; use npm run build and npm start on your host.",
+    "start": "next start",
+    "build": "next build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "next-dev": "next dev",
     "next-build": "next build",
     "next-start": "next start",
-    "dev": "set NODE_OPTIONS=--max-old-space-size=4096 && next dev"
+    "dev": "next dev"
   },
   "eslintConfig": {
     "extends": [

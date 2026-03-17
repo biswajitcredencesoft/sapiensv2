@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 // import I9 from "../../assets/images/I9.png";
 // import I10 from "../../assets/images/I10.png";
@@ -57,7 +58,7 @@ const SolutionVideo = () => {
             >
               <div className="card-top-content">
                 <div className="card-img">
-                  <img src={card.img} alt={card.title} />
+                  <Image src={card.img} alt={card.title} width={48} height={48} />
                 </div>
 
                 <p className="card-title lg:-mt-1 text-left ml-0 md:ml-16">

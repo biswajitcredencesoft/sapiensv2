@@ -1,14 +1,16 @@
 import React from "react";
+import Image from "next/image";
 import multi from "../../assets/images/Multi.png";
 import support from "../../assets/images/Support.png";
 import economial from "../../assets/images/Economical.png";
 
 const Card = ({ imageSrc, desc, description, description1, altText }) => (
   <div className="rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400">
-    <img
+    <Image
       src={imageSrc}
       alt={altText || desc || "Seer insight"}
-      loading="lazy"
+      width={400}
+      height={208}
       className="w-full h-52 object-cover "
     />
     <div className="p-6">

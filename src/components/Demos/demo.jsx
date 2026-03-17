@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 import Automate from "../../assets/images/Automate-weekly.png";
@@ -19,10 +20,9 @@ const Demo = () => {
 
       <div className="ContactContainerDemo lg:mt-0 md:mt-0  sm:-mb-16">
         <div className="ContactLeftSection">
-          <img
+          <Image
             src={Optimise}
             alt="Optimize Store Inventory"
-            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -64,10 +64,9 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img
+          <Image
             src={Automate}
             alt="Automate Weekly Vendor Reorders"
-            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -110,10 +109,9 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img
+          <Image
             src={Reallocate}
             alt="Reallocate Stock Between Locations"
-            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -154,10 +152,9 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img
+          <Image
             src={Gauge}
             alt="Gauge Desirability of Products"
-            loading="lazy"
             className="rounded-xl"
           />
         </div>
@@ -199,10 +196,9 @@ const Demo = () => {
 
       <div className="ContactContainerDemo sm:-mb-16">
         <div className="ContactLeftSection">
-          <img
+          <Image
             src={Simulate}
             alt="Simulate Long Term Demand"
-            loading="lazy"
             className="rounded-xl"
           />
         </div>

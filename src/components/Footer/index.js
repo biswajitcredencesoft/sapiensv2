@@ -37,9 +37,9 @@ const Footer = () => {
         </li>
         <li className="NavbarLink">
           <Link
-            href="/caseStudies"
+            href="/case-studies"
             className={
-              pathname === "/caseStudies"
+              pathname === "/case-studies"
                 ? "NavbarLinkText active"
                 : "NavbarLinkText"
             }

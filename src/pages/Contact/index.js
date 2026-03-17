@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 // import Faceboook from "../../assets/images/Facebook.png";
 import Google from "../../assets/images/Google.png";
 import LinkedIn from "../../assets/images/LinkedIn.png";
@@ -111,7 +112,7 @@ const Contact = () => {
               <meta name="twitter:card" content="summary" />
               <meta name="twitter:title" content="Contact Sapiens v2 for AI Forecasting & 24/7 Support" />
               <meta name="twitter:description" content="Reach us for a Stock Seer AI demo, 24/7 LS Central and Business Central support, or partnership enquiries." />
-              <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
+              <meta name="twitter:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
               <script type="application/ld+json">
                 {`{
                   "@context": "https://schema.org",
@@ -260,21 +261,21 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Google} alt="Google" className="w-12 h-12" />
+            <Image src={Google} alt="Google" width={48} height={48} className="w-12 h-12" />
           </a>
           <a
             href="https://www.linkedin.com/company/sapiens-v2/about/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={LinkedIn} alt="LinkedIn" className="w-12 h-12" />
+            <Image src={LinkedIn} alt="LinkedIn" width={48} height={48} className="w-12 h-12" />
           </a>
           <a
             href="https://www.youtube.com/@Sapiensv2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={YouTube} alt="YouTube" className="w-12 h-12" />
+            <Image src={YouTube} alt="YouTube" width={48} height={48} className="w-12 h-12" />
           </a>
         </div>
       </div>

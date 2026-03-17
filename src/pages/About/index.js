@@ -25,12 +25,12 @@ const index = () => {
           <meta property="og:title" content="Meet Sapiens v2 — Creators of Stock Seer AI & LS Central Experts" />
           <meta property="og:description" content="Sapiens v2 AI demand forecasting software and expert LS Central, Business Central services for retail and hospitality." />
           <meta property="og:url" content="https://sapiensv2.com/about" />
-          <meta property="og:image" content="https://www.sapiensv2.com/images/team-or-hq.jpg" />
+          <meta property="og:image" content="https://www.sapiensv2.com/images/uploads/social-share.svg" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="About Sapiens v2 | AI Demand Forecasting & Ls Central Experts" />
           <meta name="twitter:description" content="Sapiens v2 builds Stock Seer AI demand forecasting software and delivers LS Central and Business Central services globally." />
-          <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
+          <meta name="twitter:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
       </Head>
 
       <div className="bg-[#edeeff] pb-0 md:pb-10 md:pt-10 pt-0">

@@ -1,0 +1,42 @@
+
+> seer@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.4
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Ready in 3.6s
+ ○ Compiling / ...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled / in 19.4s (594 modules)
+ GET / 200 in 20493ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 7.9s (614 modules)
+ GET /about 200 in 8040ms
+ ○ Compiling /blog ...
+ ✓ Compiled /blog in 616ms (622 modules)
+ GET /blog 200 in 714ms
+ ○ Compiling /case-studies ...
+ ✓ Compiled /case-studies in 532ms (628 modules)
+ GET /case-studies 200 in 580ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 677ms (650 modules)
+ GET /contact 200 in 1022ms
+ ○ Compiling /solutions ...
+ ✓ Compiled /solutions in 1355ms (666 modules)
+ GET /solutions 200 in 1406ms
+ ✓ Compiled /_error in 367ms (668 modules)
+ GET /does-not-exist 404 in 426ms
+ GET / 200 in 747ms
+ GET /about 200 in 22ms
+ GET /blog 200 in 18ms
+ GET /case-studies 200 in 16ms
+ GET /contact 200 in 33ms
+ GET /solutions 200 in 17ms
+ GET /does-not-exist 404 in 18ms

@@ -30,7 +30,7 @@ const Solution = () => {
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="Stock Seer: AI Demand Planning & Forecasting Tool" />
             <meta name="twitter:description" content="Achieve maximum forecast accuracy with Stock Seer. AI-powered demand planning for retail worldwide." />
-            <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
+            <meta name="twitter:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
             <script type="application/ld+json">
               {`{
                 "@context": "https://schema.org",

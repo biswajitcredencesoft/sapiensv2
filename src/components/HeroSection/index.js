@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { MdContactPhone, MdEmail } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
 
@@ -319,15 +320,19 @@ const HeroSection = ({ scrollToDemo }) => {
       </div>
 
       <div className="HeroSectionBgImg">
-        <img
-          src="https://bookonelocal.in/cdn/Stock_Seer_Oracle.svg"
+        <Image
+          src="/images/uploads/Stock_Seer_Oracle.svg"
           alt="hero"
+          width={900}
+          height={700}
           className="desktop-image"
           style={{ fontFamily: "HouschkaPro" }}
         />
-        <img
-          src="https://bookonelocal.in/cdn/Stock_Seer_Oracle_phone-cropped.svg"
+        <Image
+          src="/images/uploads/Stock_Seer_Oracle.svg"
           alt="hero"
+          width={420}
+          height={520}
           className="mobile-image"
           style={{ fontFamily: "HouschkaPro" }}
         />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 import blog from "../../assets/images/blog.jpg";
@@ -42,7 +43,7 @@ const Blog = () => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Implementing AI Demand Forecasting in Fashion Retail" />
             <meta name="twitter:description" content="A guide on how to implement AI demand forecasting. Best practices for fashion retail and maximizing your inventory ROI." />
-            <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
+            <meta name="twitter:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
             <script type="application/ld+json">
               {`{
                 "@context": "https://schema.org",
@@ -190,7 +191,7 @@ const Blog = () => {
             </p>
           </div>
           <div className="py-4">
-            <img src={blog} alt="Logo" className="image rounded-2xl" />
+            <Image src={blog} alt="Blog" className="image rounded-2xl" />
           </div>
           <div>
             <p
@@ -262,7 +263,7 @@ const Blog = () => {
               style={{ fontFamily: "roboto" }}
               className="lg:text-xl text-sm text-left  text-[#000000]"
             >
-              <Link href="/caseStudies" className="mr-2">
+              <Link href="/case-studies" className="mr-2">
                 Contact
               </Link>
               the team at Sapiens v2 to learn more about how an AI retail

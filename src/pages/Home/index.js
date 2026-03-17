@@ -39,14 +39,14 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Stock Seer — AI Demand Forecasting Software" />
         <meta name="twitter:description" content="AI demand planning software that eliminates stockouts and overstocks for multi-store retail and hospitality brands." />
-        <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
+        <meta name="twitter:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
         <script type="application/ld+json">
                 {`{
                   "@context": "https://schema.org",
                   "@type": "Organization",
                   "name": "Sapiens v2",
                   "url": "https://www.sapiensv2.com/",
-                  "logo": "https://www.sapiensv2.com/logo.png",
+                  "logo": "https://www.sapiensv2.com/images/uploads/Sv2_logo_bluepurpleOne.svg",
                   "description": "A global AI-driven demand forecasting and inventory optimization platform for enterprise retailers.",
                   "contactPoint": [
                     {

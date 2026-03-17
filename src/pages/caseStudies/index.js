@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Seer1 from "../../assets/images/client_glassons.png";
 // import Seer2 from "../../assets/images/client_animates.png";
 import Seer3 from "../../assets/images/client_hallensteins.png";
@@ -23,17 +24,17 @@ const CaseStudies = () => {
             name="description" 
             content="Discover how Stock Seer demand planning software drives results for retail and hospitality brands. Real-world case studies in demand forecasting and inventory ROI." 
           />
-          <link rel="canonical" href="https://sapiensv2.com/caseStudies" />
+          <link rel="canonical" href="https://sapiensv2.com/case-studies" />
           <meta property="og:title" content="How Retail Brands Transformed Inventory with Stock Seer AI | Sapiens v2" />
           <meta property="og:description" content="Discover how Stock Seer demand planning software drives results for retail and hospitality brands." />
-          <meta property="og:url" content="https://sapiensv2.com/caseStudies" />
+          <meta property="og:url" content="https://sapiensv2.com/case-studies" />
           <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
           <meta property="og:type" content="website" />
           <meta name="keywords" content="Demand forecasting case studies, AI inventory management results, Stock Seer AI, retail demand planning, LS Central implementation, demand forecasting ROI, hospitality inventory management, fashion retail AI, demand planning software results, supply chain forecasting" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="AI Demand Forecasting Case Studies | Sapiens v2" />
           <meta name="twitter:description" content="Real-world results from retail brands using Stock Seer AI demand planning software. ROI data included." />
-          <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
+          <meta name="twitter:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
           <script type="application/ld+json">
             {`{
               "@context": "https://schema.org",
@@ -49,7 +50,7 @@ const CaseStudies = () => {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Case Studies",
-                  "item": "https://sapiensv2.com/caseStudies"
+                  "item": "https://sapiensv2.com/case-studies"
                 }
               ]
             }`}
@@ -57,9 +58,11 @@ const CaseStudies = () => {
       </Head>
       <div className="flex flex-col items-center ">
         <div className="flex flex-col items-center pb-6 bg-[#edeeff]">
-          <img
+          <Image
             src={Seer1}
             alt="Glassons"
+            width={250}
+            height={38}
             className="w-[250px] h-[38px] sm:w-[200px] sm:h-[38px] md:w-[250px] md:h-[38px] max-w-md mt-20 -mb-4"
           />
           <p
@@ -118,9 +121,11 @@ const CaseStudies = () => {
         </div>
 
         <div className="flex flex-col items-center  bg-[#303e58] text-white mb-[-80px] pb-24">
-          <img
+          <Image
             src="/images/uploads/client_animates_white.svg"
             alt="Animates"
+            width={250}
+            height={38}
             className="w-[250px] h-[38px] sm:w-[250px] sm:h-[38px] md:w-[250px] md:h-[38px] max-w-md mt-20 -mb-4"
           />
           <p
@@ -169,9 +174,11 @@ const CaseStudies = () => {
         </div>
 
         <div className="flex flex-col items-center bg-[#edeeff]  mb-[-80px] pb-32">
-          <img
+          <Image
             src={Seer3}
-            alt="Animates"
+            alt="Hallensteins"
+            width={250}
+            height={88}
             className="w-[250px] h-[88px] sm:w-[250px] sm:h-[38px] md:w-[250px] md:h-[88px] max-w-md mt-20 -mb-4"
           />
           <p
