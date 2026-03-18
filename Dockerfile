@@ -1,4 +1,4 @@
-# Use official Node.js image as base
+# Stage 1: Build the application
 FROM node:18-alpine AS build
 
 # Set the working directory in the container
@@ -10,33 +10,40 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application
+# Copy the rest of the application code
 COPY . .
 
-RUN npm run build
+# Build the application using your specific Next.js build command
+RUN npm run next-build
 
-# Stage 2: Use a small image for production
-# FROM node:18-alpine
-FROM nginx
+
+# Stage 2: Production environment
+FROM node:18-alpine AS production
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Copy the built Angular app from the previous stage
-COPY --from=build /usr/src/app/build /usr/share/nginx/html
+# Set node environment to production for better performance
+ENV NODE_ENV=production
 
-# Create custom Nginx configuration
-RUN echo 'server {\n\
-    listen 80;\n\
-    server_name localhost;\n\
-    root /usr/share/nginx/html;\n\
-    index index.html;\n\
-    location / {\n\
-    try_files $uri $uri/ /index.html;\n\
-    }\n\
-    error_page 404 /index.html;\n\
-    }' > /etc/nginx/conf.d/default.conf
+# Copy package files so npm scripts can be executed
+COPY --from=build /usr/src/app/package*.json ./
 
+# Copy the built .next output folder
+COPY --from=build /usr/src/app/.next ./.next
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Copy node_modules to run the SSR server
+COPY --from=build /usr/src/app/node_modules ./node_modules
+
+# Copy the public folder to serve static assets
+COPY --from=build /usr/src/app/public ./public
+
+# [OPTIONAL] Copy Next.js config if you have one (uncomment the correct one for your app)
+# COPY --from=build /usr/src/app/next.config.js ./
+# COPY --from=build /usr/src/app/next.config.mjs ./
+
+# Expose the port Next.js normally runs on (3000)
+EXPOSE 3000
+
+# Start the SSR server using your specific Next.js start command
+CMD ["npm", "run", "next-start"]
