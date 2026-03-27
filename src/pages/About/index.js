@@ -33,7 +33,7 @@ const index = () => {
           <meta name="twitter:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
       </Head>
 
-      <div className="bg-[#edeeff] pb-0 md:pb-10 md:pt-10 pt-0">
+      <div className="bg-[#edeeff] pb-0 md:pb-10 md:pt-0 pt-0">
         <p className="text-left lg:text-xl md:text-xl text-[18px] px-6 md:px-20 pt-10 text-[#000000]">
           Notwithstanding the hype around AI in recent years, its quintessential
           ability to discern patterns and relationships across untenably large

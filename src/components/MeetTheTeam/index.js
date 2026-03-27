@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Person1 from "../../assets/images/Joshua1.svg";
 import Person2 from "../../assets/images/Roland1.svg";
 import Person4 from "../../assets/images/Kanika.svg";
@@ -59,8 +60,13 @@ const MeetTheTeam = () => {
       <div className="grid md:grid-cols-3 md:gap-16 gap-5 mx-3 md:mx-10">
         {firstRow.map((s, i) => (
           <div key={i} className="lg:w-full md:px-0 px-10">
-            <div>
-              <img src={s.image} alt={s.name} loading="lazy" className="w-full mx-auto rounded-xl" />
+            <div className="team-image-wrap">
+              <Image
+                src={s.image}
+                alt={s.name}
+                className="team-image w-full mx-auto rounded-xl"
+                sizes="(max-width: 768px) 80vw, 33vw"
+              />
             </div>
             <div className="text-center mt-3">
               <p
@@ -90,8 +96,13 @@ const MeetTheTeam = () => {
             key={i}
             className="lg:w-[30%] md:w-[40%] sm:w-[80%] px-10 md:px-0"
           >
-            <div>
-              <img src={s.image} alt={s.name} loading="lazy" className="w-full mx-auto rounded-xl" />
+            <div className="team-image-wrap">
+              <Image
+                src={s.image}
+                alt={s.name}
+                className="team-image w-full mx-auto rounded-xl"
+                sizes="(max-width: 768px) 80vw, 30vw"
+              />
             </div>
             <div className="text-center mt-3">
               <p

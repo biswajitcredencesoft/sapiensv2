@@ -2,6 +2,16 @@
   font-family:'roboto';
  
 }
+.team-image-wrap {
+  width: 100%;
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .team-description {
   font-family: 'Roboto';
   font-size: 18px;
