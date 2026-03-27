@@ -82,6 +82,12 @@
     padding: 2px 0;
 }
 
+.demo-copy{
+    color: #111827;
+    font-weight: 580;
+;  line-height: 1.7;
+}
+
 .ContactRightSection > input{
     border: 1px solid #808080;
     border-radius: 5px;

@@ -35,7 +35,7 @@ const SolutionVideo = () => {
 
   return (
     <div className="solution-video-container md:h-[600px] lg:h-[600px] sm:h-[1000px] ">
-      <h2 className="heading"  style={{fontFamily:'AllroundGothic, sans-serif'}}>Predict. Prepare. Prosper. With Stock Seer.
+      <h2 className="heading solution-video-heading" style={{fontFamily:'AllroundGothic, sans-serif'}}>Predict. Prepare. Prosper. With Stock Seer.
       </h2>
 
       <div className="content-container">

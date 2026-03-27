@@ -38,7 +38,7 @@ const Demo = () => {
               Optimize Store Inventory Levels
             </span>
             <span
-              className="text-lg lg:text-xl lg:mt-10"
+              className="demo-copy text-lg lg:text-xl lg:mt-10"
               style={{ fontFamily: "Roboto, sans-serif" }}
             >
               to get the right stock in the right stores at the right time
@@ -83,7 +83,7 @@ const Demo = () => {
               <span style={{ fontFamily: "Roboto, sans-serif" }}>-</span>Orders.
             </span>
             <span
-              className="text-lg lg:text-xl lg:mt-10"
+              className="demo-copy text-lg lg:text-xl lg:mt-10"
               style={{ fontFamily: "Roboto, sans-serif" }}
             >
               Calculate safety stock with a desired confidence factor. Determine
@@ -127,8 +127,8 @@ const Demo = () => {
               Reallocate Stock Between Locations
             </span>
             <span
-              className="text-lg lg:text-xl lg:mt-10"
-              style={{ fontFamily: "roboto" }}
+              className="demo-copy text-lg lg:text-xl lg:mt-10"
+              style={{ fontFamily: "Roboto, sans-serif" }}
             >
               based on “real-time” sales forecasts, pre-defined re-group
               regions, transport costs and times to maximise sales across the
@@ -170,8 +170,8 @@ const Demo = () => {
               Gauge Desirability of Potential Products.
             </span>
             <span
-              className="text-lg lg:text-xl lg:mt-10"
-              style={{ fontFamily: "roboto" }}
+              className="demo-copy text-lg lg:text-xl lg:mt-10"
+              style={{ fontFamily: "Roboto, sans-serif" }}
             >
               Craft a range comprising the best of them to achieve your category
               mix and sales goals. Simulate sales to determine the optimum range
@@ -214,8 +214,8 @@ const Demo = () => {
               Simulate Long Term Demand for Perennial Lines.
             </span>
             <span
-              className="text-lg lg:text-xl lg:mt-10"
-              style={{ fontFamily: "roboto" }}
+              className="demo-copy text-lg lg:text-xl lg:mt-10"
+              style={{ fontFamily: "Roboto, sans-serif" }}
             >
               Adjust the simulation for potential drivers such as planned
               promotions and known events. Plan orders to ensure you never run

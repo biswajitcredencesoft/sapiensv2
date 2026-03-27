@@ -11,8 +11,7 @@ color:white;
    font-family: 'roboto';
     background-color: rgb(38, 48, 68);
     opacity: 1;
-    
-  
+ 
 }
 .SeerInsightsContainer > h1 {
     text-align: center;
@@ -28,7 +27,6 @@ color:white;
     padding: 10px 50px;
     padding-bottom: 30px;
     line-height: 80px;
-
    
     
 }

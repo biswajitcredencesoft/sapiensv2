@@ -13,6 +13,10 @@
   margin-bottom: 40px;
 }
 
+.solution-video-heading {
+  color: #000000 !important;
+}
+
 .content-container {
   display: flex;
   flex-direction: column;

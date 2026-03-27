@@ -15,12 +15,16 @@ const Card = ({ imageSrc, desc, description, description1, altText }) => (
     />
     <div className="p-6">
       <p
-        style={{ fontFamily: "roboto" }}
+        style={{ fontFamily: "Roboto, sans-serif" }}
         className="text-white font-bold text-lg"
       >
-        <span style={{ fontFamily: "roboto" }}>{desc}</span> {description}
+        <span style={{ fontFamily: "Roboto, sans-serif" }}>{desc}</span>{" "}
+        {description}
       </p>
-      <p style={{ fontFamily: "roboto" }} className="text-[#ffffff]">
+      <p
+        style={{ fontFamily: "Roboto, sans-serif" }}
+        className="text-[#ffffff]"
+      >
         {description1}
       </p>
     </div>
@@ -59,7 +63,7 @@ const SeerInsights = () => {
     <div className="container mx-auto pt-4 my-[-80px] pb-20">
       <h2
         style={{ fontFamily: "AllroundGothic" }}
-        className="  font-bold text-center mb-5 text-white mt-5 fontSize"
+        className="  font-bold text-center mb-12 text-white mt-5 fontSize"
       >
         Don’t Sweat. With Sapiens v2 Support.
       </h2>
