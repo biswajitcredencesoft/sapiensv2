@@ -147,7 +147,7 @@ const Contact = () => {
           Get In Touch
         </h1>
 
-        <p style={{ fontFamily: "roboto" }} className="md:mt-4 mt-2">
+        <p style={{ fontFamily: "Roboto, sans-serif" }} className="md:mt-4 mt-2 ">
           Tell us about your retail challenges.
         </p>
 
@@ -158,7 +158,7 @@ const Contact = () => {
           <div>
             <h3
               style={{
-                fontFamily: "roboto",
+                fontFamily: "Roboto, sans-serif",
                 fontWeight: "600",
                 color: "#374151",
               }}
@@ -170,7 +170,7 @@ const Contact = () => {
               <p
                 className="flex items-start gap-2"
                 style={{
-                  fontFamily: "roboto",
+                  fontFamily: "Roboto, sans-serif",
                   fontWeight: "500",
                   color: "#374151",
                 }}
@@ -183,7 +183,7 @@ const Contact = () => {
               <p
                 className="flex items-center gap-2"
                 style={{
-                  fontFamily: "roboto",
+                  fontFamily: "Roboto, sans-serif",
                   fontWeight: "500",
                   color: "#374151",
                 }}
@@ -193,7 +193,7 @@ const Contact = () => {
               <p
                 className="flex items-center gap-2 cursor-pointer"
                 style={{
-                  fontFamily: "roboto",
+                  fontFamily: "Roboto, sans-serif",
                   fontWeight: "500",
                   color: "#374151",
                 }}
@@ -208,7 +208,7 @@ const Contact = () => {
           <div>
             <h3
               style={{
-                fontFamily: "roboto",
+                fontFamily: "Roboto, sans-serif",
                 fontWeight: "500",
                 color: "#374151",
               }}
@@ -219,7 +219,7 @@ const Contact = () => {
               <p
                 className="flex items-start gap-2"
                 style={{
-                  fontFamily: "roboto",
+                  fontFamily: "Roboto, sans-serif",
                   fontWeight: "500",
                   color: "#374151",
                 }}
@@ -231,7 +231,7 @@ const Contact = () => {
               <p
                 className="flex items-center gap-2"
                 style={{
-                  fontFamily: "roboto",
+                  fontFamily: "Roboto, sans-serif",
                   fontWeight: "500",
                   color: "#374151",
                 }}
@@ -241,7 +241,7 @@ const Contact = () => {
               <p
                 className="flex items-center gap-2 cursor-pointer"
                 style={{
-                  fontFamily: "roboto",
+                  fontFamily: "Roboto, sans-serif",
                   fontWeight: "500",
                   color: "#374151",
                 }}
@@ -293,7 +293,7 @@ const Contact = () => {
 
               <p
                 className="py-2 text-[#374151]"
-                style={{ fontFamily: "roboto" }}
+                style={{ fontFamily: "Roboto, sans-serif" }}
               >
                 Name:
               </p>
@@ -310,7 +310,7 @@ const Contact = () => {
 
               <p
                 className="py-2 text-[#374151]"
-                style={{ fontFamily: "roboto" }}
+                style={{ fontFamily: "Roboto, sans-serif" }}
               >
                 Email:{" "}
                 {emailError && (
@@ -333,7 +333,7 @@ const Contact = () => {
 
               <p
                 className="py-2 text-[#374151]"
-                style={{ fontFamily: "roboto" }}
+                style={{ fontFamily: "Roboto, sans-serif" }}
               >
                 Phone:
               </p>
@@ -349,7 +349,7 @@ const Contact = () => {
 
               <p
                 className="py-2 text-[#374151]"
-                style={{ fontFamily: "roboto" }}
+                style={{ fontFamily: "Roboto, sans-serif" }}
               >
                 Enquiry:
               </p>
@@ -443,7 +443,7 @@ const Contact = () => {
                 </div>
                 <p
                   className="gmail inc text-white mt-2 text-center"
-                  style={{ fontFamily: "roboto" }}
+                  style={{ fontFamily: "Roboto, sans-serif" }}
                 >
                   getintouch@sapiensv2.com
                 </p>
@@ -459,7 +459,7 @@ const Contact = () => {
                 </div>
                 <p
                   className="gmail text-white mt-2 text-center"
-                  style={{ fontFamily: "roboto" }}
+                  style={{ fontFamily: "Roboto, sans-serif" }}
                 >
                   +6498879320
                 </p>
@@ -477,7 +477,7 @@ const Contact = () => {
                 </div>
                 <p
                   className="text-white text-center gmail mt-2"
-                  style={{ fontFamily: "roboto" }}
+                  style={{ fontFamily: "Roboto, sans-serif" }}
                 >
                   Sapiens v2 Ltd. <br />
                   Auckland, New Zealand

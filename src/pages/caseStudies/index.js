@@ -66,8 +66,8 @@ const CaseStudies = () => {
             className="w-[250px] h-[38px] sm:w-[200px] sm:h-[38px] md:w-[250px] md:h-[38px] max-w-md mt-20 -mb-4"
           />
           <p
-            style={{ fontFamily: "roboto" }}
-            className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16 sm:mr-16 text-[#000000] "
+            style={{ fontFamily: "Roboto, sans-serif" }}
+            className="text-left text-lg leading-7 tracking-normal mt-8 p-4 sm:ml-16 sm:mr-16 text-[#000000] "
           >
             Glassons are renowned in Australia and New Zealand for delivering
             youthful  women’s fashion at  great value, across 60 vibrant stores
@@ -76,7 +76,7 @@ const CaseStudies = () => {
             pieces, wardrobe staples and everything in between.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16  text-[#000000]"
           >
             Glassons epitomises “fast fashion”. Most styles sell out within days
@@ -87,7 +87,7 @@ const CaseStudies = () => {
             up to 100 already sold out items returned to each store.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             To avoid polluting the store with out of stock items, the store
@@ -100,7 +100,7 @@ const CaseStudies = () => {
             rooms or transferred to suboptimal  locations.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             Glassons chose Sapiens v2 to automate and improve outcomes for this
@@ -110,7 +110,7 @@ const CaseStudies = () => {
             stores, and propose transfers accordingly.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             The results are: dramatically reduced man hours at store and head
@@ -129,7 +129,7 @@ const CaseStudies = () => {
             className="w-[250px] h-[38px] sm:w-[250px] sm:h-[38px] md:w-[250px] md:h-[38px] max-w-md mt-20 -mb-4"
           />
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16 sm:mr-16"
           >
             With over 50 pet and vet stores throughout New Zealand, Animates are
@@ -137,7 +137,7 @@ const CaseStudies = () => {
             care, advice and services for pets across New Zealand.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16"
           >
             Operational complexities at Animates derive from ensuring both the
@@ -149,7 +149,7 @@ const CaseStudies = () => {
             weekly vendor re-orders (often by gut-feel).
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16"
           >
             Given more than 5,000 products across 50 stores, it is impossible
@@ -160,7 +160,7 @@ const CaseStudies = () => {
             customer satisfaction.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16"
           >
             Animates chose Sapiens v2 to eliminate this complex manual process
@@ -182,7 +182,7 @@ const CaseStudies = () => {
             className="w-[250px] h-[88px] sm:w-[250px] sm:h-[38px] md:w-[250px] md:h-[88px] max-w-md mt-20 -mb-4"
           />
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal mt-4 p-4 sm:ml-16     sm:mr-52  text-[#000000]"
           >
             A 46-store-strong, Australia/New Zealand-based chain, Hallensteins
@@ -190,7 +190,7 @@ const CaseStudies = () => {
             catering to the modern man's evolving tastes.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             For Hallensteins, a compelling in store experience demands an
@@ -201,7 +201,7 @@ const CaseStudies = () => {
             next replenishment.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             However, determining the ideal stock levels, week on week, for some
@@ -215,7 +215,7 @@ const CaseStudies = () => {
             movements ensue.
           </p>
           <p
-            style={{ fontFamily: "roboto" }}
+            style={{ fontFamily: "Roboto, sans-serif" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
             Once again, we deployed Stock Seer to automate this manual process,

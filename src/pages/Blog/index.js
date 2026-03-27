@@ -89,7 +89,7 @@ const Blog = () => {
             >
               How can artificial intelligence help retailers forecast demand?
             </p>
-            <p className="py-2 text-[#000000]" style={{ fontFamily: "roboto" }}>
+            <p className="py-2 text-[#000000]" style={{ fontFamily: "Roboto, sans-serif" }}>
               Are retailers on the verge of extinction? Confronted by supply
               chain issues, labour shortages, fickle demand, inflationary
               pressures and rising interest rates, retailers are scrambling to
@@ -107,7 +107,7 @@ const Blog = () => {
               on the top performing lines at the expense of the oth..{" "}
               <span
                 className="underline font-bold text-[#000000]"
-                style={{ cursor: "pointer", fontFamily: "roboto" }}
+                style={{ cursor: "pointer", fontFamily: "Roboto, sans-serif" }}
                 onClick={handleButtonClick}
               >
                 Read More
@@ -135,7 +135,7 @@ const Blog = () => {
               Are retailers on the verge of extinction?
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left py-6 text-[#000000]"
             >
               Confronted by supply chain issues, labour shortages, fickle
@@ -144,7 +144,7 @@ const Blog = () => {
               challenges they face.
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left text-[#000000]"
             >
               Consider a retailer with 20,000 SKUs and 50 stores (potentially 1
@@ -170,7 +170,7 @@ const Blog = () => {
               AI for retailers
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left pb-6 text-[#000000]"
             >
               Enter AI with its potential to alleviate all the above. When we
@@ -178,7 +178,7 @@ const Blog = () => {
               does it work? And how can you apply it in your business?
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl md:text-lg text-sm text-[#000000]"
             >
               Deep learning replicates the human mind’s ability to perceive
@@ -205,7 +205,7 @@ const Blog = () => {
               Demand forecasting
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left text-[#000000]"
             >
               Knowing what will sell, where and when underpins all stock
@@ -214,7 +214,7 @@ const Blog = () => {
               accurate, autonomous stock optimization.
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left text-[#000000]"
             >
               Retailers invariably have rich transactional history and master
@@ -223,7 +223,7 @@ const Blog = () => {
               retailers to: -
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left pt-4  text-[#000000] "
             >
               1. Circumvent the cost and complexity of establishing their own AI
@@ -235,7 +235,7 @@ const Blog = () => {
               3. Free up teams to focus on core business.
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left py-4  text-[#000000]"
             >
               An AI implementation entails identifying a problem typically a
@@ -246,7 +246,7 @@ const Blog = () => {
             </p>
 
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left pb-4  text-[#000000]"
             >
               An AI enabled business will not merely survive but thrive and will
@@ -264,7 +264,7 @@ const Blog = () => {
  */}
 
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left  text-[#000000]"
             >
               <Link href="/case-studies" className="mr-2">
@@ -274,12 +274,12 @@ const Blog = () => {
               solution could work for your organisation.
             </p>
             <p
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
               className="lg:text-xl text-sm text-left "
             >
               <span
                 className="underline font-bold text-[#000000]"
-                style={{ cursor: "pointer", fontFamily: "roboto" }}
+                style={{ cursor: "pointer", fontFamily: "Roboto, sans-serif" }}
                 onClick={handleButtonClickFalse}
               >
                 Less

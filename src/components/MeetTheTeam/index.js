@@ -49,7 +49,7 @@ const MeetTheTeam = () => {
   const secondRow = details.slice(3);
 
   return (
-    <div className="pb-16">
+    <div className="pb-12">
       <p
         style={{ fontFamily: "AllroundGothic" }}
         className="lg:text-5xl md:text-4xl text-[#000000] text-xl text-center font-bold lg:mt-4 md:mt-4 py-4"
@@ -81,9 +81,12 @@ const MeetTheTeam = () => {
               >
                 {s.designation}
               </p>
-              <p 
-               style={{ fontFamily: "roboto" }}
-              className="team-description">{s.description}</p>
+              <p
+                style={{ fontFamily: "Roboto, sans-serif" }}
+                className="team-description"
+              >
+                {s.description}
+              </p>
             </div>
           </div>
         ))}

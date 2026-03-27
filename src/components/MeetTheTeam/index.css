@@ -1,5 +1,5 @@
 .description {
-  font-family:'roboto';
+  font-family: "Roboto, sans-serif";
  
 }
 .team-image-wrap {
@@ -13,7 +13,7 @@
 }
 
 .team-description {
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #000000;
   text-align: center; 
@@ -24,7 +24,7 @@
   white-space: normal;
 }
 .damien-description{
-   font-family: 'Roboto';
+font-family: "Roboto, sans-serif";
   font-size: 18px;
   color: #000000;
   text-align: center; 
