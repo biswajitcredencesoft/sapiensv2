@@ -147,7 +147,10 @@ const Contact = () => {
           Get In Touch
         </h1>
 
-        <p style={{ fontFamily: "Roboto, sans-serif" }} className="md:mt-4 mt-2 ">
+        <p
+          style={{ fontFamily: "Roboto, sans-serif" }}
+          className="contact-lead md:mt-4 mt-2"
+        >
           Tell us about your retail challenges.
         </p>
 
@@ -157,10 +160,9 @@ const Contact = () => {
         <div className="ml-2 md:mt-[10px] flex flex-col md:flex-row md:gap-[152px] gap-8">
           <div>
             <h3
+              className="contact-region"
               style={{
                 fontFamily: "Roboto, sans-serif",
-                fontWeight: "600",
-                color: "#374151",
               }}
             >
               NEW ZEALAND
@@ -168,11 +170,9 @@ const Contact = () => {
 
             <div className="mt-[14px] space-y-2">
               <p
-                className="flex items-start gap-2"
+                className="contact-detail flex items-start gap-2"
                 style={{
                   fontFamily: "Roboto, sans-serif",
-                  fontWeight: "500",
-                  color: "#374151",
                 }}
               >
                 <SlLocationPin className="mt-[11px]" /> Sapiens v2 Ltd.
@@ -181,25 +181,24 @@ const Contact = () => {
               </p>
 
               <p
-                className="flex items-center gap-2"
+                className="contact-detail flex items-center gap-2"
                 style={{
                   fontFamily: "Roboto, sans-serif",
-                  fontWeight: "500",
-                  color: "#374151",
                 }}
               >
                 <FiPhone /> +64 9 887 9320
               </p>
               <p
-                className="flex items-center gap-2 cursor-pointer"
+                className="contact-detail flex items-center gap-2 cursor-pointer"
                 style={{
                   fontFamily: "Roboto, sans-serif",
-                  fontWeight: "500",
-                  color: "#374151",
                 }}
               >
                 <MdOutlineMail />
-                <a href="mailto:getintouch@sapiensv2.com">
+                <a
+                  href="mailto:getintouch@sapiensv2.com"
+                  className="contact-detail-link"
+                >
                   getintouch@sapiensv2.com
                 </a>
               </p>
@@ -207,21 +206,18 @@ const Contact = () => {
           </div>
           <div>
             <h3
+              className="contact-region"
               style={{
                 fontFamily: "Roboto, sans-serif",
-                fontWeight: "500",
-                color: "#374151",
               }}
             >
               INDIA
             </h3>
             <div className="mt-[14px] space-y-2">
               <p
-                className="flex items-start gap-2"
+                className="contact-detail flex items-start gap-2"
                 style={{
                   fontFamily: "Roboto, sans-serif",
-                  fontWeight: "500",
-                  color: "#374151",
                 }}
               >
                 <SlLocationPin className="mt-[11px]" /> Sapiens v2 (IND),
@@ -229,25 +225,24 @@ const Contact = () => {
                 Rajasthan, India
               </p>
               <p
-                className="flex items-center gap-2"
+                className="contact-detail flex items-center gap-2"
                 style={{
                   fontFamily: "Roboto, sans-serif",
-                  fontWeight: "500",
-                  color: "#374151",
                 }}
               >
                 <FiPhone /> +91 9660469937
               </p>
               <p
-                className="flex items-center gap-2 cursor-pointer"
+                className="contact-detail flex items-center gap-2 cursor-pointer"
                 style={{
                   fontFamily: "Roboto, sans-serif",
-                  fontWeight: "500",
-                  color: "#374151",
                 }}
               >
                 <MdOutlineMail />
-                <a href="mailto:getintouch@sapiensv2.com">
+                <a
+                  href="mailto:getintouch@sapiensv2.com"
+                  className="contact-detail-link"
+                >
                   getintouch@sapiensv2.com
                 </a>
               </p>

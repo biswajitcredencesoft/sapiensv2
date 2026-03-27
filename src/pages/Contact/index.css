@@ -1,6 +1,6 @@
 .ContactContainer {
   display: flex;
-  min-height: 75vh;
+  min-height: 70vh;
   margin: auto;
 }
 
@@ -58,11 +58,34 @@
 
 .ContactLeftSection > p {
   color: #374151;
-
   font-weight: 500;
   font-size: 20px;
   padding: 5px 0;
   margin-left: 5px;
+}
+
+.contact-lead {
+  color: #374151 !important;
+  font-weight: 510 !important;
+  font-size: 20px !important;
+  line-height: 1.35;
+}
+
+.contact-region {
+  color: #374151;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em;
+}
+
+.contact-detail {
+  color: #374151 !important;
+  font-weight: 600 !important;
+  line-height: 1.6;
+}
+
+.contact-detail-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .ContactLeftSectionContactDetails > p {
@@ -132,6 +155,10 @@ p.get-in {
   .ContactLeftSection > p {
     font-size: 15px;
     padding: 5px 0;
+  }
+
+  .contact-lead {
+    font-size: 20px !important;
   }
 
   .ContactLeftSectionContactDetails > p {

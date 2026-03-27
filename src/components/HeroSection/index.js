@@ -121,7 +121,7 @@ const HeroSection = ({ scrollToDemo }) => {
 
                 <p
                   className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
+                  style={{ fontFamily: "Roboto, sans-serif" }}
                 >
                   Name:
                 </p>
@@ -138,7 +138,7 @@ const HeroSection = ({ scrollToDemo }) => {
 
                 <p
                   className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
+                  style={{ fontFamily: "Roboto, sans-serif" }}
                 >
                   Email:{" "}
                   {emailError && (
@@ -161,7 +161,7 @@ const HeroSection = ({ scrollToDemo }) => {
 
                 <p
                   className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
+                  style={{ fontFamily: "Roboto, sans-serif" }}
                 >
                   Phone:
                 </p>
@@ -177,7 +177,7 @@ const HeroSection = ({ scrollToDemo }) => {
 
                 <p
                   className="py-2 text-[#374151]"
-                  style={{ fontFamily: "roboto" }}
+                  style={{ fontFamily: "Roboto, sans-serif" }}
                 >
                   Enquiry:
                 </p>
@@ -269,7 +269,7 @@ const HeroSection = ({ scrollToDemo }) => {
                   </div>
                   <p
                     className="gmail inc text-white mt-2 text-center"
-                    style={{ fontFamily: "roboto" }}
+                    style={{ fontFamily: "Roboto, sans-serif" }}
                   >
                     getintouch@sapiensv2.com
                   </p>
@@ -285,7 +285,7 @@ const HeroSection = ({ scrollToDemo }) => {
                   </div>
                   <p
                     className="gmail text-white mt-2 text-center"
-                    style={{ fontFamily: "roboto" }}
+                    style={{ fontFamily: "Roboto, sans-serif" }}
                   >
                     +6498879320
                   </p>
@@ -303,7 +303,7 @@ const HeroSection = ({ scrollToDemo }) => {
                   </div>
                   <p
                     className="text-white text-center gmail mt-2"
-                    style={{ fontFamily: "roboto" }}
+                    style={{ fontFamily: "Roboto, sans-serif" }}
                   >
                     Sapiens v2 Ltd. <br />
                     Auckland, New Zealand
