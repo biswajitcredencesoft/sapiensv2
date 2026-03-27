@@ -13,9 +13,7 @@ const ClientCard = () => {
           style={{ fontFamily: "Roboto, sans-serif" }}
           className="text-center text-[#000000]"
         >
-          "Our stores were swamped with web returns. Sapiens v2 swiftly and
-          elegantly enabled us to re-distribute the returns to locations with
-          the greatest sales potential."
+          "Our stores were swamped with web returns. Sapiens v2’s swiftly and elegantly enabled us to re-distribute the returns to locations with the greatest sales potential."
         </p>
 
         <h5

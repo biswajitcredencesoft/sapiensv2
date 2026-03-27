@@ -39,7 +39,7 @@ const Demo = () => {
             </span>
             <span
               className="text-lg lg:text-xl lg:mt-10"
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
             >
               to get the right stock in the right stores at the right time
               considering future promotions, time of year, special events,
@@ -80,11 +80,11 @@ const Demo = () => {
               style={{ fontFamily: "AllroundGothic" }}
             >
               Automate Weekly Vendor Re
-              <span style={{ fontFamily: "roboto" }}>-</span>Orders.
+              <span style={{ fontFamily: "Roboto, sans-serif" }}>-</span>Orders.
             </span>
             <span
               className="text-lg lg:text-xl lg:mt-10"
-              style={{ fontFamily: "roboto" }}
+              style={{ fontFamily: "Roboto, sans-serif" }}
             >
               Calculate safety stock with a desired confidence factor. Determine
               reorder points and refill levels using Sapiens v2’s sales forecast

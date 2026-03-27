@@ -95,7 +95,7 @@ const HeroSection = ({ scrollToDemo }) => {
             <br />
             <span>demand forecaster.</span>
           </h1>
-          <p style={{ fontFamily: "roboto" }}>
+          <p style={{ fontFamily: "Roboto, sans-serif" }}>
             Helping inventory planners get the right stock, in the right place,
             at <br /> the right time.
           </p>

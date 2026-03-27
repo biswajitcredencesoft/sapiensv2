@@ -33,7 +33,7 @@ const VideoSection = () => {
                 />
               </div>
               <p
-                style={{ fontFamily: "roboto" }}
+                style={{ fontFamily: "Roboto, sans-serif" }}
                 className="w-4/5 lg:text-lg md:text-xs  text-sm text-[#ffffff]  "
               >
                 <span
