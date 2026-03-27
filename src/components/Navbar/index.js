@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -17,11 +16,9 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
   return (
     <div className="NavbarContainer ">
       <div className="NavbarLogo  seer-logo">
-        <Image
+        <img
           src="/images/uploads/Sv2_logo_bluepurpleOne.svg"
           alt="Logo"
-          width={220}
-          height={60}
           style={{ fontFamily: "HouschkaPro" }}
         />
       </div>

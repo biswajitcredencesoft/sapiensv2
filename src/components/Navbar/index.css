@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #090d14 10%, #35435f 90%);
-  padding: 2.5rem; 
+  padding: 2.5rem 2.5rem;
   position: sticky;
   top: 0;
   width: 100%;
@@ -20,12 +20,17 @@
 .NavbarLogo {
   width: 25%;
   height: auto;
-  
+  display: flex;
+  align-items: center;
 }
 
 .NavbarLogo>img {
   font-family: 'HouschkaPro';
   margin-left: 23px;
+  height: 68px;
+  width: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .NavbarLinks {
@@ -94,7 +99,7 @@
   }
 
   .NavbarLogo {
-    width: 60%; 
+    width: 60%;
   }
 }
 
@@ -116,8 +121,8 @@
   }
   .NavbarLogo>img {
     font-family: 'HouschkaPro';
-   margin-left: -14px;
-   
+    margin-left: 0;
+    height: 44px;
   }
 
 }
