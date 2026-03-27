@@ -5,7 +5,7 @@ import support from "../../assets/images/Support.png";
 import economial from "../../assets/images/Economical.png";
 
 const Card = ({ imageSrc, desc, description, description1, altText }) => (
-  <div className="rounded-lg overflow-hidden shadow-lg border border-slate-50 shadow-gray-400">
+  <div className="rounded-lg overflow-hidden shadow-lg border border-slate-50">
     <Image
       src={imageSrc}
       alt={altText || desc || "Seer insight"}

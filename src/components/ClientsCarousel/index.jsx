@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import ClientCard from "../ClientCard";
 import ClientCard3 from "../ClientCard3";
 import ClientCard4 from "../ClientCard4";
@@ -121,13 +122,13 @@ const ClientsCarousel = () => {
                         : "h-[190px] w-full md:w-[260px] mx-auto md:ml-[120px] mt-[300px] md:mt-[160px]"
                     } pr-4 flex justify-center items-center`}
                   >
-                    <img
+                    <Image
                       src={card.imageUrl}
                       alt={`Partner logo ${index % cardCount}`}
-                      loading="lazy"
                       className={`${
                         isMobile ? "w-full" : "w-[400px]"
                       } object-cover font-HouschkaPro`}
+                      sizes={isMobile ? "100vw" : "400px"}
                     />
                   </div>
                 )}

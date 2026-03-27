@@ -6,6 +6,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { serviceId, templateId, publicKey } from "../../configs/emailjs";
 
 import Submitbutton from "../../components/Submitbutton/index.jsx";
+import MobileHeroImage from "../../assets/images/Seer_Oracle_phone.svg";
 
 const HeroSection = ({ scrollToDemo }) => {
   const [formData, setFormData] = useState({
@@ -322,19 +323,21 @@ const HeroSection = ({ scrollToDemo }) => {
       <div className="HeroSectionBgImg">
         <Image
           src="/images/uploads/Stock_Seer_Oracle.svg"
-          alt="hero"
+          alt="Stock Seer hero illustration"
           width={900}
           height={700}
           className="desktop-image"
-          style={{ fontFamily: "HouschkaPro" }}
+          priority
+          sizes="100vw"
         />
         <Image
-          src="/images/uploads/Stock_Seer_Oracle.svg"
-          alt="hero"
+          src={MobileHeroImage}
+          alt="Stock Seer mobile hero illustration"
           width={420}
           height={520}
           className="mobile-image"
-          style={{ fontFamily: "HouschkaPro" }}
+          priority
+          sizes="100vw"
         />
       </div>
     </div>
