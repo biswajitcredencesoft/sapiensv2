@@ -62,7 +62,7 @@ const MeetTheTeam = () => {
         {firstRow.map((s, i) => (
           <div key={i} className="lg:w-full md:px-0 px-10">
             <div>
-              <img src={s.image} className="w-full mx-auto rounded-xl" />
+              <img src={s.image} alt={s.name} loading="lazy" className="w-full mx-auto rounded-xl" />
             </div>
             <div className="text-center mt-3">
               <p
@@ -93,7 +93,7 @@ const MeetTheTeam = () => {
             className="lg:w-[30%] md:w-[40%] sm:w-[80%] px-10 md:px-0"
           >
             <div>
-              <img src={s.image} className="w-full mx-auto rounded-xl" />
+              <img src={s.image} alt={s.name} loading="lazy" className="w-full mx-auto rounded-xl" />
             </div>
             <div className="text-center mt-3">
               <p

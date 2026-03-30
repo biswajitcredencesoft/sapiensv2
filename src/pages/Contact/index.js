@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import "./index.css";
 // import Faceboook from "../../assets/images/Facebook.png";
 import Google from "../../assets/images/Google.png";
@@ -79,12 +80,61 @@ const Contact = () => {
         console.error("Error in sending email:", error);
         setIsFormSubmisionError(true);
         setIsLoading(false);
-      }
+      },
     );
   };
 
   return (
     <div className="ContactContainer bg-[#edeeff] pb-10 md:pb-0 lg:pb-0">
+      {/* <Helmet>
+        <title>Contact — Sapiens v2</title>
+        <meta name="description" content="Contact Sapiens v2 — tell us about your retail challenges and we'll help you explore AI solutions." />
+        <link rel="canonical" href="https://sapiensv2.com/contact" />
+        <meta property="og:title" content="Contact — Sapiens v2" />
+        <meta property="og:description" content="Contact Sapiens v2 — tell us about your retail challenges and we'll help you explore AI solutions." />
+        <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet> */}
+
+         <Helmet>
+              <title>Contact Us | AI Demand Forecasting & 24/7 LS Central Support | Sapiens v2</title>
+              <meta 
+                name="description" 
+                content="Contact Sapiens v2 for a Stock Seer AI demand forecasting demo or 24/7 LS Central and Business Central support. Expert solutions for multi-store retail businesses." 
+              />
+              <link rel="canonical" href="https://sapiensv2.com/contact" />
+              <meta property="og:title" content="Contact Sapiens v2 — Book a Stock Seer Demo or Get 24/7 LS Central Support" />
+              <meta property="og:description" content="Get in touch for AI demand forecasting demos and expert 24/7 LS Central or Business Central support." />
+              <meta property="og:url" content="https://sapiensv2.com/contact-us" />
+              <meta property="og:image" content="https://sapiensv2.com/images/uploads/social-share.svg" />
+              <meta property="og:type" content="website" />
+              <meta name="twitter:card" content="summary" />
+              <meta name="twitter:title" content="Contact Sapiens v2 for AI Forecasting & 24/7 Support" />
+              <meta name="twitter:description" content="Reach us for a Stock Seer AI demo, 24/7 LS Central and Business Central support, or partnership enquiries." />
+              <meta name="twitter:image" content="https://sapiensv2.com/images/twitterimage.jpg" />
+              <script type="application/ld+json">
+                {`{
+                  "@context": "https://schema.org",
+                  "@type": "ContactPage",
+                  "name": "Contact Sapiens v2",
+                  "description": "Contact Sapiens v2 for Stock Seer AI demos and 24/7 LS Central technical support.",
+                  "url": "https://sapiensv2.com/contact",
+                  "mainEntity": {
+                    "@type": "Organization",
+                    "name": "Sapiens v2",
+                    "contactPoint": {
+                      "@type": "ContactPoint",
+                      "telephone": "+64 9 887 9320",
+                      "contactType": "customer service",
+                      "availableLanguage": "English",
+                      "hoursAvailable": "Mo-Su 00:00-23:59"
+                    }
+                  }
+                }`}
+              </script>
+         </Helmet>
+
+
       <div className="ContactLeftSection">
         <h1
           className="shadow-none"

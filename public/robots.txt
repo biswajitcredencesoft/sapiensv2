@@ -1,3 +1,14 @@
-# https://www.robotstxt.org/robotstxt.html
+# For all user agents
 User-agent: *
-Disallow:
+Allow: https://sapiensv2.com/solutions
+Allow: https://sapiensv2.com/about
+Allow: https://sapiensv2.com/blog
+Allow: https://sapiensv2.com/caseStudies
+
+# Exclude common administration or test directories
+Disallow: /wp-admin/
+Disallow: /admin/
+Disallow: /temp/
+
+# Direct crawlers to the location of the sitemap file
+Sitemap: https://www.sapiensv2.com/sitemap.xml

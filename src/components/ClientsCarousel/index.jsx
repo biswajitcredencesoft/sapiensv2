@@ -123,7 +123,8 @@ const ClientsCarousel = () => {
                   >
                     <img
                       src={card.imageUrl}
-                      alt={`Card ${index % cardCount}`}
+                      alt={`Partner logo ${index % cardCount}`}
+                      loading="lazy"
                       className={`${
                         isMobile ? "w-full" : "w-[400px]"
                       } object-cover font-HouschkaPro`}
